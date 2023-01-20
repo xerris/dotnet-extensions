@@ -13,6 +13,18 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
 // ReSharper disable InconsistentNaming
 
+[GitHubActions(
+    "continuous",
+    GitHubActionsImage.WindowsLatest,
+    GitHubActionsImage.UbuntuLatest,
+    GitHubActionsImage.MacOsLatest,
+    FetchDepth = 0,
+    OnPushBranches = new []{ "main", "release/*" },
+    OnPushTags = new[] { "v*" },
+    OnPullRequestBranches = new[] { "main" },
+    PublishArtifacts = true,
+    InvokedTargets = new[] { nameof(Compile), nameof(Test) },
+    CacheKeyFiles = new[] { "global.json", "source/**/*.csproj" })]
 partial class Build : NukeBuild
 {
     /// Support plugins are available for:
@@ -59,8 +71,11 @@ partial class Build : NukeBuild
                 .SetProjectFile(Solution));
         });
 
+    AbsolutePath VersionFile => OutputDirectory / "VERSION";
+
     Target Compile => _ => _
         .DependsOn(Clean, Restore)
+        .Produces(VersionFile)
         .Executes(() =>
         {
             DotNetBuild(s => s
@@ -71,7 +86,7 @@ partial class Build : NukeBuild
                 .SetInformationalVersion(GitVersion.InformationalVersion)
                 .EnableNoRestore());
 
-            File.WriteAllText(OutputDirectory / "VERSION", GitVersion.NuGetVersionV2);
+            File.WriteAllText(VersionFile, GitVersion.NuGetVersionV2);
         });
 
 }
