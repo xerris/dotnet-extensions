@@ -3,6 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{4001CB4E-1A8E-4E35-AA13-78488D3835C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Configuration", "source\Xerris.Extensions.Configuration\Xerris.Extensions.Configuration.csproj", "{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{92A85A3E-1FAE-4F29-88EA-D4A6E92D12C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Configuration.Tests", "tests\Xerris.Extensions.Configuration.Tests\Xerris.Extensions.Configuration.Tests.csproj", "{457C3937-1C18-4133-B74C-C8A6D2739418}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +18,19 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{457C3937-1C18-4133-B74C-C8A6D2739418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{457C3937-1C18-4133-B74C-C8A6D2739418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{457C3937-1C18-4133-B74C-C8A6D2739418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{457C3937-1C18-4133-B74C-C8A6D2739418}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E} = {4001CB4E-1A8E-4E35-AA13-78488D3835C6}
+		{457C3937-1C18-4133-B74C-C8A6D2739418} = {92A85A3E-1FAE-4F29-88EA-D4A6E92D12C1}
 	EndGlobalSection
 EndGlobal
