@@ -13,7 +13,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
 // ReSharper disable InconsistentNaming
 
-class Build : NukeBuild
+partial class Build : NukeBuild
 {
     /// Support plugins are available for:
     ///   - JetBrains ReSharper        https://nuke.build/resharper
@@ -23,8 +23,13 @@ class Build : NukeBuild
 
     public static int Main () => Execute<Build>(x => x.Compile);
 
-    protected override void OnBuildInitialized() =>
-        Log.Information("{VersionInfo}", JsonSerializer.Serialize(GitVersion));
+    protected override void OnBuildInitialized()
+    {
+        Log.Information("{VersionInfo}", JsonSerializer.Serialize(GitVersion, new JsonSerializerOptions
+        {
+            WriteIndented = true
+        }));
+    }
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
