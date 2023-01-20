@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 
 namespace Xerris.Extensions.Configuration.Tests;
@@ -47,5 +48,29 @@ public class ConfigurationExtensionsTests
         var test = () => config.Require(key);
 
         test.Should().Throw<ConfigurationException>().WithMessage($"*{key}*");
+    }
+
+    [Fact]
+    public void Collection_gets_configuration_section_values_as_array()
+    {
+        var jsonBytes = JsonSerializer.SerializeToUtf8Bytes(new
+        {
+            section = new
+            {
+                item1 = 1,
+                item2 = 2,
+                item3 = 3
+            }
+        });
+
+        using var jsonStream = new MemoryStream(jsonBytes);
+
+        var config = new ConfigurationBuilder()
+            .AddJsonStream(jsonStream)
+            .Build();
+
+        var sectionValues = config.Collection("section");
+
+        sectionValues.Should().BeEquivalentTo("1", "2", "3");
     }
 }

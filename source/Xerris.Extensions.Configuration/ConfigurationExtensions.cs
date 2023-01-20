@@ -27,7 +27,7 @@ public static class ConfigurationExtensions
     /// Get a configuration section's children as an array of values.
     /// </summary>
     /// <param name="config">The configuration.</param>
-    /// <param name="section">The configuration section name..</param>
+    /// <param name="section">The configuration section name.</param>
     /// <returns>The configuration values.</returns>
     public static string[] Collection(this IConfiguration config, string section)
     {
