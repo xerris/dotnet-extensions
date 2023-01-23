@@ -2,7 +2,7 @@ using System.IO;
 using System.Text.Json;
 using Nuke.Common;
 using Nuke.Common.CI.GitHubActions;
-using Nuke.Common.CI;
+using Nuke.Common.Git;
 using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tools.DotNet;
@@ -19,7 +19,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
     GitHubActionsImage.UbuntuLatest,
     GitHubActionsImage.MacOsLatest,
     FetchDepth = 0,
-    OnPushBranches = new []{ "main", "release/*" },
+    OnPushBranches = new[] { "main", "release/*" },
     OnPushTags = new[] { "v*" },
     OnPullRequestBranches = new[] { "main" },
     PublishArtifacts = true,
@@ -33,7 +33,7 @@ partial class Build : NukeBuild
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
 
-    public static int Main () => Execute<Build>(x => x.Compile);
+    public static int Main() => Execute<Build>(x => x.Compile);
 
     protected override void OnBuildInitialized()
     {
@@ -46,13 +46,15 @@ partial class Build : NukeBuild
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
 
-    [Required] [GitVersion(Framework = "net6.0", NoFetch = true)] readonly GitVersion GitVersion;
-
-    [CI] readonly GitHubActions GitHubActions;
+    [Required][GitRepository] readonly GitRepository GitRepository;
+    [Required][GitVersion(Framework = "net6.0", NoFetch = true)] readonly GitVersion GitVersion;
 
     [Solution] readonly Solution Solution;
 
     AbsolutePath OutputDirectory => RootDirectory / "output";
+
+    const string MainBranch = "main";
+    const string ReleaseBranchPrefix = "release";
 
     Target Clean => _ => _
         .Before(Restore)
@@ -88,5 +90,4 @@ partial class Build : NukeBuild
 
             File.WriteAllText(VersionFile, GitVersion.NuGetVersionV2);
         });
-
 }
