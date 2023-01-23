@@ -47,6 +47,10 @@
           "type": "boolean",
           "description": "Disables displaying the NUKE logo"
         },
+        "NuGetApiKey": {
+          "type": "string",
+          "default": "Secrets must be entered via 'nuke :secrets [profile]'"
+        },
         "Partition": {
           "type": "string",
           "description": "Partition to use on CI"
@@ -75,6 +79,8 @@
               "Clean",
               "Compile",
               "GenerateCoverageReport",
+              "Pack",
+              "Publish",
               "Restore",
               "Test"
             ]
@@ -93,6 +99,8 @@
               "Clean",
               "Compile",
               "GenerateCoverageReport",
+              "Pack",
+              "Publish",
               "Restore",
               "Test"
             ]
