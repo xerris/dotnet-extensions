@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{8497A171
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Common", "source\Xerris.Extensions.Common\Xerris.Extensions.Common.csproj", "{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Common.Tests", "tests\Xerris.Extensions.Common.Tests\Xerris.Extensions.Common.Tests.csproj", "{07EEA7B6-AA1D-49D0-8718-ADAC46246302}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{457C3937-1C18-4133-B74C-C8A6D2739418} = {92A85A3E-1FAE-4F29-88EA-D4A6E92D12C1}
 		{657D9300-3015-42A5-96EA-D347553FE62C} = {8497A171-A7CD-4EA4-83A2-1CD3716E6C0A}
 		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0} = {4001CB4E-1A8E-4E35-AA13-78488D3835C6}
+		{07EEA7B6-AA1D-49D0-8718-ADAC46246302} = {92A85A3E-1FAE-4F29-88EA-D4A6E92D12C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1EB876D-37F2-4BB3-A9E1-FCC6D57B0F24}
