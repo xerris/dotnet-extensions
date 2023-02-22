@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using System.IO;
 using Nuke.Common;
 using Nuke.Common.CI.GitHubActions;
 using Nuke.Common.IO;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
+using Xerris.Extensions.Common;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
 [GitHubActions(
@@ -25,9 +27,11 @@ partial class Build
                 .SetProject(Solution)
                 .SetConfiguration(Configuration)
                 .SetNoBuild(SucceededTargets.Contains(Compile))
-                .SetOutputDirectory(OutputDirectory)
                 .SetRepositoryUrl(GitRepository.HttpsUrl)
                 .SetVersion(GitVersion.NuGetVersionV2));
+            
+            var packageFiles = RootDirectory.GlobFiles("**/*.nupkg");
+            packageFiles.ForEach(pkg => File.Copy(pkg, OutputDirectory / pkg.Name));
         });
 
     [Parameter][Secret] readonly string NuGetApiKey;
@@ -38,7 +42,7 @@ partial class Build
         .DependsOn(Pack)
         .Consumes(Pack)
         .OnlyWhenStatic(() => false) // Temporarily disabled
-        //.Requires(() => NuGetApiKey) // Temporarily disabled
+                                     //.Requires(() => NuGetApiKey) // Temporarily disabled
         .Executes(() =>
         {
             DotNetNuGetPush(_ => _

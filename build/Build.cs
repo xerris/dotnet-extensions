@@ -1,5 +1,4 @@
 using System.IO;
-using System.Text.Json;
 using Nuke.Common;
 using Nuke.Common.CI.GitHubActions;
 using Nuke.Common.Git;
@@ -8,6 +7,7 @@ using Nuke.Common.ProjectModel;
 using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.GitVersion;
 using Serilog;
+using Xerris.Extensions.Common;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
@@ -35,13 +35,7 @@ partial class Build : NukeBuild
 
     public static int Main() => Execute<Build>(x => x.Compile);
 
-    protected override void OnBuildInitialized()
-    {
-        Log.Information("{VersionInfo}", JsonSerializer.Serialize(GitVersion, new JsonSerializerOptions
-        {
-            WriteIndented = true
-        }));
-    }
+    protected override void OnBuildInitialized() => Log.Information("{VersionInfo}", GitVersion.ToJson(true));
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
