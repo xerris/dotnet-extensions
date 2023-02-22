@@ -8,8 +8,8 @@ using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.GitVersion;
 using Serilog;
 using Xerris.Extensions.Common;
-using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
+using static Nuke.Common.IO.FileSystemTasks;
 
 // ReSharper disable InconsistentNaming
 
@@ -46,6 +46,7 @@ partial class Build : NukeBuild
     [Solution] readonly Solution Solution;
 
     AbsolutePath OutputDirectory => RootDirectory / "output";
+    AbsolutePath SourceDirectory => RootDirectory / "source";
 
     const string MainBranch = "main";
     const string ReleaseBranchPrefix = "release";
@@ -54,9 +55,7 @@ partial class Build : NukeBuild
         .Before(Restore)
         .Executes(() =>
         {
-            DotNetClean(s => s
-                .SetProject(Solution));
-
+            SourceDirectory.GlobDirectories("*/bin", "*/obj").ForEach(DeleteDirectory);
             EnsureCleanDirectory(OutputDirectory);
         });
 
