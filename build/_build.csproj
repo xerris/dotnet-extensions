@@ -16,4 +16,8 @@
     <PackageDownload Include="ReportGenerator" Version="[5.1.15]" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\source\Xerris.Extensions.Common\Xerris.Extensions.Common.csproj" />
+  </ItemGroup>
+
 </Project>
