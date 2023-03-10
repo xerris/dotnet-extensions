@@ -9,18 +9,18 @@
 #
 #     - To trigger manual generation invoke:
 #
-#         nuke --generate-configuration GitHubActions_publish --host GitHubActions
+#         nuke --generate-configuration GitHubActions_release --host GitHubActions
 #
 # </auto-generated>
 # ------------------------------------------------------------------------------
 
-name: publish
+name: release
 
 on:
   push:
     branches:
       - main
-      - 'release/*'
+      - 'release/v*'
     tags:
       - 'v*'
 
@@ -38,16 +38,17 @@ jobs:
           path: |
             .nuke/temp
             ~/.nuget/packages
-          key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj') }}
-      - name: Run './build.cmd Publish'
-        run: ./build.cmd Publish
+          key: ${{ runner.os }}-${{ hashFiles('global.json', 'source/**/*.csproj') }}
+      - name: Run './build.cmd Test Pack Push'
+        run: ./build.cmd Test Pack Push
         env:
           NuGetApiKey: ${{ secrets.NUGET_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-artifact@v3
         with:
-          name: VERSION
-          path: output/VERSION
+          name: test-results
+          path: artifacts/test-results
       - uses: actions/upload-artifact@v3
         with:
-          name: output
-          path: output
+          name: packages
+          path: artifacts/packages

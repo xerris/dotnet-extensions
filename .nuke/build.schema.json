@@ -8,7 +8,6 @@
       "properties": {
         "Configuration": {
           "type": "string",
-          "description": "Configuration to build - Default is 'Debug' (local) or 'Release' (server)",
           "enum": [
             "Debug",
             "Release"
@@ -43,6 +42,10 @@
             "VSCode"
           ]
         },
+        "IgnoreFailedSources": {
+          "type": "boolean",
+          "description": "Ignore unreachable sources during Restore"
+        },
         "NoLogo": {
           "type": "boolean",
           "description": "Disables displaying the NUKE logo"
@@ -50,6 +53,9 @@
         "NuGetApiKey": {
           "type": "string",
           "default": "Secrets must be entered via 'nuke :secrets [profile]'"
+        },
+        "NuGetSource": {
+          "type": "string"
         },
         "Partition": {
           "type": "string",
@@ -78,11 +84,13 @@
             "enum": [
               "Clean",
               "Compile",
-              "GenerateCoverageReport",
+              "Format",
               "Pack",
-              "Publish",
+              "Push",
+              "ReportCoverage",
               "Restore",
-              "Test"
+              "Test",
+              "VerifyFormat"
             ]
           }
         },
@@ -98,11 +106,13 @@
             "enum": [
               "Clean",
               "Compile",
-              "GenerateCoverageReport",
+              "Format",
               "Pack",
-              "Publish",
+              "Push",
+              "ReportCoverage",
               "Restore",
-              "Test"
+              "Test",
+              "VerifyFormat"
             ]
           }
         },

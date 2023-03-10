@@ -1,4 +1,4 @@
-﻿namespace Xerris.Extensions.Configuration;
+namespace Xerris.Extensions.Configuration;
 
 public class ConfigurationException : Exception
 {
