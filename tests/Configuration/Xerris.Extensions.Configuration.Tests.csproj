@@ -34,9 +34,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
+  
   <ItemGroup>
-    <ProjectReference Include="..\..\source\Xerris.Extensions.Configuration\Xerris.Extensions.Configuration.csproj" />
+    <ProjectReference Include="..\..\src\Configuration\Xerris.Extensions.Configuration.csproj" />
   </ItemGroup>
 
 </Project>

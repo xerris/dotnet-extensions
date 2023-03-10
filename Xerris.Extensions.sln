@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{4001CB4E-1A8E-4E35-AA13-78488D3835C6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xerris.Extensions.Configuration", "source\Xerris.Extensions.Configuration\Xerris.Extensions.Configuration.csproj", "{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{92A85A3E-1FAE-4F29-88EA-D4A6E92D12C1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xerris.Extensions.Configuration.Tests", "tests\Xerris.Extensions.Configuration.Tests\Xerris.Extensions.Configuration.Tests.csproj", "{457C3937-1C18-4133-B74C-C8A6D2739418}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{657D9300-3015-42A5-96EA-D347553FE62C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{8497A171-A7CD-4EA4-83A2-1CD3716E6C0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Common", "source\Xerris.Extensions.Common\Xerris.Extensions.Common.csproj", "{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0A06B89D-0F67-4D2B-8626-D41B21608E6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Common.Tests", "tests\Xerris.Extensions.Common.Tests\Xerris.Extensions.Common.Tests.csproj", "{07EEA7B6-AA1D-49D0-8718-ADAC46246302}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Common", "src\Common\Xerris.Extensions.Common.csproj", "{C035DB38-D012-49D9-A237-36F6EC2E58BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Configuration", "src\Configuration\Xerris.Extensions.Configuration.csproj", "{7EE67BF5-8D6F-44A8-BD8F-7C8D63997382}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{689CE77C-997D-4D67-A5ED-9FF1EA0A3301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Common.Tests", "tests\Common\Xerris.Extensions.Common.Tests.csproj", "{955C88AB-4F72-4176-8303-A6ABAB2B84CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Configuration.Tests", "tests\Configuration\Xerris.Extensions.Configuration.Tests.csproj", "{23A98FEE-49A1-45FE-867B-67E956A2C84D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,34 +25,34 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{457C3937-1C18-4133-B74C-C8A6D2739418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{457C3937-1C18-4133-B74C-C8A6D2739418}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{457C3937-1C18-4133-B74C-C8A6D2739418}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{457C3937-1C18-4133-B74C-C8A6D2739418}.Release|Any CPU.Build.0 = Release|Any CPU
 		{657D9300-3015-42A5-96EA-D347553FE62C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{657D9300-3015-42A5-96EA-D347553FE62C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07EEA7B6-AA1D-49D0-8718-ADAC46246302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C035DB38-D012-49D9-A237-36F6EC2E58BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C035DB38-D012-49D9-A237-36F6EC2E58BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C035DB38-D012-49D9-A237-36F6EC2E58BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C035DB38-D012-49D9-A237-36F6EC2E58BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE67BF5-8D6F-44A8-BD8F-7C8D63997382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE67BF5-8D6F-44A8-BD8F-7C8D63997382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE67BF5-8D6F-44A8-BD8F-7C8D63997382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE67BF5-8D6F-44A8-BD8F-7C8D63997382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955C88AB-4F72-4176-8303-A6ABAB2B84CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955C88AB-4F72-4176-8303-A6ABAB2B84CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955C88AB-4F72-4176-8303-A6ABAB2B84CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955C88AB-4F72-4176-8303-A6ABAB2B84CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A98FEE-49A1-45FE-867B-67E956A2C84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A98FEE-49A1-45FE-867B-67E956A2C84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A98FEE-49A1-45FE-867B-67E956A2C84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A98FEE-49A1-45FE-867B-67E956A2C84D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FB5DEA5C-AD1A-4E86-A1A7-F566568F318E} = {4001CB4E-1A8E-4E35-AA13-78488D3835C6}
-		{457C3937-1C18-4133-B74C-C8A6D2739418} = {92A85A3E-1FAE-4F29-88EA-D4A6E92D12C1}
 		{657D9300-3015-42A5-96EA-D347553FE62C} = {8497A171-A7CD-4EA4-83A2-1CD3716E6C0A}
-		{209C8FAC-E765-4EB4-81B8-B0BAE08AADF0} = {4001CB4E-1A8E-4E35-AA13-78488D3835C6}
-		{07EEA7B6-AA1D-49D0-8718-ADAC46246302} = {92A85A3E-1FAE-4F29-88EA-D4A6E92D12C1}
+		{C035DB38-D012-49D9-A237-36F6EC2E58BC} = {0A06B89D-0F67-4D2B-8626-D41B21608E6E}
+		{7EE67BF5-8D6F-44A8-BD8F-7C8D63997382} = {0A06B89D-0F67-4D2B-8626-D41B21608E6E}
+		{955C88AB-4F72-4176-8303-A6ABAB2B84CB} = {689CE77C-997D-4D67-A5ED-9FF1EA0A3301}
+		{23A98FEE-49A1-45FE-867B-67E956A2C84D} = {689CE77C-997D-4D67-A5ED-9FF1EA0A3301}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1EB876D-37F2-4BB3-A9E1-FCC6D57B0F24}

@@ -10,7 +10,7 @@ public class EnumerableExtensionsTests
         var values = Enumerable.Range(1, 10).ToArray();
 
         values.ForEach(list.Add);
-        
+
         list.Should().BeEquivalentTo(values);
     }
 }

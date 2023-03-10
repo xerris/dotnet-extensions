@@ -1,31 +1,30 @@
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
 using Nuke.Common;
-using Nuke.Common.CI.GitHubActions;
+using Nuke.Common.CI;
 using Nuke.Common.Git;
-using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
+using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
-using Nuke.Common.Tools.GitVersion;
-using Serilog;
-using Xerris.Extensions.Common;
-using static Nuke.Common.Tools.DotNet.DotNetTasks;
+using Xerris.Nuke.Components;
 using static Nuke.Common.IO.FileSystemTasks;
+using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
+// ReSharper disable RedundantExtendsListEntry
 // ReSharper disable InconsistentNaming
 
-[GitHubActions(
-    "continuous",
-    GitHubActionsImage.WindowsLatest,
-    GitHubActionsImage.UbuntuLatest,
-    GitHubActionsImage.MacOsLatest,
-    FetchDepth = 0,
-    OnPushBranches = new[] { "main", "release/*" },
-    OnPushTags = new[] { "v*" },
-    OnPullRequestBranches = new[] { "main" },
-    PublishArtifacts = true,
-    InvokedTargets = new[] { nameof(Compile), nameof(Test) },
-    CacheKeyFiles = new[] { "global.json", "source/**/*.csproj" })]
-partial class Build : NukeBuild
+[DotNetVerbosityMapping]
+[ShutdownDotNetAfterServerBuild]
+partial class Build : NukeBuild,
+    IHasGitRepository,
+    IHasVersioning,
+    IRestore,
+    IFormat,
+    ICompile,
+    ITest,
+    IReportCoverage,
+    IPack,
+    IPush
 {
     /// Support plugins are available for:
     ///   - JetBrains ReSharper        https://nuke.build/resharper
@@ -33,54 +32,49 @@ partial class Build : NukeBuild
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
 
-    public static int Main() => Execute<Build>(x => x.Compile);
+    public static int Main() => Execute<Build>(x => ((ICompile) x).Compile);
 
-    protected override void OnBuildInitialized() => Log.Information("{VersionInfo}", GitVersion.ToJson(true));
-
-    [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
-    readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
-
-    [Required][GitRepository] readonly GitRepository GitRepository;
-    [Required][GitVersion(Framework = "net6.0", NoFetch = true)] readonly GitVersion GitVersion;
-
-    [Solution] readonly Solution Solution;
-
-    AbsolutePath OutputDirectory => RootDirectory / "output";
-    AbsolutePath SourceDirectory => RootDirectory / "source";
-
-    const string MainBranch = "main";
-    const string ReleaseBranchPrefix = "release";
+    [Solution]
+    readonly Solution Solution;
+    Solution IHasSolution.Solution => Solution;
 
     Target Clean => _ => _
-        .Before(Restore)
+        .Before<IRestore>()
         .Executes(() =>
         {
-            SourceDirectory.GlobDirectories("*/bin", "*/obj").ForEach(DeleteDirectory);
-            EnsureCleanDirectory(OutputDirectory);
+            DotNetClean(_ => _
+                .SetProject(Solution));
+
+            EnsureCleanDirectory(FromComponent<IHasArtifacts>().ArtifactsDirectory);
         });
 
-    Target Restore => _ => _
-        .Executes(() =>
-        {
-            DotNetRestore(s => s
-                .SetProjectFile(Solution));
-        });
+    public IEnumerable<string> ExcludedFormatPaths => Enumerable.Empty<string>();
 
-    AbsolutePath VersionFile => OutputDirectory / "VERSION";
+    public bool RunFormatAnalyzers => true;
 
-    Target Compile => _ => _
-        .DependsOn(Clean, Restore)
-        .Produces(VersionFile)
-        .Executes(() =>
-        {
-            DotNetBuild(s => s
-                .SetProjectFile(Solution)
-                .SetConfiguration(Configuration)
-                .SetAssemblyVersion(GitVersion.AssemblySemVer)
-                .SetFileVersion(GitVersion.AssemblySemFileVer)
-                .SetInformationalVersion(GitVersion.InformationalVersion)
-                .EnableNoRestore());
+    Target ICompile.Compile => _ => _
+        .Inherit<ICompile>()
+        .DependsOn(Clean)
+        .DependsOn<IFormat>(x => x.VerifyFormat);
 
-            File.WriteAllText(VersionFile, GitVersion.NuGetVersionV2);
-        });
+    bool IReportCoverage.CreateCoverageHtmlReport => true;
+
+    IEnumerable<Project> ITest.TestProjects => Partition.GetCurrent(Solution.GetProjects("*.Tests"));
+
+    Configure<DotNetPublishSettings> ICompile.PublishSettings => _ => _
+        .When(!ScheduledTargets.Contains(((IPush) this).Push), _ => _
+            .ClearProperties());
+
+    Target IPush.Push => _ => _
+        .Inherit<IPush>()
+        .Consumes(FromComponent<IPush>().Pack)
+        .Requires(() =>
+            FromComponent<IHasGitRepository>().GitRepository.IsOnMainBranch() ||
+            FromComponent<IHasGitRepository>().GitRepository.IsOnReleaseBranch() ||
+            FromComponent<IHasGitRepository>().GitRepository.Tags.Any())
+        .WhenSkipped(DependencyBehavior.Execute);
+
+    T FromComponent<T>()
+        where T : INukeBuild
+        => (T) (object) this;
 }
