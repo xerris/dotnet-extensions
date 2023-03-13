@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Xerris.Extensions.Common;
+namespace Xerris.Extensions.Common.Serialization;
 
 public static class JsonExtensions
 {
@@ -21,7 +21,7 @@ public static class JsonExtensions
         var options = DefaultJsonSerializerOptions;
         options.WriteIndented = indented;
 
-        return ToJson(obj, options);
+        return obj.ToJson(options);
     }
 
     /// <summary>

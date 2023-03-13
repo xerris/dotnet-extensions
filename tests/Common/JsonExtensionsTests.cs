@@ -1,4 +1,5 @@
 using System.Text.Json;
+using Xerris.Extensions.Common.Serialization;
 // ReSharper disable NotAccessedPositionalProperty.Local
 
 namespace Xerris.Extensions.Common.Tests;
