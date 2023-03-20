@@ -43,7 +43,7 @@ public class StringExtensionsTests
     [InlineData("Hafthór Júlíus Björnsson", "Hafthor Julius Bjornsson")]
     public static void StripDiacritics_should_normalize_strings_with_diacritics(string input, string expected)
     {
-        Assert.Equal(input.StripDiacritics(), expected);
+        input.StripDiacritics().Should().Be(expected);
     }
 
     [Theory]
@@ -52,6 +52,34 @@ public class StringExtensionsTests
     [InlineData("Hafthor Julíus Bjornsson", "Hafthor Julius Bjornsson")]
     public static void StripDiacritics_should_not_modify_strings_with_no_diacritics(string input, string expected)
     {
-        Assert.Equal(input.StripDiacritics(), expected);
+        input.StripDiacritics().Should().Be(expected);
+    }
+
+    [Theory]
+    [InlineData("24/05/2017")]
+    [InlineData(@"24\05\2017")]
+    [InlineData("24>05<2017:24|05?*2017")]
+    [InlineData("Fo\"o")]
+    public void ToValidFileName_should_convert_value_to_valid_filename(string value)
+    {
+        var invalidCharactersInResult = value.ToValidFileName()
+            .ToCharArray()
+            .Intersect(Path.GetInvalidFileNameChars());
+
+        invalidCharactersInResult.Should().BeEmpty();
+    }
+
+    public static IEnumerable<object[]> InvalidFileNameChars =>
+        Path.GetInvalidFileNameChars().Select(c => new object[] { c });
+
+    [Theory]
+    [MemberData(nameof(InvalidFileNameChars))]
+    public void ToValidFileName_throws_ArgumentException_if_replacement_string_contains_invalid_chars(char invalid)
+    {
+        const string value = "17/05/2017";
+
+        var action = () => value.ToValidFileName(invalid.ToString());
+
+        action.Should().Throw<ArgumentException>();
     }
 }

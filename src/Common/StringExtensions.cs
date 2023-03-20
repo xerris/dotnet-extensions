@@ -5,6 +5,11 @@ namespace Xerris.Extensions.Common;
 
 public static class StringExtensions
 {
+    /// <summary>
+    /// Converts a string to lowerCamelCase.
+    /// </summary>
+    /// <param name="s">The string.</param>
+    /// <returns>The converted string.</returns>
     public static string ToLowerCamelCase(this string s)
     {
         return s.ToCamelCase();
@@ -31,7 +36,7 @@ public static class StringExtensions
         if (string.IsNullOrEmpty(s))
             return s;
 
-        // This splits letters with diacritics into separate characters so we can strip off the diacritics
+        // This splits letters with diacritics into separate characters so we can strip them away
         s = s.Normalize(NormalizationForm.FormD);
 
         int i = 0, j = 0;
@@ -40,7 +45,7 @@ public static class StringExtensions
 
         var result = new char[s.Length];
 
-        // Skip any whitespace, punctuation, etc... in front of the first word...
+        // Skip any whitespace, punctuation, etc. in front of the first word...
         while (i < s.Length && !char.IsLetterOrDigit(s[i]))
             i++;
 
@@ -68,8 +73,8 @@ public static class StringExtensions
                 continue;
             }
 
-            // We treat a translation from a uppercase to lowercase as the start of a new word.
-            // This handles the case of applying ToCamelCase to a string that already is in camelCase
+            // We treat a translation from a uppercase to lowercase as the start of a new word. This handles the case
+            // of applying ToCamelCase to a string that is already camel-cased.
             if (i > 0 && char.IsLower(s[i - 1]) && char.IsUpper(s[i]))
                 isStartOfWord = true;
 
@@ -88,7 +93,7 @@ public static class StringExtensions
     }
 
     /// <summary>
-    /// Replace the diacritic characters in in a string with their ASCII equivalents (if possible). For example:
+    /// Replace the diacritic characters in in a string with their ASCII equivalents when possible. For example:
     /// <example>
     ///     <code>"Hafþór Júlíus Björnsson".StripDiacritics() == "Hafthor Julius Bjornsson"</code>
     /// </example>
@@ -104,14 +109,44 @@ public static class StringExtensions
         var normalizedString = value.Normalize(NormalizationForm.FormD);
         var stringBuilder = new StringBuilder();
 
-        foreach (var c in normalizedString)
+        foreach (var character in normalizedString)
         {
-            var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+            var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(character);
 
             if (unicodeCategory != UnicodeCategory.NonSpacingMark)
-                stringBuilder.Append(c);
+                stringBuilder.Append(character);
         }
 
         return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
+    }
+
+    /// <summary>
+    /// Converts the string to a valid file name by replacing invalid chars with underscores or a given value.
+    /// (e.g. <c>"08/03/2017".ToValidFileName() == "08_03_2017"</c>)
+    /// </summary>
+    /// <param name="value">The value.</param>
+    /// <param name="replacement">The string to replace invalid characters with.</param>
+    /// <returns>A valid filename.</returns>
+    public static string ToValidFileName(this string value, string replacement = "_")
+    {
+        var invalidChars = Path.GetInvalidFileNameChars();
+
+        if (replacement.ToCharArray().Intersect(invalidChars).Any())
+        {
+            throw new ArgumentException($"{nameof(replacement)} cannot contain invalid file name characters.",
+                nameof(replacement));
+        }
+
+        var result = new StringBuilder();
+
+        foreach (var c in value.StripDiacritics())
+        {
+            if (c is >= ' ' and <= '~' && Array.IndexOf(invalidChars, c) < 0)
+                result.Append(c);
+            else
+                result.Append(replacement);
+        }
+
+        return result.ToString();
     }
 }
