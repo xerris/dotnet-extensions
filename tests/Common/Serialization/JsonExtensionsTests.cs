@@ -2,7 +2,7 @@ using System.Text.Json;
 using Xerris.Extensions.Common.Serialization;
 // ReSharper disable NotAccessedPositionalProperty.Local
 
-namespace Xerris.Extensions.Common.Tests;
+namespace Xerris.Extensions.Common.Tests.Serialization;
 
 public class JsonExtensionsTests
 {
@@ -18,7 +18,7 @@ public class JsonExtensionsTests
     {
         var value = new SomeRecord("foo", 1, SomeEnum.First);
 
-        const string expectedJson = $$"""{"foo":"foo","bar":1,"baz":"First"}""";
+        const string expectedJson = """{"foo":"foo","bar":1,"baz":"First"}""";
 
         var json = value.ToJson();
 
@@ -31,7 +31,7 @@ public class JsonExtensionsTests
         var value = new SomeRecord("foo", 1, SomeEnum.First);
 
         const string expectedJson =
-            $$"""
+            """
             {
               "foo": "foo",
               "bar": 1,
@@ -49,7 +49,7 @@ public class JsonExtensionsTests
     {
         var value = new SomeRecord("foo", 1, SomeEnum.First);
 
-        const string expectedJson = $$"""{"Foo":"foo","Bar":1,"Baz":0}""";
+        const string expectedJson = """{"Foo":"foo","Bar":1,"Baz":0}""";
 
         var json = value.ToJson(new JsonSerializerOptions(JsonSerializerDefaults.General));
 
@@ -59,12 +59,24 @@ public class JsonExtensionsTests
     [Fact]
     public void FromJson_reads_valid_json()
     {
-        const string json = $$"""{"Foo":"foo","Bar":1,"Baz":0}""";
+        const string json = """{"Foo":"foo","Bar":1,"Baz":0}""";
 
         var value = json.FromJson<SomeRecord>();
 
         var expectedValue = new SomeRecord("foo", 1, SomeEnum.First);
 
         value.Should().BeEquivalentTo(expectedValue);
+    }
+
+    [Fact]
+    public void FromJson_deserializes_anonymous_type()
+    {
+        var anonymousType = new { foo = string.Empty };
+
+        const string json = """{"foo":"bar"}""";
+
+        var deserialized = json.FromJson(anonymousType);
+
+        deserialized!.foo.Should().Be("bar");
     }
 }
