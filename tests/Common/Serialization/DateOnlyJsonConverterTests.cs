@@ -43,6 +43,6 @@ public class DateOnlyJsonConverterTests
 
         var serialized = value.ToJson(_jsonOptions);
 
-        serialized.Should().Be($$"""{"date":"2023-01-01"}""" );
+        serialized.Should().Be($$"""{"date":"2023-01-01"}""");
     }
 }

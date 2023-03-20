@@ -34,7 +34,7 @@ public class TrimmingJsonConverterTests
     public void Read_creates_empty_string_for_values_that_are_entirely_whitespace()
     {
         var type = new { value = string.Empty };
-        
+
         var json = $$"""{"value":{{AsciiWhiteSpaceString.ToJson()}}}""";
 
         var deserialized = json.FromJson(type, _jsonOptions);
