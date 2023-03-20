@@ -18,7 +18,7 @@ public class JsonExtensionsTests
     {
         var value = new SomeRecord("foo", 1, SomeEnum.First);
 
-        const string expectedJson = $$"""{"foo":"foo","bar":1,"baz":"First"}""";
+        const string expectedJson = """{"foo":"foo","bar":1,"baz":"First"}""";
 
         var json = value.ToJson();
 
@@ -31,7 +31,7 @@ public class JsonExtensionsTests
         var value = new SomeRecord("foo", 1, SomeEnum.First);
 
         const string expectedJson =
-            $$"""
+            """
             {
               "foo": "foo",
               "bar": 1,
@@ -49,7 +49,7 @@ public class JsonExtensionsTests
     {
         var value = new SomeRecord("foo", 1, SomeEnum.First);
 
-        const string expectedJson = $$"""{"Foo":"foo","Bar":1,"Baz":0}""";
+        const string expectedJson = """{"Foo":"foo","Bar":1,"Baz":0}""";
 
         var json = value.ToJson(new JsonSerializerOptions(JsonSerializerDefaults.General));
 
@@ -59,7 +59,7 @@ public class JsonExtensionsTests
     [Fact]
     public void FromJson_reads_valid_json()
     {
-        const string json = $$"""{"Foo":"foo","Bar":1,"Baz":0}""";
+        const string json = """{"Foo":"foo","Bar":1,"Baz":0}""";
 
         var value = json.FromJson<SomeRecord>();
 
@@ -73,7 +73,7 @@ public class JsonExtensionsTests
     {
         var anonymousType = new { foo = string.Empty };
 
-        const string json = $$"""{"foo":"bar"}""";
+        const string json = """{"foo":"bar"}""";
 
         var deserialized = json.FromJson(anonymousType);
 
