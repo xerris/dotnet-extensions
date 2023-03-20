@@ -31,4 +31,34 @@ public class ObjectExtensionsTests
 
         enumerable.Should().BeEmpty();
     }
+
+    [Fact]
+    public void ValueOrDefault_returns_default_value_for_selected_property_when_null()
+    {
+        var foo = new { bar = (string?) null };
+
+        var value = foo.ValueOrDefault(x => x?.bar);
+
+        value.Should().BeNull();
+    }
+
+    [Fact]
+    public void ValueOrDefault_returns_selected_value_for_selected_property_when_not_null()
+    {
+        var foo = new { bar = "baz" };
+
+        var value = foo.ValueOrDefault(x => x?.bar);
+
+        value.Should().Be("baz");
+    }
+
+    [Fact]
+    public void ValueOrDefault_returns_default_value_for_selected_type_when_parent_object_is_null()
+    {
+        var foo = (List<string>) null!;
+
+        var value = foo.ValueOrDefault(x => x?.Count);
+
+        value.Should().BeNull();
+    }
 }
