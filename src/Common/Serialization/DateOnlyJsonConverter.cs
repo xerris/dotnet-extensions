@@ -9,7 +9,7 @@ namespace Xerris.Extensions.Common.Serialization;
 /// <remarks>
 /// This is useful when working with JSON produced with flexible date/time types that include a time component by
 /// default. For example, a Typescript <c>Date</c> can deserialize <c>"2023-01-01"</c>, but will serialize to
-/// <c>2023-01-01T00:00:00.000</c>.
+/// <c>2023-01-01T00:00:00.000</c> by default.
 /// </remarks>
 /// </summary>
 public sealed class DateOnlyJsonConverter : JsonConverter<DateOnly>

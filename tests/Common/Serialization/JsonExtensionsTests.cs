@@ -67,4 +67,16 @@ public class JsonExtensionsTests
 
         value.Should().BeEquivalentTo(expectedValue);
     }
+
+    [Fact]
+    public void FromJson_deserializes_anonymous_type()
+    {
+        var anonymousType = new { foo = string.Empty };
+
+        const string json = $$"""{"foo":"bar"}""";
+
+        var deserialized = json.FromJson(anonymousType);
+
+        deserialized!.foo.Should().Be("bar");
+    }
 }

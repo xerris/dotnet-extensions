@@ -47,4 +47,20 @@ public static class JsonExtensions
 
         return JsonSerializer.Deserialize<TValue>(json, options);
     }
+
+    /// <summary>
+    /// Parses the string representing a single JSON value into a <paramref name="returnType"/>.
+    /// </summary>
+    /// <param name="json">JSON text to parse.</param>
+    /// <param name="returnType">The type of the object to convert to and return.</param>
+    /// <param name="options">Options to control the behavior during parsing.</param>
+    /// <returns>A <typeparamref name="TValue" /> representation of the JSON value.</returns>
+#pragma warning disable IDE0060 // Remove unused parameter
+    public static TValue? FromJson<TValue>(this string json, TValue returnType, JsonSerializerOptions? options = default)
+#pragma warning restore IDE0060 // Remove unused parameter
+    {
+        options ??= DefaultJsonSerializerOptions;
+
+        return JsonSerializer.Deserialize<TValue>(json, options);
+    }
 }
