@@ -26,15 +26,15 @@ public class BackgroundTaskQueueProcessor : BackgroundService
 
     private async Task BackgroundProcessing(CancellationToken stoppingToken)
     {
+        async Task DoWorkAsync(CancellationToken cancellationToken)
+        {
+            var workItem = await _taskQueue.DequeueAsync(cancellationToken);
+
+            await workItem(stoppingToken);
+        }
+
         while (!stoppingToken.IsCancellationRequested)
         {
-            async Task DoWorkAsync(CancellationToken cancellationToken)
-            {
-                var workItem = await _taskQueue.DequeueAsync(cancellationToken);
-
-                await workItem(stoppingToken);
-            }
-
             var jobs = Enumerable.Range(0, _options.WorkerCount).Select(_ => DoWorkAsync(stoppingToken));
 
             await Task.WhenAll(jobs);

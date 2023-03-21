@@ -17,6 +17,7 @@ namespace Xerris.Extensions.BackgroundTasks;
 /// <param name="WorkerCount">The number of background processing workers to use.</param>
 public record BackgroundTaskQueueOptions(int QueueCapacity, int WorkerCount);
 
+/// <inheritdoc />
 public class BackgroundTaskQueue : IBackgroundTaskQueue
 {
     private readonly Channel<Func<CancellationToken, ValueTask>> _queue;
