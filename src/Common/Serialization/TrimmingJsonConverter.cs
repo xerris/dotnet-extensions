@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 namespace Xerris.Extensions.Common.Serialization;
 
 /// <summary>
-/// Trims whitespace from the beginning and end of string values when serializing or deserializing.
+/// Converts a string to or from JSON, trimming trailing and leading whitespace from string values.
 /// </summary>
 public sealed class TrimmingJsonConverter : JsonConverter<string>
 {

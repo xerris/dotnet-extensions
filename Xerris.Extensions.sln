@@ -21,6 +21,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xerris.Extensions.Configura
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.BackgroundTasks", "src\BackgroundTasks\Xerris.Extensions.BackgroundTasks.csproj", "{3BE28D45-53B6-4693-9D84-F804CB71064C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Http", "src\Http\Xerris.Extensions.Http.csproj", "{A0DFF26A-310B-4826-B834-FC887A6564F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xerris.Extensions.Http.Tests", "tests\Http\Xerris.Extensions.Http.Tests.csproj", "{BA343EDE-3BF9-4CD2-B3E2-CBB2A62A4413}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,14 @@ Global
 		{3BE28D45-53B6-4693-9D84-F804CB71064C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BE28D45-53B6-4693-9D84-F804CB71064C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BE28D45-53B6-4693-9D84-F804CB71064C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DFF26A-310B-4826-B834-FC887A6564F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DFF26A-310B-4826-B834-FC887A6564F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DFF26A-310B-4826-B834-FC887A6564F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DFF26A-310B-4826-B834-FC887A6564F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA343EDE-3BF9-4CD2-B3E2-CBB2A62A4413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA343EDE-3BF9-4CD2-B3E2-CBB2A62A4413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA343EDE-3BF9-4CD2-B3E2-CBB2A62A4413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA343EDE-3BF9-4CD2-B3E2-CBB2A62A4413}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +72,8 @@ Global
 		{955C88AB-4F72-4176-8303-A6ABAB2B84CB} = {689CE77C-997D-4D67-A5ED-9FF1EA0A3301}
 		{23A98FEE-49A1-45FE-867B-67E956A2C84D} = {689CE77C-997D-4D67-A5ED-9FF1EA0A3301}
 		{3BE28D45-53B6-4693-9D84-F804CB71064C} = {0A06B89D-0F67-4D2B-8626-D41B21608E6E}
+		{A0DFF26A-310B-4826-B834-FC887A6564F6} = {0A06B89D-0F67-4D2B-8626-D41B21608E6E}
+		{BA343EDE-3BF9-4CD2-B3E2-CBB2A62A4413} = {689CE77C-997D-4D67-A5ED-9FF1EA0A3301}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F1EB876D-37F2-4BB3-A9E1-FCC6D57B0F24}
