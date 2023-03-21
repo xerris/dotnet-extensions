@@ -13,9 +13,9 @@ public static class JsonExtensions
     /// <summary>
     /// Get a JSON representation of this object.
     /// </summary>
-    /// <param name="obj">The object to serialize</param>
-    /// <param name="indented">True to output indented JSON</param>
-    /// <returns>The JSON string representing this object</returns>
+    /// <param name="obj">The object to serialize.</param>
+    /// <param name="indented">Whether or not JSON should use pretty printing.</param>
+    /// <returns>The JSON string representing this object.</returns>
     public static string ToJson(this object obj, bool indented = false)
     {
         var options = DefaultJsonSerializerOptions;
@@ -27,9 +27,9 @@ public static class JsonExtensions
     /// <summary>
     /// Get a JSON representation of this object.
     /// </summary>
-    /// <param name="obj">The object to serialize</param>
+    /// <param name="obj">The object to serialize.</param>
     /// <param name="options">The serialization options</param>
-    /// <returns>The JSON string representing this object</returns>
+    /// <returns>The JSON string representing this object.</returns>
     public static string ToJson(this object obj, JsonSerializerOptions options)
     {
         return JsonSerializer.Serialize(obj, options);
@@ -55,6 +55,14 @@ public static class JsonExtensions
     /// <param name="returnType">The type of the object to convert to and return.</param>
     /// <param name="options">Options to control the behavior during parsing.</param>
     /// <returns>A <typeparamref name="TValue" /> representation of the JSON value.</returns>
+    /// <remarks>
+    /// This method is useful for parsing JSON into an anonymously-typed object. For example:
+    /// <code>
+    /// var type = new { value = string.Empty };
+    /// var json = """{"value":"foo"}""";
+    /// var deserialized = json.FromJson(type);
+    /// </code>
+    /// </remarks>
 #pragma warning disable IDE0060 // Remove unused parameter
     public static TValue? FromJson<TValue>(this string json, TValue returnType, JsonSerializerOptions? options = default)
 #pragma warning restore IDE0060 // Remove unused parameter
@@ -63,7 +71,4 @@ public static class JsonExtensions
 
         return JsonSerializer.Deserialize<TValue>(json, options);
     }
-
-    public static ValueTask<TValue?> DeserializeAnonymousTypeAsync<TValue>(Stream stream, TValue anonymousTypeObject, JsonSerializerOptions? options = default, CancellationToken cancellationToken = default)
-        => JsonSerializer.DeserializeAsync<TValue>(stream, options, cancellationToken);
 }
