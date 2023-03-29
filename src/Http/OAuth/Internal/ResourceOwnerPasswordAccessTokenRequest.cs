@@ -31,6 +31,9 @@ internal record ResourceOwnerPasswordAccessTokenRequest : AccessTokenRequest
     [JsonPropertyName("client_secret")]
     public string ClientSecret { get; init; } = string.Empty;
 
+    /// <summary>
+    /// The grant type.
+    /// </summary>
     [JsonPropertyName("grant_type")]
     public virtual string GrantType => "password";
 }

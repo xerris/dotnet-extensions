@@ -31,8 +31,6 @@ public class ClientCredentialsAccessTokenProvider : IAccessTokenProvider
         _options = options;
     }
 
-    // todo: a lot of this can probably be refactored into a base class, the only thing that changes is the request content
-    // todo: rule of three tho 🤔
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)
     {
         var scopesValue = string.Join(" ", scopes);

@@ -8,7 +8,6 @@ public static class AccessTokenProviderBuilderExtensions
     public static IAccessTokenProviderBuilder UseClientCredentialsFlow(
         this IAccessTokenProviderBuilder builder, ClientCredentialsProviderOptions options)
     {
-        builder.Services.AddOptions(); // todo: why am I doing this
         builder.Services.AddTransient(_ => options);
         builder.Services.AddHttpClient<IAccessTokenProvider, ClientCredentialsAccessTokenProvider>();
 
@@ -19,14 +18,21 @@ public static class AccessTokenProviderBuilderExtensions
         this IAccessTokenProviderBuilder builder,
         Action<ClientCredentialsProviderOptions> clientCredentialsOptionsAction)
     {
-        builder.Services.AddOptions();//todo: why am I doing this
+        builder.Services.AddOptions();
         builder.Services.AddHttpClient<IAccessTokenProvider, ResourceOwnerPasswordAccessTokenProvider>();
+
+        builder.Services.Configure(clientCredentialsOptionsAction);
 
         return builder;
     }
+
     public static IAccessTokenProviderBuilder UseResourceOwnerPasswordFlow(
         this IAccessTokenProviderBuilder builder, ResourceOwnerPasswordProviderOptions options)
     {
+        builder.Services.AddOptions();
+        builder.Services.AddTransient(_ => options);
+        builder.Services.AddHttpClient<IAccessTokenProvider, ResourceOwnerPasswordAccessTokenProvider>();
+
         return builder;
     }
 
@@ -34,6 +40,11 @@ public static class AccessTokenProviderBuilderExtensions
         this IAccessTokenProviderBuilder builder,
         Action<ResourceOwnerPasswordProviderOptions> resourceOwnerPasswordOptionsAction)
     {
+        builder.Services.AddOptions();
+        builder.Services.AddHttpClient<IAccessTokenProvider, ResourceOwnerPasswordAccessTokenProvider>();
+
+        builder.Services.Configure(resourceOwnerPasswordOptionsAction);
+
         return builder;
     }
 
@@ -55,7 +66,7 @@ public static class AccessTokenProviderBuilderExtensions
     public static IAccessTokenProviderBuilder WithDistributedCaching(this IAccessTokenProviderBuilder builder,
         AccessTokenCachingOptions? cachingOptions = null)
     {
-        builder.Services.AddTransient(_ => cachingOptions ?? new()); // todo: use options?
+        builder.Services.AddTransient(_ => cachingOptions ?? new AccessTokenCachingOptions());
         builder.Services.AddDistributedMemoryCache();
         builder.Services.Decorate<IAccessTokenProvider, DistributedCachingAccessTokenProvider>();
 
@@ -65,13 +76,10 @@ public static class AccessTokenProviderBuilderExtensions
     public static IAccessTokenProviderBuilder WithInMemoryCaching(this IAccessTokenProviderBuilder builder,
         AccessTokenCachingOptions? cachingOptions = null, Action<MemoryCacheOptions>? setupAction = null)
     {
-        builder.Services.AddTransient(_ => cachingOptions ?? new()); // todo: use options?
+        builder.Services.AddTransient(_ => cachingOptions ?? new AccessTokenCachingOptions());
         builder.Services.AddMemoryCache(setupAction ?? (_ => { }));
         builder.Services.Decorate<IAccessTokenProvider, InMemoryCachingAccessTokenProvider>();
 
         return builder;
     }
-
-    //todo: what should happen if someone used both in memory and distributed caching?
-    // todo: should we use .WithInMemoryCaching/.WithDistributedCaching or .WithCaching(CachingType.InMemory/CachingType.Distributed)
 }
