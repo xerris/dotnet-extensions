@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Microsoft.Extensions.Caching.Distributed;
+using Xerris.Extensions.Common.Serialization;
 
 namespace Xerris.Extensions.Http.OAuth;
 
@@ -27,10 +28,10 @@ public class DistributedCachingAccessTokenProvider : IAccessTokenProvider
         var cachedAccessTokenResponseValue = await _cache.GetStringAsync(cacheKey);
 
         if (!string.IsNullOrEmpty(cachedAccessTokenResponseValue))
-            return JsonSerializer.Deserialize<AccessTokenResponse>(cachedAccessTokenResponseValue)!;
+            return cachedAccessTokenResponseValue.FromJson<AccessTokenResponse>()!;
 
         var freshAccessTokenResponse = await _innerProvider.GetAccessTokenAsync(scopes);
-        var freshAccessTokenResponseValue = JsonSerializer.Serialize(freshAccessTokenResponse);
+        var freshAccessTokenResponseValue = freshAccessTokenResponse.ToJson();
 
         var cacheEntryOptions = new DistributedCacheEntryOptions
         {

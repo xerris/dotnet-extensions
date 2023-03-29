@@ -21,6 +21,7 @@ public class TrimmingJsonConverterTests
     {
         var type = new { value = string.Empty };
 
+        // Convert value to JSON so that whitespace values are necessarily escaped
         var jsonValue = $"{AsciiWhiteSpaceString}foo{AsciiWhiteSpaceString}".ToJson();
 
         var json = $$"""{"value":{{jsonValue}}}""";

@@ -3,6 +3,7 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using Moq;
 using Moq.Protected;
+using Xerris.Extensions.Common.Serialization;
 using Xerris.Extensions.Http.OAuth;
 using Xerris.Extensions.Http.OAuth.Internal;
 using Xerris.Extensions.Testing;
@@ -64,7 +65,7 @@ public class ClientCredentialsAccessTokenProviderTests
         var httpResponse = new HttpResponseMessage
         {
             StatusCode = HttpStatusCode.OK,
-            Content = new StringContent(JsonSerializer.Serialize(response))
+            Content = new StringContent(response.ToJson())
         };
 
         var actualRequest = new HttpRequestMessage();
@@ -159,7 +160,7 @@ public class ClientCredentialsAccessTokenProviderTests
         return GetMockHttpMessageHandler(new HttpResponseMessage
         {
             StatusCode = HttpStatusCode.OK,
-            Content = new StringContent(JsonSerializer.Serialize(response))
+            Content = new StringContent(response.ToJson())
         });
     }
 

@@ -16,4 +16,8 @@
     <InternalsVisibleTo Include="Xerris.Extensions.Http.Tests" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Xerris.Extensions.Common.csproj" />
+  </ItemGroup>
+
 </Project>
