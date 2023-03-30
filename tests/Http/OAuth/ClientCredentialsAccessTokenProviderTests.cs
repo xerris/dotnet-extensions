@@ -1,8 +1,6 @@
 using System.Net;
 using System.Net.Http.Json;
-using System.Text.Json;
 using Moq;
-using Moq.Protected;
 using Xerris.Extensions.Common.Serialization;
 using Xerris.Extensions.Http.OAuth;
 using Xerris.Extensions.Http.OAuth.Internal;
@@ -23,7 +21,7 @@ public class ClientCredentialsAccessTokenProviderTests
             TokenType = "bearer"
         };
 
-        var handlerMock = GetMockHttpMessageHandler(response);
+        var handlerMock = GetMockHttpMessageHandlerWithResponse(response);
 
         await ServiceTestHarness<ClientCredentialsAccessTokenProvider>.Create(TestAction)
             .WithDependency(new HttpClient(handlerMock.Object))
@@ -70,7 +68,7 @@ public class ClientCredentialsAccessTokenProviderTests
 
         var actualRequest = new HttpRequestMessage();
 
-        var handlerMock = GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
+        var handlerMock = TestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
 
         var providerOptions = new ClientCredentialsProviderOptions
         {
@@ -124,7 +122,8 @@ public class ClientCredentialsAccessTokenProviderTests
     public async Task Throws_exception_for_unsuccessful_request()
     {
         // Arrange
-        var handlerMock = GetMockHttpMessageHandler(new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
+        var handlerMock = TestUtilities.GetMockHttpMessageHandler(
+            new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
 
         var providerOptions = new ClientCredentialsProviderOptions
         {
@@ -155,30 +154,12 @@ public class ClientCredentialsAccessTokenProviderTests
         }
     }
 
-    private static Mock<HttpMessageHandler> GetMockHttpMessageHandler(AccessTokenResponse response)
+    private static Mock<HttpMessageHandler> GetMockHttpMessageHandlerWithResponse(AccessTokenResponse response)
     {
-        return GetMockHttpMessageHandler(new HttpResponseMessage
+        return TestUtilities.GetMockHttpMessageHandler(new HttpResponseMessage
         {
             StatusCode = HttpStatusCode.OK,
             Content = new StringContent(response.ToJson())
         });
-    }
-
-    private static Mock<HttpMessageHandler> GetMockHttpMessageHandler(HttpResponseMessage response,
-        Action<HttpRequestMessage, CancellationToken>? requestCallback = null)
-    {
-        var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
-        handlerMock
-            .Protected()
-            .Setup<Task<HttpResponseMessage>>(
-                nameof(HttpClient.SendAsync),
-                ItExpr.IsAny<HttpRequestMessage>(),
-                ItExpr.IsAny<CancellationToken>()
-            )
-            .Callback(requestCallback ?? ((_, _) => { /* no-op */ }))
-            .ReturnsAsync(response)
-            .Verifiable();
-
-        return handlerMock;
     }
 }

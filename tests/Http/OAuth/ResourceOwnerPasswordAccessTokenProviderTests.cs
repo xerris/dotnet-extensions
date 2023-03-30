@@ -1,8 +1,6 @@
 using System.Net;
 using System.Net.Http.Json;
-using System.Text.Json;
 using Moq;
-using Moq.Protected;
 using Xerris.Extensions.Common.Serialization;
 using Xerris.Extensions.Http.OAuth;
 using Xerris.Extensions.Http.OAuth.Internal;
@@ -72,7 +70,7 @@ public class ResourceOwnerPasswordAccessTokenProviderTests
 
         var actualRequest = new HttpRequestMessage();
 
-        var handlerMock = GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
+        var handlerMock = TestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
 
         var providerOptions = new ResourceOwnerPasswordProviderOptions
         {
@@ -130,7 +128,8 @@ public class ResourceOwnerPasswordAccessTokenProviderTests
     public async Task Throws_exception_for_unsuccessful_request()
     {
         // Arrange
-        var handlerMock = GetMockHttpMessageHandler(new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
+        var handlerMock = TestUtilities.GetMockHttpMessageHandler(
+            new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
 
         var providerOptions = new ResourceOwnerPasswordProviderOptions
         {
@@ -165,28 +164,10 @@ public class ResourceOwnerPasswordAccessTokenProviderTests
 
     private static Mock<HttpMessageHandler> GetMockHttpMessageHandler(AccessTokenResponse response)
     {
-        return GetMockHttpMessageHandler(new HttpResponseMessage
+        return TestUtilities.GetMockHttpMessageHandler(new HttpResponseMessage
         {
             StatusCode = HttpStatusCode.OK,
             Content = new StringContent(response.ToJson())
         });
-    }
-
-    private static Mock<HttpMessageHandler> GetMockHttpMessageHandler(HttpResponseMessage response,
-        Action<HttpRequestMessage, CancellationToken>? requestCallback = null)
-    {
-        var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
-        handlerMock
-            .Protected()
-            .Setup<Task<HttpResponseMessage>>(
-                nameof(HttpClient.SendAsync),
-                ItExpr.IsAny<HttpRequestMessage>(),
-                ItExpr.IsAny<CancellationToken>()
-            )
-            .Callback(requestCallback ?? ((_, _) => { /* no-op */ }))
-            .ReturnsAsync(response)
-            .Verifiable();
-
-        return handlerMock;
     }
 }
