@@ -31,6 +31,8 @@ public static class ConfigurationExtensions
     /// <returns>The configuration values.</returns>
     public static string[] Collection(this IConfiguration config, string section)
     {
-        return config.GetSection(section).GetChildren().Select(x => x.Value!).ToArray();
+        return config.GetSection(section).GetChildren()
+            .Select(x => x.Value!)
+            .ToArray();
     }
 }
