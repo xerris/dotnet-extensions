@@ -59,7 +59,7 @@ public class ServiceTestHarness<TService>
 
         var serviceUnderTest = serviceProvider.GetRequiredService<TService>();
 
-        await _testAction(serviceUnderTest);
+        await _testAction(serviceUnderTest).ConfigureAwait(false);
     }
 
     public static ServiceTestHarness<TService> Create(Func<TService, Task> testAction)

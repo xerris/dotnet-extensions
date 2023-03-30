@@ -21,23 +21,23 @@ public class BackgroundTaskQueueProcessor : BackgroundService
     {
         _logger.LogInformation("Background task processor is running");
 
-        await BackgroundProcessing(stoppingToken);
+        await BackgroundProcessing(stoppingToken).ConfigureAwait(false);
     }
 
     private async Task BackgroundProcessing(CancellationToken stoppingToken)
     {
         async Task DoWorkAsync(CancellationToken cancellationToken)
         {
-            var workItem = await _taskQueue.DequeueAsync(cancellationToken);
+            var workItem = await _taskQueue.DequeueAsync(cancellationToken).ConfigureAwait(false);
 
-            await workItem(stoppingToken);
+            await workItem(stoppingToken).ConfigureAwait(false);
         }
 
         while (!stoppingToken.IsCancellationRequested)
         {
             var jobs = Enumerable.Range(0, _options.WorkerCount).Select(_ => DoWorkAsync(stoppingToken));
 
-            await Task.WhenAll(jobs);
+            await Task.WhenAll(jobs).ConfigureAwait(false);
         }
     }
 
@@ -45,6 +45,6 @@ public class BackgroundTaskQueueProcessor : BackgroundService
     {
         _logger.LogInformation("Background task processor is stopping");
 
-        await base.StopAsync(cancellationToken);
+        await base.StopAsync(cancellationToken).ConfigureAwait(false);
     }
 }

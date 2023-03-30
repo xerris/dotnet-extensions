@@ -24,12 +24,12 @@ public class DistributedCachingAccessTokenProvider : IAccessTokenProvider
 
         var cacheKey = $"{cacheKeyBase}:{cacheKeyId}";
 
-        var cachedAccessTokenResponseValue = await _cache.GetStringAsync(cacheKey);
+        var cachedAccessTokenResponseValue = await _cache.GetStringAsync(cacheKey).ConfigureAwait(false);
 
         if (!string.IsNullOrEmpty(cachedAccessTokenResponseValue))
             return cachedAccessTokenResponseValue.FromJson<AccessTokenResponse>()!;
 
-        var freshAccessTokenResponse = await _innerProvider.GetAccessTokenAsync(scopes);
+        var freshAccessTokenResponse = await _innerProvider.GetAccessTokenAsync(scopes).ConfigureAwait(false);
         var freshAccessTokenResponseValue = freshAccessTokenResponse.ToJson();
 
         var cacheEntryOptions = new DistributedCacheEntryOptions
@@ -38,7 +38,7 @@ public class DistributedCachingAccessTokenProvider : IAccessTokenProvider
                 .Subtract(_options.ExpirationBuffer)
         };
 
-        await _cache.SetStringAsync(cacheKey, freshAccessTokenResponseValue, cacheEntryOptions);
+        await _cache.SetStringAsync(cacheKey, freshAccessTokenResponseValue, cacheEntryOptions).ConfigureAwait(false);
 
         return freshAccessTokenResponse;
     }
