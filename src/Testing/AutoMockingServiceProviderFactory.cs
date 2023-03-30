@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Moq.AutoMock;
@@ -61,13 +63,14 @@ internal class AutoMockingServiceProviderFactory : IServiceProviderFactory<IServ
                 // mock of it.
                 if (serviceCollection.Any(sd => sd.ServiceType == parameterType))
                     continue;
-
+                
                 var mockType = typeof(Mock<>);
                 mockType = mockType.MakeGenericType(parameterType);
 
                 var mockInstance = Activator.CreateInstance(mockType) as Mock;
 
-                serviceCollection.Add(new ServiceDescriptor(parameterType, mockInstance!.Object));
+                // todo: should this be left out? we'll just get a mock later if we need to from the automocker
+                //serviceCollection.Add(new ServiceDescriptor(parameterType, mockInstance!.Object));
             }
         }
 

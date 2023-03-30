@@ -50,7 +50,8 @@ public class ServiceTestHarness<TService>
     {
         _serviceCollection.AddLogging(logging => logging.AddConsole());
 
-        _serviceCollection.AddTransient<TService>();
+        if (_serviceCollection.All(x => x.ServiceType != typeof(TService)))
+            _serviceCollection.AddTransient<TService>();
 
         var factory = new AutoMockingServiceProviderFactory(new AutoMocker(MockBehavior.Loose));
 

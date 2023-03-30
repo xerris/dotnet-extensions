@@ -1,3 +1,4 @@
+using Microsoft.Extensions.DependencyInjection;
 using Moq.AutoMock;
 
 namespace Xerris.Extensions.Testing;
@@ -15,6 +16,6 @@ internal class AutoMockingServiceProvider : IServiceProvider
 
     public object GetService(Type serviceType)
     {
-        return _serviceProvider.GetService(serviceType) ?? _mocker.Get(serviceType);
+        return _serviceProvider.GetService(serviceType) ?? _mocker.GetRequiredService(serviceType);
     }
 }
