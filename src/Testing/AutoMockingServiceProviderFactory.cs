@@ -57,20 +57,24 @@ internal class AutoMockingServiceProviderFactory : IServiceProviderFactory<IServ
 
             var ctorParameterTypes = bestConstructor.GetParameters().Select(p => p.ParameterType);
 
-            foreach (var parameterType in ctorParameterTypes)
+            // Don't mock framework constructs
+            var filteredCtorParameterTypes = ctorParameterTypes.Where(pt =>
+                    !pt.Namespace!.StartsWith("System") &&
+                    !pt.Namespace!.StartsWith("Microsoft.Extensions"));
+
+            foreach (var parameterType in filteredCtorParameterTypes)
             {
                 // If there's already a type registered for this constructor parameter, move on, otherwise register a
                 // mock of it.
                 if (serviceCollection.Any(sd => sd.ServiceType == parameterType))
                     continue;
-                
+
                 var mockType = typeof(Mock<>);
                 mockType = mockType.MakeGenericType(parameterType);
 
                 var mockInstance = Activator.CreateInstance(mockType) as Mock;
 
-                // todo: should this be left out? we'll just get a mock later if we need to from the automocker
-                //serviceCollection.Add(new ServiceDescriptor(parameterType, mockInstance!.Object));
+                serviceCollection.Add(new ServiceDescriptor(parameterType, mockInstance!.Object));
             }
         }
 

@@ -23,21 +23,11 @@ public class DummyHttpService
 
 public class BearerTokenAuthenticationHandlerTests
 {
-
-
-
     [Fact]
     public async Task Access_tokens_are_added_in_authentication_header_of_request()
     {
         // Arrange
-        var httpResponse = new HttpResponseMessage
-        {
-            StatusCode = HttpStatusCode.NoContent
-        };
-
         var actualRequest = new HttpRequestMessage();
-
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
 
         const string accessTokenValue = "access_token";
 
