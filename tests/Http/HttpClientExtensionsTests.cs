@@ -58,6 +58,7 @@ public class HttpClientExtensionsTests
         var action = async () =>
             await httpClient.PostAsJsonAsync<RequestType, ResponseType>("http://example.com", new RequestType("foo"));
 
+        // Assert
         await action.Should().ThrowAsync<HttpRequestException>();
     }
 
