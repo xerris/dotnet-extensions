@@ -8,7 +8,7 @@ using Xerris.Extensions.Http.OAuth;
 using Xerris.Extensions.Http.OAuth.Internal;
 using Xerris.Extensions.Testing;
 
-namespace Xerris.Extensions.Http.Tests;
+namespace Xerris.Extensions.Http.Tests.OAuth;
 
 public class ResourceOwnerPasswordAccessTokenProviderTests
 {

@@ -1,7 +1,6 @@
 using System.Net.Http.Headers;
-using Xerris.Extensions.Http.OAuth;
 
-namespace Xerris.Extensions.Http;
+namespace Xerris.Extensions.Http.OAuth;
 
 /// <summary>
 /// Adds OAuth 2.0 <see href="https://datatracker.ietf.org/doc/html/rfc6750">bearer token authentication</see> to
