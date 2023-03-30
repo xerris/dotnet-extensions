@@ -62,7 +62,7 @@ public class ResourceOwnerPasswordAccessTokenProvider : IAccessTokenProvider
             AdditionalProperties = _options.AdditionalProperties?.ToDictionary(k => k.Key, v => (object) v.Value)
         };
 
-        using var response = await _httpClient.PostAsJsonAsync(_options.TokenEndpoint, request);
+        using var response = await _httpClient.PostAsJsonAsync(_options.TokenEndpoint, request).ConfigureAwait(false);
 
         try
         {
@@ -74,7 +74,7 @@ public class ResourceOwnerPasswordAccessTokenProvider : IAccessTokenProvider
                 $"for client {_options.ClientId} using grant type {request.GrantType}", ex);
         }
 
-        var accessTokenResponse = await response.Content.ReadFromJsonAsync<AccessTokenResponse>();
+        var accessTokenResponse = await response.Content.ReadFromJsonAsync<AccessTokenResponse>().ConfigureAwait(false);
 
         return accessTokenResponse!;
     }

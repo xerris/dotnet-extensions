@@ -28,10 +28,10 @@ public class BearerTokenAuthenticationHandler : DelegatingHandler
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
         CancellationToken cancellationToken)
     {
-        var response = await _accessTokenProvider.GetAccessTokenAsync(_scopes);
+        var response = await _accessTokenProvider.GetAccessTokenAsync(_scopes).ConfigureAwait(false);
 
         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", response.AccessToken);
 
-        return await base.SendAsync(request, cancellationToken);
+        return await base.SendAsync(request, cancellationToken).ConfigureAwait(false);
     }
 }

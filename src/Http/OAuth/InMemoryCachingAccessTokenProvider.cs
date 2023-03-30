@@ -25,7 +25,7 @@ public class InMemoryCachingAccessTokenProvider : IAccessTokenProvider
 
         var accessTokenResponse = await _cache.GetOrCreateAsync(cacheKey, async entry =>
         {
-            var freshAccessTokenResponse = await _innerProvider.GetAccessTokenAsync(cacheKeyId);
+            var freshAccessTokenResponse = await _innerProvider.GetAccessTokenAsync(cacheKeyId).ConfigureAwait(false);
 
             var absoluteExpirationRelativeToNow = TimeSpan.FromSeconds(freshAccessTokenResponse.ExpiresIn)
                 .Subtract(_options.ExpirationBuffer);
@@ -42,7 +42,7 @@ public class InMemoryCachingAccessTokenProvider : IAccessTokenProvider
             entry.AbsoluteExpirationRelativeToNow = absoluteExpirationRelativeToNow;
 
             return freshAccessTokenResponse;
-        });
+        }).ConfigureAwait(false);
 
         return accessTokenResponse!;
     }

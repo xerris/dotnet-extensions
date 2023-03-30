@@ -28,11 +28,13 @@ public static class HttpClientExtensions
     public static async Task<TResponse?> PostAsJsonAsync<TRequest, TResponse>(this HttpClient client, string? requestUri,
         TRequest value, JsonSerializerOptions? options = null, CancellationToken cancellationToken = default)
     {
-        var response = await client.PostAsJsonAsync(requestUri, value, options, cancellationToken);
+        var response = await client.PostAsJsonAsync(requestUri, value, options, cancellationToken)
+            .ConfigureAwait(false);
 
         return await response
             .EnsureSuccessStatusCode()
-            .Content.ReadFromJsonAsync<TResponse>(options, cancellationToken);
+            .Content.ReadFromJsonAsync<TResponse>(options, cancellationToken)
+            .ConfigureAwait(false);
     }
 
     /// <summary>
@@ -57,11 +59,12 @@ public static class HttpClientExtensions
     public static async Task<TResponse?> PutAsJsonAsync<TRequest, TResponse>(this HttpClient client, string? requestUri,
         TRequest value, JsonSerializerOptions? options = null, CancellationToken cancellationToken = default)
     {
-        var response = await client.PutAsJsonAsync(requestUri, value, options, cancellationToken);
+        var response = await client.PutAsJsonAsync(requestUri, value, options, cancellationToken).ConfigureAwait(false);
 
         return await response
             .EnsureSuccessStatusCode()
-            .Content.ReadFromJsonAsync<TResponse>(options, cancellationToken);
+            .Content.ReadFromJsonAsync<TResponse>(options, cancellationToken)
+            .ConfigureAwait(false);
     }
 
     /// <summary>
@@ -97,7 +100,7 @@ public static class HttpClientExtensions
             Content = new StringContent(value.ToJson(options), Encoding.UTF8, "application/json")
         };
 
-        var response = await client.SendAsync(request, cancellationToken);
+        var response = await client.SendAsync(request, cancellationToken).ConfigureAwait(false);
 
         return response.EnsureSuccessStatusCode();
     }
