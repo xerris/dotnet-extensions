@@ -12,9 +12,9 @@ public class BearerTokenAuthenticationHandler : DelegatingHandler
     private readonly string[] _scopes;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="BearerTokenAuthenticationHandler"/> class.
+    /// Initializes a new instance of the <see cref="BearerTokenAuthenticationHandler" /> class.
     /// </summary>
-    /// <param name="accessTokenProvider">The <see cref="IAccessTokenProvider"/> to acquire bearer tokens with.</param>
+    /// <param name="accessTokenProvider">The <see cref="IAccessTokenProvider" /> to acquire bearer tokens with.</param>
     /// <param name="scopes">
     /// The <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-3.3">scopes</see> to use when requesting
     /// access tokens.
@@ -25,6 +25,7 @@ public class BearerTokenAuthenticationHandler : DelegatingHandler
         _scopes = scopes;
     }
 
+    /// <inheritdoc />
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
         CancellationToken cancellationToken)
     {

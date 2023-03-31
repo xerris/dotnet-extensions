@@ -3,12 +3,21 @@ using Microsoft.Extensions.Logging;
 
 namespace Xerris.Extensions.BackgroundTasks;
 
+/// <summary>
+/// A <see cref="BackgroundService"/> that processes a queue of work items.
+/// </summary>
 public class BackgroundTaskQueueProcessor : BackgroundService
 {
     private readonly IBackgroundTaskQueue _taskQueue;
     private readonly BackgroundTaskQueueOptions _options;
     private readonly ILogger<BackgroundTaskQueueProcessor> _logger;
 
+    /// <summary>
+    /// Create a new instance of <see cref="BackgroundTaskQueueProcessor"/>.
+    /// </summary>
+    /// <param name="taskQueue">The task queue to process.</param>
+    /// <param name="options">The task processing options.</param>
+    /// <param name="logger">The logger to log messages to.</param>
     public BackgroundTaskQueueProcessor(IBackgroundTaskQueue taskQueue, BackgroundTaskQueueOptions options,
         ILogger<BackgroundTaskQueueProcessor> logger)
     {
@@ -17,6 +26,7 @@ public class BackgroundTaskQueueProcessor : BackgroundService
         _logger = logger;
     }
 
+    /// <inheritdoc />
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         _logger.LogInformation("Background task processor is running");
@@ -41,6 +51,7 @@ public class BackgroundTaskQueueProcessor : BackgroundService
         }
     }
 
+    /// <inheritdoc />
     public override async Task StopAsync(CancellationToken cancellationToken)
     {
         _logger.LogInformation("Background task processor is stopping");

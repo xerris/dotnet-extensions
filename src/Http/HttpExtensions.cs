@@ -1,13 +1,17 @@
 using System.Reflection;
 
 namespace Xerris.Extensions.Http;
+
+/// <summary>
+/// Extension methods for working with HTTP messages.
+/// </summary>
 public static class HttpExtensions
 {
     /// <summary>
     /// Serialize an object into an HTTP query string.
     /// </summary>
     /// <typeparam name="T">The object type.</typeparam>
-    /// <param name="obj">The <typeparamref name="T"/> to serialize.</param>
+    /// <param name="obj">The <typeparamref name="T" /> to serialize.</param>
     /// <returns>A query string containing the object properties.</returns>
     public static string ToQueryString<T>(this T obj)
         where T : class

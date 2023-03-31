@@ -1,5 +1,8 @@
 namespace Xerris.Extensions.BackgroundTasks;
 
+/// <summary>
+/// 
+/// </summary>
 public interface IBackgroundTaskQueue
 {
     /// <summary>

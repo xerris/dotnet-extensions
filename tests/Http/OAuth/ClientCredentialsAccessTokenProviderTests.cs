@@ -29,11 +29,11 @@ public class ClientCredentialsAccessTokenProviderTests
             {
                 sp.AddAccessTokenProvider(builder =>
                 {
-                    builder.UseClientCredentialsFlow(new ClientCredentialsProviderOptions
+                    builder.UseClientCredentialsFlow(opts =>
                     {
-                        TokenEndpoint = new Uri("https://test.com/"),
-                        ClientId = "foo",
-                        ClientSecret = "bar"
+                        opts.TokenEndpoint = new Uri("https://test.com");
+                        opts.ClientId = "foo";
+                        opts.ClientSecret = "bar";
                     });
                 });
             })

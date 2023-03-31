@@ -3,6 +3,9 @@ using System.Text;
 
 namespace Xerris.Extensions.Common;
 
+/// <summary>
+/// Extension methods for working with <see cref="string"/>s.
+/// </summary>
 public static class StringExtensions
 {
     /// <summary>

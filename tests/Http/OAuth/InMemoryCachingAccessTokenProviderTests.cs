@@ -71,9 +71,9 @@ public class InMemoryCachingAccessTokenProviderTests
                 sp.AddAccessTokenProvider(builder =>
                 {
                     builder.UseCustomProvider(mockAccessTokenProvider.Object)
-                        .WithInMemoryCaching(new AccessTokenCachingOptions
+                        .WithInMemoryCaching(opts =>
                         {
-                            ExpirationBuffer = tokenExpiryWindow / 2
+                            opts.ExpirationBuffer = tokenExpiryWindow / 2;
                         });
                 });
             })
@@ -113,9 +113,9 @@ public class InMemoryCachingAccessTokenProviderTests
                 sp.AddAccessTokenProvider(builder =>
                 {
                     builder.UseCustomProvider(mockAccessTokenProvider.Object)
-                        .WithInMemoryCaching(new AccessTokenCachingOptions
+                        .WithInMemoryCaching(opts =>
                         {
-                            ExpirationBuffer = tokenExpiryWindow.Add(TimeSpan.FromTicks(1))
+                            opts.ExpirationBuffer = tokenExpiryWindow.Add(TimeSpan.FromTicks(1));
                         });
                 });
             })

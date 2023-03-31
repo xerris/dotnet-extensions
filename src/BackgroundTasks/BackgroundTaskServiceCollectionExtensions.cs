@@ -2,6 +2,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Xerris.Extensions.BackgroundTasks;
 
+/// <summary>
+/// Extension methods for configuring background task processing services with an <see cref="IServiceCollection"/>.
+/// </summary>
 public static class BackgroundTaskServiceCollectionExtensions
 {
     /// <summary>

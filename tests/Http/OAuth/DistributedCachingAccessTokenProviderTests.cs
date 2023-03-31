@@ -71,9 +71,9 @@ public class DistributedCachingAccessTokenProviderTests
                 sp.AddAccessTokenProvider(builder =>
                 {
                     builder.UseCustomProvider(mockAccessTokenProvider.Object)
-                        .WithDistributedCaching(new AccessTokenCachingOptions
+                        .WithDistributedCaching(opts =>
                         {
-                            ExpirationBuffer = tokenExpiryWindow / 2
+                            opts.ExpirationBuffer = tokenExpiryWindow / 2;
                         });
                 });
             })
@@ -113,9 +113,9 @@ public class DistributedCachingAccessTokenProviderTests
                 sp.AddAccessTokenProvider(builder =>
                 {
                     builder.UseCustomProvider(mockAccessTokenProvider.Object)
-                        .WithDistributedCaching(new AccessTokenCachingOptions
+                        .WithDistributedCaching(opts =>
                         {
-                            ExpirationBuffer = tokenExpiryWindow.Add(TimeSpan.FromTicks(1))
+                            opts.ExpirationBuffer = tokenExpiryWindow.Add(TimeSpan.FromTicks(1));
                         });
                 });
             })

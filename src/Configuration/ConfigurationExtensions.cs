@@ -2,6 +2,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace Xerris.Extensions.Configuration;
 
+/// <summary>
+/// Extension methods for <see cref="IConfiguration"/>.
+/// </summary>
 public static class ConfigurationExtensions
 {
     /// <summary>
@@ -10,9 +13,7 @@ public static class ConfigurationExtensions
     /// <param name="config">The configuration.</param>
     /// <param name="key">The configuration key.</param>
     /// <returns>The configuration value.</returns>
-    /// <exception cref="ConfigurationException">
-    /// Thrown if the configuration value is not found or is whitespace.
-    /// </exception>
+    /// <exception cref="ConfigurationException">The configuration value is not found or is whitespace.</exception>
     public static string Require(this IConfiguration config, string key)
     {
         var value = config[key];
