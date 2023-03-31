@@ -1,7 +1,7 @@
 namespace Xerris.Extensions.BackgroundTasks;
 
 /// <summary>
-/// 
+/// An interface for services that process background tasks.
 /// </summary>
 public interface IBackgroundTaskQueue
 {

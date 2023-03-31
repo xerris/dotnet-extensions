@@ -3,7 +3,7 @@
   <PropertyGroup>
     <LangVersion>preview</LangVersion>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-    <NoWarn>CA1711;NU5129;NU5118</NoWarn>
+    <NoWarn>NU5129;NU5118</NoWarn>
     <DefineConstants>$(DefineConstants);JETBRAINS_ANNOTATIONS</DefineConstants>
     <DebugType>embedded</DebugType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
