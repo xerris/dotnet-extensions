@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace Xerris.Extensions.BackgroundTasks;
 
@@ -18,11 +19,11 @@ public class BackgroundTaskQueueProcessor : BackgroundService
     /// <param name="taskQueue">The task queue to process.</param>
     /// <param name="options">The task processing options.</param>
     /// <param name="logger">The logger to log messages to.</param>
-    public BackgroundTaskQueueProcessor(IBackgroundTaskQueue taskQueue, BackgroundTaskQueueOptions options,
+    public BackgroundTaskQueueProcessor(IBackgroundTaskQueue taskQueue, IOptions<BackgroundTaskQueueOptions> options,
         ILogger<BackgroundTaskQueueProcessor> logger)
     {
         _taskQueue = taskQueue;
-        _options = options;
+        _options = options.Value;
         _logger = logger;
     }
 

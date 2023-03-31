@@ -8,12 +8,17 @@ namespace Xerris.Extensions.Http.OAuth;
 /// The options values for acquiring access tokens using the
 /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.4">client credentials</see> flow.
 /// </summary>
-public record ClientCredentialsProviderOptions : AccessTokenProviderOptions
+public record ClientCredentialsProviderOptions : AccessTokenProviderOptions, IOptions<ClientCredentialsProviderOptions>
 {
     /// <summary>
     /// The client secret.
     /// </summary>
     public string ClientSecret { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The default configured M<see cref="ClientCredentialsProviderOptions" /> instance.
+    /// </summary>
+    public ClientCredentialsProviderOptions Value => this;
 }
 
 /// <summary>

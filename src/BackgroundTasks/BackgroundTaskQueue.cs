@@ -1,21 +1,7 @@
 using System.Threading.Channels;
+using Microsoft.Extensions.Options;
 
 namespace Xerris.Extensions.BackgroundTasks;
-
-/// <summary>
-/// Options for configuring background job processing behaviour.
-/// </summary>
-/// <param name="QueueCapacity">
-/// The capacity of the background task queue.
-/// <remarks>
-/// <paramref name="QueueCapacity"/> should be set based on the expected application load and number of concurrent
-/// threads accessing the queue. <see cref="BoundedChannelFullMode"/><c>.Wait</c> will cause calls to
-/// <c>WriteAsync()</c> to return a task, which completes only when space becomes available. This can lead to
-/// back-pressure if too many publishers/calls start accumulating.
-/// </remarks>
-/// </param>
-/// <param name="WorkerCount">The number of background processing workers to use.</param>
-public record BackgroundTaskQueueOptions(int QueueCapacity, int WorkerCount);
 
 /// <summary>
 /// A background task queue that processes work items with a bounded <see cref="Channel"/>.
@@ -28,10 +14,10 @@ public class BackgroundTaskQueue : IBackgroundTaskQueue
     /// Creates a new instance of <see cref="BackgroundTaskQueue"/>.
     /// </summary>
     /// <param name="options">Configuration options for the service.</param>
-    public BackgroundTaskQueue(BackgroundTaskQueueOptions options)
+    public BackgroundTaskQueue(IOptions<BackgroundTaskQueueOptions> options)
     {
         _queue = Channel.CreateBounded<Func<CancellationToken, ValueTask>>(
-            new BoundedChannelOptions(options.QueueCapacity) { FullMode = BoundedChannelFullMode.Wait });
+            new BoundedChannelOptions(options.Value.QueueCapacity) { FullMode = BoundedChannelFullMode.Wait });
     }
 
     /// <inheritdoc />

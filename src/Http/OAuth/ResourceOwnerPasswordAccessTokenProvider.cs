@@ -9,7 +9,8 @@ namespace Xerris.Extensions.Http.OAuth;
 /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.3">resource owner password credentials</see>
 /// flow.
 /// </summary>
-public record ResourceOwnerPasswordProviderOptions : AccessTokenProviderOptions
+public record ResourceOwnerPasswordProviderOptions : AccessTokenProviderOptions,
+    IOptions<ResourceOwnerPasswordProviderOptions>
 {
     /// <summary>
     /// The resource owner username.
@@ -25,6 +26,11 @@ public record ResourceOwnerPasswordProviderOptions : AccessTokenProviderOptions
     /// The client secret.
     /// </summary>
     public string ClientSecret { get; set; } = string.Empty;
+
+    /// <summary>
+    /// The default configured M<see cref="ResourceOwnerPasswordProviderOptions" /> instance.
+    /// </summary>
+    public ResourceOwnerPasswordProviderOptions Value => this;
 }
 
 /// <summary>
