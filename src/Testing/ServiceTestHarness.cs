@@ -53,7 +53,7 @@ public class ServiceTestHarness<TService>
         if (_serviceCollection.All(x => x.ServiceType != typeof(TService)))
             _serviceCollection.AddTransient<TService>();
 
-        var factory = new AutoMockingServiceProviderFactory(new AutoMocker(MockBehavior.Loose));
+        var factory = new AutoMockingServiceProviderFactory();
 
         var serviceProvider = factory.CreateServiceProvider(_serviceCollection);
 

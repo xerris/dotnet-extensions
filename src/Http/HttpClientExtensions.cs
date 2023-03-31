@@ -4,6 +4,10 @@ using System.Text.Json;
 using Xerris.Extensions.Common.Serialization;
 
 namespace Xerris.Extensions.Http;
+
+/// <summary>
+/// Extension methods for <see cref="HttpClient"/>.
+/// </summary>
 public static class HttpClientExtensions
 {
     /// <summary>

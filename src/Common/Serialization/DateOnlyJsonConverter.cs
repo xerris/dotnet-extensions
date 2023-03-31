@@ -14,6 +14,7 @@ namespace Xerris.Extensions.Common.Serialization;
 /// </summary>
 public sealed class DateOnlyJsonConverter : JsonConverter<DateOnly>
 {
+    /// <inheritdoc />
     public override DateOnly Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         var date = DateTime.Parse(reader.GetString()!, CultureInfo.InvariantCulture);
@@ -21,6 +22,7 @@ public sealed class DateOnlyJsonConverter : JsonConverter<DateOnly>
         return DateOnly.FromDateTime(date);
     }
 
+    /// <inheritdoc />
     public override void Write(Utf8JsonWriter writer, DateOnly value, JsonSerializerOptions options)
     {
         var isoDate = value.ToString("O", CultureInfo.InvariantCulture);

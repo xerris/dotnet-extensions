@@ -39,8 +39,8 @@ public record AccessTokenResponse
     /// <summary>
     /// Additional properties in the response from the authorization server.
     /// <remarks>
-    /// This dictionary <i>should</i> only contain strings, but <see cref="JsonExtensionDataAttribute"/> requires the
-    /// property to be a dictionary of <see cref="object"/>s.
+    /// This dictionary <i>should</i> only contain strings, but <see cref="JsonExtensionDataAttribute" /> requires the
+    /// property to be a dictionary of <see cref="object" />s.
     /// </remarks>
     /// </summary>
     [JsonExtensionData]

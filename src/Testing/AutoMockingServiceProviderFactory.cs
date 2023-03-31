@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Moq.AutoMock;
@@ -10,14 +8,9 @@ internal class AutoMockingServiceProviderFactory : IServiceProviderFactory<IServ
 {
     private readonly AutoMocker _mocker;
 
-    public AutoMockingServiceProviderFactory()
+    public AutoMockingServiceProviderFactory(MockBehavior mockBehavior = MockBehavior.Loose)
     {
-        _mocker = new AutoMocker(MockBehavior.Loose);
-    }
-
-    public AutoMockingServiceProviderFactory(AutoMocker mocker)
-    {
-        _mocker = mocker;
+        _mocker = new AutoMocker(mockBehavior);
     }
 
     public IServiceCollection CreateBuilder(IServiceCollection services)
@@ -59,8 +52,8 @@ internal class AutoMockingServiceProviderFactory : IServiceProviderFactory<IServ
 
             // Don't mock framework constructs
             var filteredCtorParameterTypes = ctorParameterTypes.Where(pt =>
-                    !pt.Namespace!.StartsWith("System") &&
-                    !pt.Namespace!.StartsWith("Microsoft.Extensions"));
+                    !pt.Namespace!.StartsWith("System", StringComparison.InvariantCulture) &&
+                    !pt.Namespace!.StartsWith("Microsoft.Extensions", StringComparison.InvariantCulture));
 
             foreach (var parameterType in filteredCtorParameterTypes)
             {

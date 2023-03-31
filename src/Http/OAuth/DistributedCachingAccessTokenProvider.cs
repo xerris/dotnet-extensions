@@ -4,12 +4,22 @@ using Xerris.Extensions.Common.Serialization;
 
 namespace Xerris.Extensions.Http.OAuth;
 
+/// <summary>
+/// An <see cref="IAccessTokenProvider" /> decorator that caches access token responses in an
+/// <see cref="IDistributedCache" />.
+/// </summary>
 public class DistributedCachingAccessTokenProvider : IAccessTokenProvider
 {
-    private readonly IAccessTokenProvider _innerProvider;
     private readonly IDistributedCache _cache;
+    private readonly IAccessTokenProvider _innerProvider;
     private readonly AccessTokenCachingOptions _options;
 
+    /// <summary>
+    /// Create a new instance of <see cref="DistributedCachingAccessTokenProvider" />.
+    /// </summary>
+    /// <param name="innerProvider">The underlying <see cref="IAccessTokenProvider" />to decorate.</param>
+    /// <param name="cache">The <see cref="IDistributedCache" /> to cache responses with.</param>
+    /// <param name="options">The access token caching configuration options.</param>
     public DistributedCachingAccessTokenProvider(IAccessTokenProvider innerProvider, IDistributedCache cache,
         IOptions<AccessTokenCachingOptions> options)
     {
@@ -18,6 +28,13 @@ public class DistributedCachingAccessTokenProvider : IAccessTokenProvider
         _options = options.Value;
     }
 
+    /// <summary>
+    /// Checks for an unexpired <see cref="AccessTokenResponse" /> with the specified scopes in the cache and returns
+    /// it if found. Otherwise, requests a fresh access token from the decorated <see cref="IAccessTokenProvider" />,
+    /// stores it, and returns the fresh <see cref="AccessTokenResponse" />.
+    /// </summary>
+    /// <param name="scopes">The <see href="https://oauth.net/2/scope/">scopes</see> to include in the request.</param>
+    /// <returns>The cached <see cref="AccessTokenResponse" /> if found, otherwise the fresh response.</returns>
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)
     {
         var cacheKeyBase = _innerProvider.GetType().Name;

@@ -3,8 +3,14 @@ using System.Text.Json.Serialization;
 
 namespace Xerris.Extensions.Common.Serialization;
 
+/// <summary>
+/// Extension methods for serializing to and from JSON.
+/// </summary>
 public static class JsonExtensions
 {
+    /// <summary>
+    /// The default JSON serialization options.
+    /// </summary>
     public static JsonSerializerOptions DefaultJsonSerializerOptions => new(JsonSerializerDefaults.Web)
     {
         Converters = { new JsonStringEnumConverter() }

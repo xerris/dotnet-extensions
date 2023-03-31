@@ -43,9 +43,9 @@ public class ResourceOwnerPasswordAccessTokenProvider : IAccessTokenProvider
     private readonly ResourceOwnerPasswordProviderOptions _options;
 
     /// <summary>
-    /// Creates a new instance of <see cref="ResourceOwnerPasswordAccessTokenProvider"/>.
+    /// Creates a new instance of <see cref="ResourceOwnerPasswordAccessTokenProvider" />.
     /// </summary>
-    /// <param name="httpClient">The <see cref="HttpClient"/> used to make request.</param>
+    /// <param name="httpClient">The <see cref="HttpClient" /> used to make request.</param>
     /// <param name="options">The configuration options for this provider.</param>
     public ResourceOwnerPasswordAccessTokenProvider(HttpClient httpClient,
         IOptions<ResourceOwnerPasswordProviderOptions> options)

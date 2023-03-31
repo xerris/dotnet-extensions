@@ -25,6 +25,11 @@ public class ClientCredentialsAccessTokenProvider : IAccessTokenProvider
     private readonly HttpClient _httpClient;
     private readonly ClientCredentialsProviderOptions _options;
 
+    /// <summary>
+    /// Create a new instance of <see cref="ClientCredentialsAccessTokenProvider" />.
+    /// </summary>
+    /// <param name="httpClient">The <see cref="HttpClient" /> to use.</param>
+    /// <param name="options">The configuration options for the access token request.</param>
     public ClientCredentialsAccessTokenProvider(HttpClient httpClient,
         IOptions<ClientCredentialsProviderOptions> options)
     {
@@ -32,6 +37,7 @@ public class ClientCredentialsAccessTokenProvider : IAccessTokenProvider
         _options = options.Value;
     }
 
+    /// <inheritdoc />
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)
     {
         var scopesValue = string.Join(" ", scopes);

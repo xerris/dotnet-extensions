@@ -1,5 +1,8 @@
 namespace Xerris.Extensions.Common;
 
+/// <summary>
+/// Extensions for arbitrary <see cref="object"/>s.
+/// </summary>
 public static class ObjectExtensions
 {
     /// <summary>
