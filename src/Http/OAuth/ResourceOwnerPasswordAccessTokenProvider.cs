@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using Microsoft.Extensions.Options;
 using Xerris.Extensions.Http.OAuth.Internal;
 
 namespace Xerris.Extensions.Http.OAuth;
@@ -41,13 +42,19 @@ public class ResourceOwnerPasswordAccessTokenProvider : IAccessTokenProvider
     private readonly HttpClient _httpClient;
     private readonly ResourceOwnerPasswordProviderOptions _options;
 
+    /// <summary>
+    /// Creates a new instance of <see cref="ResourceOwnerPasswordAccessTokenProvider"/>.
+    /// </summary>
+    /// <param name="httpClient">The <see cref="HttpClient"/> used to make request.</param>
+    /// <param name="options">The configuration options for this provider.</param>
     public ResourceOwnerPasswordAccessTokenProvider(HttpClient httpClient,
-        ResourceOwnerPasswordProviderOptions options)
+        IOptions<ResourceOwnerPasswordProviderOptions> options)
     {
         _httpClient = httpClient;
-        _options = options;
+        _options = options.Value;
     }
 
+    /// <inheritdoc />
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)
     {
         var scopesValue = string.Join(" ", scopes);

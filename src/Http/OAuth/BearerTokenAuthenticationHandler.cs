@@ -25,6 +25,7 @@ public class BearerTokenAuthenticationHandler : DelegatingHandler
         _scopes = scopes;
     }
 
+    /// <inheritdoc />
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
         CancellationToken cancellationToken)
     {

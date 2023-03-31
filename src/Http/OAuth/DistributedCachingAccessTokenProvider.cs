@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Options;
 using Xerris.Extensions.Common.Serialization;
 
 namespace Xerris.Extensions.Http.OAuth;
@@ -10,11 +11,11 @@ public class DistributedCachingAccessTokenProvider : IAccessTokenProvider
     private readonly AccessTokenCachingOptions _options;
 
     public DistributedCachingAccessTokenProvider(IAccessTokenProvider innerProvider, IDistributedCache cache,
-        AccessTokenCachingOptions options)
+        IOptions<AccessTokenCachingOptions> options)
     {
         _innerProvider = innerProvider;
         _cache = cache;
-        _options = options;
+        _options = options.Value;
     }
 
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)

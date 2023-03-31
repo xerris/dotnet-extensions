@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using Microsoft.Extensions.Options;
 using Xerris.Extensions.Http.OAuth.Internal;
 
 namespace Xerris.Extensions.Http.OAuth;
@@ -25,10 +26,10 @@ public class ClientCredentialsAccessTokenProvider : IAccessTokenProvider
     private readonly ClientCredentialsProviderOptions _options;
 
     public ClientCredentialsAccessTokenProvider(HttpClient httpClient,
-        ClientCredentialsProviderOptions options)
+        IOptions<ClientCredentialsProviderOptions> options)
     {
         _httpClient = httpClient;
-        _options = options;
+        _options = options.Value;
     }
 
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)

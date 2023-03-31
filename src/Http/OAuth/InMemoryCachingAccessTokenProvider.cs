@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Options;
 
 namespace Xerris.Extensions.Http.OAuth;
 
@@ -9,11 +10,11 @@ public class InMemoryCachingAccessTokenProvider : IAccessTokenProvider
     private readonly AccessTokenCachingOptions _options;
 
     public InMemoryCachingAccessTokenProvider(IAccessTokenProvider innerProvider, IMemoryCache cache,
-        AccessTokenCachingOptions options)
+        IOptions<AccessTokenCachingOptions> options)
     {
         _innerProvider = innerProvider;
         _cache = cache;
-        _options = options;
+        _options = options.Value;
     }
 
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)
