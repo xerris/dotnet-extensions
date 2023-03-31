@@ -25,7 +25,7 @@ public class BackgroundTaskQueueProcessor : BackgroundService
         _options = options;
         _logger = logger;
     }
-    
+
     /// <inheritdoc />
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
