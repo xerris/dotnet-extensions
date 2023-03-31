@@ -54,7 +54,6 @@ partial class Build : NukeBuild,
     Target IPush.Push => _ => _
         .Inherit<IPush>()
         .Consumes(this.FromComponent<IPush>().Pack)
-        .Requires(() =>
-            this.FromComponent<IHasGitRepository>().GitRepository.Tags.Any())
+        .Requires(() => this.FromComponent<IHasGitRepository>().GitRepository.Tags.Any())
         .WhenSkipped(DependencyBehavior.Execute);
 }
