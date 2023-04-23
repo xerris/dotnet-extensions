@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - docs # TODO: Temporary
   pull_request:
 
 permissions:
