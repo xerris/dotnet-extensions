@@ -7,6 +7,9 @@ on:
       - docs # TODO: Temporary
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   publish-docs:
     runs-on: ubuntu-latest
