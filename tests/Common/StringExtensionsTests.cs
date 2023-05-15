@@ -73,7 +73,9 @@ public class StringExtensionsTests
         Path.GetInvalidFileNameChars().Select(c => new object[] { c });
 
     [Theory]
+#pragma warning disable CA1825 // Avoid zero-length array allocations
     [MemberData(nameof(InvalidFileNameChars))]
+#pragma warning restore CA1825 // Avoid zero-length array allocations
     public void ToValidFileName_throws_ArgumentException_if_replacement_string_contains_invalid_chars(char invalid)
     {
         const string value = "17/05/2017";

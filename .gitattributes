@@ -1,7 +1,7 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-* text=auto
+* text=auto encoding=UTF-8
 
 *.DotSettings text eol=lf
 *.sh text eol=lf
