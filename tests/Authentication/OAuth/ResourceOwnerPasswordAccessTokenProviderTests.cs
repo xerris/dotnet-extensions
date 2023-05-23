@@ -1,14 +1,15 @@
 using System.Net;
 using System.Net.Http.Json;
 using Moq;
+using Xerris.Extensions.Authentication.OAuth;
+using Xerris.Extensions.Authentication.OAuth.Internal;
 using Xerris.Extensions.Common.Serialization;
-using Xerris.Extensions.Http.OAuth;
-using Xerris.Extensions.Http.OAuth.Internal;
 using Xerris.Extensions.Testing;
+using Xerris.Extensions.Testing.Http;
 
-namespace Xerris.Extensions.Http.Tests.OAuth;
+namespace Xerris.Extensions.Authentication.Tests.OAuth;
 
-public class ClientCredentialsAccessTokenProviderTests
+public class ResourceOwnerPasswordAccessTokenProviderTests
 {
     [Fact]
     public async Task Returns_expected_access_token()
@@ -21,19 +22,21 @@ public class ClientCredentialsAccessTokenProviderTests
             TokenType = "bearer"
         };
 
-        var handlerMock = GetMockHttpMessageHandlerWithResponse(response);
+        var handlerMock = GetMockHttpMessageHandler(response);
 
-        await ServiceTestHarness<ClientCredentialsAccessTokenProvider>.Create(TestAction)
+        await ServiceTestHarness<ResourceOwnerPasswordAccessTokenProvider>.Create(TestAction)
             .WithDependency(new HttpClient(handlerMock.Object))
             .WithServices(sp =>
             {
                 sp.AddAccessTokenProvider(builder =>
                 {
-                    builder.UseClientCredentialsFlow(opts =>
+                    builder.UseResourceOwnerPasswordFlow(new ResourceOwnerPasswordProviderOptions
                     {
-                        opts.TokenEndpoint = new Uri("https://test.com");
-                        opts.ClientId = "foo";
-                        opts.ClientSecret = "bar";
+                        TokenEndpoint = new Uri("https://test.com/"),
+                        ClientId = "foo",
+                        ClientSecret = "bar",
+                        Username = "george.costanza@vandelayindustries.com",
+                        Password = "Hunter2"
                     });
                 });
             })
@@ -68,23 +71,25 @@ public class ClientCredentialsAccessTokenProviderTests
 
         var actualRequest = new HttpRequestMessage();
 
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
 
-        var providerOptions = new ClientCredentialsProviderOptions
+        var providerOptions = new ResourceOwnerPasswordProviderOptions
         {
             TokenEndpoint = new Uri("https://test.com/"),
             ClientId = "foo",
             ClientSecret = "bar",
+            Username = "george.costanza@vandelayindustries.com",
+            Password = "Hunter2",
             AdditionalProperties = new Dictionary<string, string> { { "foo", "bar" } }
         };
 
-        await ServiceTestHarness<ClientCredentialsAccessTokenProvider>.Create(TestAction)
+        await ServiceTestHarness<ResourceOwnerPasswordAccessTokenProvider>.Create(TestAction)
             .WithDependency(new HttpClient(handlerMock.Object))
             .WithServices(sp =>
             {
                 sp.AddAccessTokenProvider(builder =>
                 {
-                    builder.UseClientCredentialsFlow(providerOptions);
+                    builder.UseResourceOwnerPasswordFlow(providerOptions);
                 });
             })
             .TestAsync();
@@ -102,10 +107,12 @@ public class ClientCredentialsAccessTokenProviderTests
             actualRequest.RequestUri.Should().Be(providerOptions.TokenEndpoint.ToString());
 
             var actualRequestContent =
-                await actualRequest.Content!.ReadFromJsonAsync<ClientCredentialsAccessTokenRequest>();
+                await actualRequest.Content!.ReadFromJsonAsync<ResourceOwnerPasswordAccessTokenRequest>();
 
             actualRequestContent!.ClientId.Should().Be(providerOptions.ClientId);
             actualRequestContent.ClientSecret.Should().Be(providerOptions.ClientSecret);
+            actualRequestContent.Username.Should().Be(providerOptions.Username);
+            actualRequestContent.Password.Should().Be(providerOptions.Password);
             actualRequestContent.Scope.Should().Be(someScope);
 
             actualRequestContent.AdditionalProperties!.Keys
@@ -114,7 +121,7 @@ public class ClientCredentialsAccessTokenProviderTests
             actualRequestContent.AdditionalProperties.Values.Select(v => v.ToString())
                 .Should().BeEquivalentTo(providerOptions.AdditionalProperties.Values);
 
-            actualRequestContent.GrantType.Should().Be("client_credentials");
+            actualRequestContent.GrantType.Should().Be("password");
         }
     }
 
@@ -122,24 +129,26 @@ public class ClientCredentialsAccessTokenProviderTests
     public async Task Throws_exception_for_unsuccessful_request()
     {
         // Arrange
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(
             new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
 
-        var providerOptions = new ClientCredentialsProviderOptions
+        var providerOptions = new ResourceOwnerPasswordProviderOptions
         {
             TokenEndpoint = new Uri("https://test.com/"),
             ClientId = "foo",
             ClientSecret = "bar",
+            Username = "george.costanza@vandelayindustries.com",
+            Password = "Hunter2",
             AdditionalProperties = new Dictionary<string, string> { { "foo", "bar" } }
         };
 
-        await ServiceTestHarness<ClientCredentialsAccessTokenProvider>.Create(TestAction)
+        await ServiceTestHarness<ResourceOwnerPasswordAccessTokenProvider>.Create(TestAction)
             .WithDependency(new HttpClient(handlerMock.Object))
             .WithServices(sp =>
             {
                 sp.AddAccessTokenProvider(builder =>
                 {
-                    builder.UseClientCredentialsFlow(providerOptions);
+                    builder.UseResourceOwnerPasswordFlow(providerOptions);
                 });
             })
             .TestAsync();
@@ -154,9 +163,9 @@ public class ClientCredentialsAccessTokenProviderTests
         }
     }
 
-    private static Mock<HttpMessageHandler> GetMockHttpMessageHandlerWithResponse(AccessTokenResponse response)
+    private static Mock<HttpMessageHandler> GetMockHttpMessageHandler(AccessTokenResponse response)
     {
-        return TestUtilities.GetMockHttpMessageHandler(new HttpResponseMessage
+        return HttpTestUtilities.GetMockHttpMessageHandler(new HttpResponseMessage
         {
             StatusCode = HttpStatusCode.OK,
             Content = new StringContent(response.ToJson())

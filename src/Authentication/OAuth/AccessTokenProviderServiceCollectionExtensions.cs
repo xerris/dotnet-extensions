@@ -1,7 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
-using Xerris.Extensions.Http.OAuth.Internal;
+using Xerris.Extensions.Authentication.OAuth.Internal;
 
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// Extension methods for configuring access token providers in an <see cref="IServiceCollection" />.

@@ -2,7 +2,7 @@ using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Options;
 using Xerris.Extensions.Common.Serialization;
 
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// An <see cref="IAccessTokenProvider" /> decorator that caches access token responses in an
@@ -50,10 +50,20 @@ public class DistributedCachingAccessTokenProvider : IAccessTokenProvider
         var freshAccessTokenResponse = await _innerProvider.GetAccessTokenAsync(scopes).ConfigureAwait(false);
         var freshAccessTokenResponseValue = freshAccessTokenResponse.ToJson();
 
+        var absoluteExpirationRelativeToNow = TimeSpan.FromSeconds(freshAccessTokenResponse.ExpiresIn)
+            .Subtract(_options.ExpirationBuffer);
+
+        if (absoluteExpirationRelativeToNow <= TimeSpan.Zero)
+        {
+            throw new InvalidOperationException(
+                $"The calculated relative expiration value of the cache entry must not be negative (current " +
+                $"value: {absoluteExpirationRelativeToNow}). Either decrease the expiration buffer or increase" +
+                "the expiry time of the access token provided by the authorization server.");
+        }
+
         var cacheEntryOptions = new DistributedCacheEntryOptions
         {
-            AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(freshAccessTokenResponse.ExpiresIn)
-                .Subtract(_options.ExpirationBuffer)
+            AbsoluteExpirationRelativeToNow = absoluteExpirationRelativeToNow
         };
 
         await _cache.SetStringAsync(cacheKey, freshAccessTokenResponseValue, cacheEntryOptions).ConfigureAwait(false);

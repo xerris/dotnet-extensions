@@ -1,8 +1,8 @@
 using System.Net.Http.Json;
 using Microsoft.Extensions.Options;
-using Xerris.Extensions.Http.OAuth.Internal;
+using Xerris.Extensions.Authentication.OAuth.Internal;
 
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// The options values for acquiring access tokens using the

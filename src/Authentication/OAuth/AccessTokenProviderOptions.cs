@@ -1,4 +1,4 @@
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// The configuration values used to acquire access tokens.

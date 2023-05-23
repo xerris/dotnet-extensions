@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Options;
 
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// Options for configuring access token caching behavior.

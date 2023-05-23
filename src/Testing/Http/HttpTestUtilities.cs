@@ -2,9 +2,9 @@ using System.Net;
 using Moq;
 using Moq.Protected;
 
-namespace Xerris.Extensions.Http.Tests;
+namespace Xerris.Extensions.Testing.Http;
 
-internal static class TestUtilities
+public static class HttpTestUtilities
 {
     public static Mock<HttpMessageHandler> GetMockHttpMessageHandler(HttpResponseMessage mockResponse,
         Action<HttpRequestMessage, CancellationToken>? requestCallback = null)
@@ -15,8 +15,7 @@ internal static class TestUtilities
             .Setup<Task<HttpResponseMessage>>(
                 nameof(HttpClient.SendAsync),
                 ItExpr.IsAny<HttpRequestMessage>(),
-                ItExpr.IsAny<CancellationToken>()
-            )
+                ItExpr.IsAny<CancellationToken>())
             .Callback(requestCallback ?? ((_, _) => { /* no-op */ }))
             .ReturnsAsync(mockResponse)
             .Verifiable();

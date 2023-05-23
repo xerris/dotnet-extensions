@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Xerris.Extensions.Http.OAuth.Internal;
+namespace Xerris.Extensions.Authentication.OAuth.Internal;
 
 internal sealed class AccessTokenProviderBuilder : IAccessTokenProviderBuilder
 {

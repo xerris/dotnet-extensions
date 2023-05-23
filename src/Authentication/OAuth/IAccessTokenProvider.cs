@@ -1,4 +1,4 @@
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// A service for retrieving <see href="https://oauth.net/2/access-tokens/">OAuth 2.0 access tokens</see>.

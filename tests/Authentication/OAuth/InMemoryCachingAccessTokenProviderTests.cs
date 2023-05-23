@@ -1,10 +1,10 @@
 using Moq;
-using Xerris.Extensions.Http.OAuth;
+using Xerris.Extensions.Authentication.OAuth;
 using Xerris.Extensions.Testing;
 
-namespace Xerris.Extensions.Http.Tests.OAuth;
+namespace Xerris.Extensions.Authentication.Tests.OAuth;
 
-public class DistributedCachingAccessTokenProviderTests
+public class InMemoryCachingAccessTokenProviderTests
 {
     [Fact]
     public async Task Unexpired_access_token_responses_are_retrieved_from_cache()
@@ -22,13 +22,13 @@ public class DistributedCachingAccessTokenProviderTests
                 Scope = "dummy_scope"
             });
 
-        await ServiceTestHarness<DistributedCachingAccessTokenProvider>.Create(TestAction)
+        await ServiceTestHarness<InMemoryCachingAccessTokenProvider>.Create(TestAction)
             .WithServices(sp =>
             {
                 sp.AddAccessTokenProvider(builder =>
                 {
                     builder.UseCustomProvider(mockAccessTokenProvider.Object)
-                        .WithDistributedCaching();
+                        .WithInMemoryCaching();
                 });
             })
             .TestAsync();
@@ -65,13 +65,13 @@ public class DistributedCachingAccessTokenProviderTests
                 Scope = "dummy_scope"
             });
 
-        await ServiceTestHarness<DistributedCachingAccessTokenProvider>.Create(TestAction)
+        await ServiceTestHarness<InMemoryCachingAccessTokenProvider>.Create(TestAction)
             .WithServices(sp =>
             {
                 sp.AddAccessTokenProvider(builder =>
                 {
                     builder.UseCustomProvider(mockAccessTokenProvider.Object)
-                        .WithDistributedCaching(opts =>
+                        .WithInMemoryCaching(opts =>
                         {
                             opts.ExpirationBuffer = tokenExpiryWindow / 2;
                         });
@@ -107,13 +107,13 @@ public class DistributedCachingAccessTokenProviderTests
             .Setup(x => x.GetAccessTokenAsync(It.IsAny<string[]>()))
             .ReturnsAsync(() => new AccessTokenResponse { ExpiresIn = (int) tokenExpiryWindow.TotalSeconds });
 
-        await ServiceTestHarness<DistributedCachingAccessTokenProvider>.Create(TestAction)
+        await ServiceTestHarness<InMemoryCachingAccessTokenProvider>.Create(TestAction)
             .WithServices(sp =>
             {
                 sp.AddAccessTokenProvider(builder =>
                 {
                     builder.UseCustomProvider(mockAccessTokenProvider.Object)
-                        .WithDistributedCaching(opts =>
+                        .WithInMemoryCaching(opts =>
                         {
                             opts.ExpirationBuffer = tokenExpiryWindow.Add(TimeSpan.FromTicks(1));
                         });
@@ -127,7 +127,7 @@ public class DistributedCachingAccessTokenProviderTests
             var action = async () => await provider.GetAccessTokenAsync();
 
             // Assert
-            await action.Should().ThrowAsync<ArgumentOutOfRangeException>();
+            await action.Should().ThrowAsync<InvalidOperationException>();
         }
     }
 }

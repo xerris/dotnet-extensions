@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// A successful access token response from the authorization server.

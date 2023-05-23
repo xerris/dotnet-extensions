@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Xerris.Extensions.Http.OAuth.Internal;
+namespace Xerris.Extensions.Authentication.OAuth.Internal;
 
 internal abstract record AccessTokenRequest
 {

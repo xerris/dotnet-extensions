@@ -1,6 +1,7 @@
 using System.Net;
 using System.Net.Http.Json;
 using Xerris.Extensions.Common.Serialization;
+using Xerris.Extensions.Testing.Http;
 
 namespace Xerris.Extensions.Http.Tests;
 
@@ -28,7 +29,7 @@ public class HttpClientExtensionsTests
 
         var actualRequest = new HttpRequestMessage();
 
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
 
         var httpClient = new HttpClient(handlerMock.Object);
 
@@ -49,7 +50,7 @@ public class HttpClientExtensionsTests
     public async Task PostAsJson_throws_exception_for_unsuccessful_request()
     {
         // Arrange
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(
             new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
 
         var httpClient = new HttpClient(handlerMock.Object);
@@ -79,7 +80,7 @@ public class HttpClientExtensionsTests
 
         var actualRequest = new HttpRequestMessage();
 
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
 
         var httpClient = new HttpClient(handlerMock.Object);
 
@@ -100,7 +101,7 @@ public class HttpClientExtensionsTests
     public async Task PutAsJson_throws_exception_for_unsuccessful_request()
     {
         // Arrange
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(
             new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
 
         var httpClient = new HttpClient(handlerMock.Object);
@@ -122,7 +123,7 @@ public class HttpClientExtensionsTests
 
         var actualRequest = new HttpRequestMessage();
 
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(httpResponse, (req, _) => actualRequest = req);
 
         var httpClient = new HttpClient(handlerMock.Object);
 
@@ -140,7 +141,7 @@ public class HttpClientExtensionsTests
     public async Task DeleteAsJson_throws_exception_for_unsuccessful_request()
     {
         // Arrange
-        var handlerMock = TestUtilities.GetMockHttpMessageHandler(
+        var handlerMock = HttpTestUtilities.GetMockHttpMessageHandler(
             new HttpResponseMessage { StatusCode = HttpStatusCode.BadRequest });
 
         var httpClient = new HttpClient(handlerMock.Object);

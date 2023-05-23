@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
 
-namespace Xerris.Extensions.Http.OAuth;
+namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
 /// An <see cref="IAccessTokenProvider" /> decorator that caches access token responses in an
@@ -51,9 +51,9 @@ public class InMemoryCachingAccessTokenProvider : IAccessTokenProvider
             if (absoluteExpirationRelativeToNow <= TimeSpan.Zero)
             {
                 throw new InvalidOperationException(
-                    "The calculated relative expiration value of the cache entry must be positive. Either decrease " +
-                    "the expiration buffer or increase the expiry time of the access token provided by the " +
-                    "authorization server.");
+                    $"The calculated relative expiration value of the cache entry must not be negative (current " +
+                    $"value: {absoluteExpirationRelativeToNow}). Either decrease the expiration buffer or increase" +
+                    "the expiry time of the access token provided by the authorization server.");
             }
 
             entry.Value = freshAccessTokenResponse;

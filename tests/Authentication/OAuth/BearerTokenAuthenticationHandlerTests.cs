@@ -1,10 +1,11 @@
 using System.Net;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
-using Xerris.Extensions.Http.OAuth;
+using Xerris.Extensions.Authentication.OAuth;
 using Xerris.Extensions.Testing;
+using Xerris.Extensions.Testing.Http;
 
-namespace Xerris.Extensions.Http.Tests.OAuth;
+namespace Xerris.Extensions.Authentication.Tests.OAuth;
 
 public class DummyHttpService
 {
@@ -52,7 +53,7 @@ public class BearerTokenAuthenticationHandlerTests
                 services.AddAccessTokenProvider(
                     configure => configure.UseCustomProvider(mockAccessTokenProvider.Object));
 
-                services.AddTransient(_ => new TestUtilities.DelegatingHandlerStub((request, _) =>
+                services.AddTransient(_ => new HttpTestUtilities.DelegatingHandlerStub((request, _) =>
                 {
                     actualRequest = request;
 
@@ -66,7 +67,7 @@ public class BearerTokenAuthenticationHandlerTests
 
                 services.AddHttpClient<DummyHttpService>()
                     .AddHttpMessageHandler<BearerTokenAuthenticationHandler>()
-                    .AddHttpMessageHandler<TestUtilities.DelegatingHandlerStub>();
+                    .AddHttpMessageHandler<HttpTestUtilities.DelegatingHandlerStub>();
             })
             .TestAsync();
     }
