@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace Xerris.Extensions.Http;
+namespace Xerris.Extensions.Common.Http;
 
 /// <summary>
 /// Extension methods for working with HTTP messages.

@@ -1,9 +1,10 @@
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
+using Xerris.Extensions.Common.Http;
 using Xerris.Extensions.Common.Serialization;
 
-namespace Xerris.Extensions.Http;
+namespace Xerris.Extensions.Common.Http;
 
 /// <summary>
 /// Extension methods for <see cref="HttpClient"/>.

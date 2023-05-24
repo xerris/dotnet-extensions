@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Common\Xerris.Extensions.Common.csproj" />
+    <ProjectReference Include="..\..\src\Testing\Xerris.Extensions.Testing.csproj" />
   </ItemGroup>
 
 </Project>

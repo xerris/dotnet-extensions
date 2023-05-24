@@ -1,9 +1,10 @@
 using System.Net;
 using System.Net.Http.Json;
+using Xerris.Extensions.Common.Http;
 using Xerris.Extensions.Common.Serialization;
 using Xerris.Extensions.Testing.Http;
 
-namespace Xerris.Extensions.Http.Tests;
+namespace Xerris.Extensions.Common.Tests.Http;
 
 public class HttpClientExtensionsTests
 {

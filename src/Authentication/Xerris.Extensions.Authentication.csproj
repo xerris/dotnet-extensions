@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Http\Xerris.Extensions.Http.csproj" />
+    <InternalsVisibleTo Include="Xerris.Extensions.Authentication.Tests" />
   </ItemGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="Xerris.Extensions.Authentication.Tests" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Xerris.Extensions.Common.csproj" />
   </ItemGroup>
 
 </Project>

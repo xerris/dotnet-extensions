@@ -1,4 +1,6 @@
-namespace Xerris.Extensions.Http.Tests;
+using Xerris.Extensions.Common.Http;
+
+namespace Xerris.Extensions.Common.Tests.Http;
 
 // ReSharper disable StringLiteralTypo
 // ReSharper disable IdentifierTypo
