@@ -127,7 +127,7 @@ public class DistributedCachingAccessTokenProviderTests
             var action = async () => await provider.GetAccessTokenAsync();
 
             // Assert
-            await action.Should().ThrowAsync<ArgumentOutOfRangeException>();
+            await action.Should().ThrowAsync<InvalidOperationException>();
         }
     }
 }

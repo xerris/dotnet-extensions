@@ -110,6 +110,7 @@ public class HttpClientExtensionsTests
         var action = async () =>
             await httpClient.PutAsJsonAsync<RequestType, ResponseType>("http://example.com", new RequestType("foo"));
 
+        // Assert
         await action.Should().ThrowAsync<HttpRequestException>();
     }
 
@@ -149,6 +150,7 @@ public class HttpClientExtensionsTests
         // Act
         var action = async () => await httpClient.DeleteAsJsonAsync("http://example.com", new RequestType("foo"));
 
+        // Assert
         await action.Should().ThrowAsync<HttpRequestException>();
     }
 }
