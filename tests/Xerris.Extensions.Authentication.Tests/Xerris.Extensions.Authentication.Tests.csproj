@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Xerris.Extensions.Authentication\Xerris.Extensions.Authentication.csproj" />
+    <ProjectReference Include="..\..\src\Xerris.Extensions.Testing\Xerris.Extensions.Testing.csproj" />
+  </ItemGroup>
+
+</Project>

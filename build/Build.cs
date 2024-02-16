@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using System.Linq;
 using Nuke.Common;
 using Nuke.Common.CI;
+using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
@@ -35,11 +35,11 @@ partial class Build : NukeBuild,
     readonly Solution Solution;
     Solution IHasSolution.Solution => Solution;
 
-    public IEnumerable<string> ExcludedFormatPaths => Enumerable.Empty<string>();
+    public IEnumerable<AbsolutePath> ExcludedFormatPaths => [];
 
-    public bool RunFormatAnalyzers => true;
+    public bool RunFormatAnalyzers => IsLocalBuild;
 
-    Target ICompile.Compile => _ => _
+    Target ICompile.Compile => t => t
         .Inherit<ICompile>()
         .DependsOn<IFormat>(x => x.VerifyFormat);
 
@@ -47,13 +47,13 @@ partial class Build : NukeBuild,
 
     IEnumerable<Project> ITest.TestProjects => Partition.GetCurrent(Solution.GetAllProjects("*.Tests"));
 
-    Configure<DotNetPublishSettings> ICompile.PublishSettings => _ => _
+    Configure<DotNetPublishSettings> ICompile.PublishSettings => t => t
         .When(!ScheduledTargets.Contains(((IPush) this).Push), _ => _
             .ClearProperties());
 
-    Target IPush.Push => _ => _
+    Target IPush.Push => t => t
         .Inherit<IPush>()
         .Consumes(this.FromComponent<IPush>().Pack)
-        .Requires(() => this.FromComponent<IHasGitRepository>().GitRepository.Tags.Any())
+        .Requires(() => this.FromComponent<IHasGitRepository>().GitRepository.Tags.Count != 0)
         .WhenSkipped(DependencyBehavior.Execute);
 }

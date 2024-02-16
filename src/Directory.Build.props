@@ -1,14 +1,14 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <PropertyGroup>
-    <LangVersion>preview</LangVersion>
+    <LangVersion>latest</LangVersion>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <NoWarn>NU5129;NU5118</NoWarn>
     <DefineConstants>$(DefineConstants);JETBRAINS_ANNOTATIONS</DefineConstants>
     <DebugType>embedded</DebugType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <AnalysisLevel>6.0-recommended</AnalysisLevel>
+    <AnalysisLevel>8.0-recommended</AnalysisLevel>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -26,6 +26,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(IsPackable)' != 'False'">
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
