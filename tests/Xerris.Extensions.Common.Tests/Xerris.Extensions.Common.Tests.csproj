@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Common\Xerris.Extensions.Common.csproj" />
-    <ProjectReference Include="..\..\src\Testing\Xerris.Extensions.Testing.csproj" />
+    <ProjectReference Include="..\..\src\Xerris.Extensions.Common\Xerris.Extensions.Common.csproj" />
+    <ProjectReference Include="..\..\src\Xerris.Extensions.Testing\Xerris.Extensions.Testing.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Configuration\Xerris.Extensions.Configuration.csproj" />
+    <ProjectReference Include="..\Xerris.Extensions.Configuration\Xerris.Extensions.Configuration.csproj" />
   </ItemGroup>
 
   <ItemGroup>
