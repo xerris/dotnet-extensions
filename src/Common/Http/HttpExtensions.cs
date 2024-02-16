@@ -32,7 +32,7 @@ public static class HttpExtensions
             queryParams.Add(property.Key, stringValue);
         }
 
-        return queryParams.Any()
+        return queryParams.Count != 0
             ? $"?{string.Join("&", queryParams.Select(qp => $"{qp.Key}={qp.Value}").ToArray())}"
             : string.Empty;
     }
