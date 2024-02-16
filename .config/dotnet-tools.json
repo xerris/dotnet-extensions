@@ -3,9 +3,15 @@
   "isRoot": true,
   "tools": {
     "docfx": {
-      "version": "2.67.1",
+      "version": "2.75.2",
       "commands": [
         "docfx"
+      ]
+    },
+    "nuke.globaltool": {
+      "version": "8.0.0",
+      "commands": [
+        "nuke"
       ]
     }
   }

@@ -38,6 +38,6 @@ internal class DelimitedConfigurationProvider : ConfigurationProvider
         foreach (var delimiter in _keyDelimiters)
             newKeys.AddRange(_keyDelimiters.Select(d => key.Replace(delimiter, d)).Distinct());
 
-        return newKeys;
+        return newKeys.AsEnumerable();
     }
 }

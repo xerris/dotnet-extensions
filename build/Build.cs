@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Nuke.Common;
 using Nuke.Common.CI;
+using Nuke.Common.IO;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
@@ -35,9 +36,9 @@ partial class Build : NukeBuild,
     readonly Solution Solution;
     Solution IHasSolution.Solution => Solution;
 
-    public IEnumerable<string> ExcludedFormatPaths => Enumerable.Empty<string>();
+    public IEnumerable<AbsolutePath> ExcludedFormatPaths => [];
 
-    public bool RunFormatAnalyzers => true;
+    public bool RunFormatAnalyzers => IsLocalBuild;
 
     Target ICompile.Compile => _ => _
         .Inherit<ICompile>()
