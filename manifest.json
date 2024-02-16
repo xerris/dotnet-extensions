@@ -1,0 +1,503 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/dotnet-extensions/dotnet-extensions/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Authentication.OAuth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Authentication.OAuth.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.BackgroundTasks.IBackgroundTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.BackgroundTasks.IBackgroundTask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.BackgroundTasks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.BackgroundTasks.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.Http.HttpClientExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.Http.HttpClientExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.Http.HttpExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.Http.HttpExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.Http.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.ObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.ObjectExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.Serialization.JsonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.Serialization.JsonExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.Serialization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Configuration.Aws.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Configuration.Aws.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Configuration.ConfigurationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Configuration.ConfigurationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Configuration.ConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Configuration.ConfigurationExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Testing.Http.HttpTestUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Testing.Http.HttpTestUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Testing.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Testing.Http.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Testing.ServiceTestHarness-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Testing.ServiceTestHarness-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Xerris.Extensions.Testing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Xerris.Extensions.Testing.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

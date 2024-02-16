@@ -1,0 +1,1570 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Xerris.Extensions.Authentication.OAuth
+  name: Xerris.Extensions.Authentication.OAuth
+  href: api/Xerris.Extensions.Authentication.OAuth.html
+  commentId: N:Xerris.Extensions.Authentication.OAuth
+  fullName: Xerris.Extensions.Authentication.OAuth
+  nameWithType: Xerris.Extensions.Authentication.OAuth
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions
+  name: AccessTokenCachingOptions
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions
+  nameWithType: AccessTokenCachingOptions
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.ExpirationBuffer
+  name: ExpirationBuffer
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions_ExpirationBuffer
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.ExpirationBuffer
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.ExpirationBuffer
+  nameWithType: AccessTokenCachingOptions.ExpirationBuffer
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.ExpirationBuffer*
+  name: ExpirationBuffer
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions_ExpirationBuffer_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.ExpirationBuffer
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.ExpirationBuffer
+  nameWithType: AccessTokenCachingOptions.ExpirationBuffer
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.Value
+  name: Value
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions_Value
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.Value
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.Value
+  nameWithType: AccessTokenCachingOptions.Value
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.Value*
+  name: Value
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions_Value_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.Value
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.Value
+  nameWithType: AccessTokenCachingOptions.Value
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions
+  name: AccessTokenProviderBuilderExtensions
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions
+  nameWithType: AccessTokenProviderBuilderExtensions
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions})
+  name: UseClientCredentialsFlow(IAccessTokenProviderBuilder, Action<ClientCredentialsProviderOptions>)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseClientCredentialsFlow_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_System_Action_Xerris_Extensions_Authentication_OAuth_ClientCredentialsProviderOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions})
+  name.vb: UseClientCredentialsFlow(IAccessTokenProviderBuilder, Action(Of ClientCredentialsProviderOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action<Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions>)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action(Of Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions))
+  nameWithType: AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(IAccessTokenProviderBuilder, Action<ClientCredentialsProviderOptions>)
+  nameWithType.vb: AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(IAccessTokenProviderBuilder, Action(Of ClientCredentialsProviderOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions)
+  name: UseClientCredentialsFlow(IAccessTokenProviderBuilder, ClientCredentialsProviderOptions)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseClientCredentialsFlow_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_Xerris_Extensions_Authentication_OAuth_ClientCredentialsProviderOptions_
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions)
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions)
+  nameWithType: AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow(IAccessTokenProviderBuilder, ClientCredentialsProviderOptions)
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow*
+  name: UseClientCredentialsFlow
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseClientCredentialsFlow_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow
+  nameWithType: AccessTokenProviderBuilderExtensions.UseClientCredentialsFlow
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseCustomProvider(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider)
+  name: UseCustomProvider(IAccessTokenProviderBuilder, IAccessTokenProvider)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseCustomProvider_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseCustomProvider(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider)
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseCustomProvider(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider)
+  nameWithType: AccessTokenProviderBuilderExtensions.UseCustomProvider(IAccessTokenProviderBuilder, IAccessTokenProvider)
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseCustomProvider*
+  name: UseCustomProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseCustomProvider_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseCustomProvider
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseCustomProvider
+  nameWithType: AccessTokenProviderBuilderExtensions.UseCustomProvider
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions})
+  name: UseResourceOwnerPasswordFlow(IAccessTokenProviderBuilder, Action<ResourceOwnerPasswordProviderOptions>)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseResourceOwnerPasswordFlow_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_System_Action_Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions})
+  name.vb: UseResourceOwnerPasswordFlow(IAccessTokenProviderBuilder, Action(Of ResourceOwnerPasswordProviderOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action<Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions>)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action(Of Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions))
+  nameWithType: AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(IAccessTokenProviderBuilder, Action<ResourceOwnerPasswordProviderOptions>)
+  nameWithType.vb: AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(IAccessTokenProviderBuilder, Action(Of ResourceOwnerPasswordProviderOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions)
+  name: UseResourceOwnerPasswordFlow(IAccessTokenProviderBuilder, ResourceOwnerPasswordProviderOptions)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseResourceOwnerPasswordFlow_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions)
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions)
+  nameWithType: AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow(IAccessTokenProviderBuilder, ResourceOwnerPasswordProviderOptions)
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow*
+  name: UseResourceOwnerPasswordFlow
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_UseResourceOwnerPasswordFlow_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow
+  nameWithType: AccessTokenProviderBuilderExtensions.UseResourceOwnerPasswordFlow
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithDistributedCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions})
+  name: WithDistributedCaching(IAccessTokenProviderBuilder, Action<AccessTokenCachingOptions>?)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_WithDistributedCaching_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_System_Action_Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithDistributedCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions})
+  name.vb: WithDistributedCaching(IAccessTokenProviderBuilder, Action(Of AccessTokenCachingOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithDistributedCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action<Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions>?)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithDistributedCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action(Of Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions))
+  nameWithType: AccessTokenProviderBuilderExtensions.WithDistributedCaching(IAccessTokenProviderBuilder, Action<AccessTokenCachingOptions>?)
+  nameWithType.vb: AccessTokenProviderBuilderExtensions.WithDistributedCaching(IAccessTokenProviderBuilder, Action(Of AccessTokenCachingOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithDistributedCaching*
+  name: WithDistributedCaching
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_WithDistributedCaching_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithDistributedCaching
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithDistributedCaching
+  nameWithType: AccessTokenProviderBuilderExtensions.WithDistributedCaching
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithInMemoryCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions},System.Action{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions})
+  name: WithInMemoryCaching(IAccessTokenProviderBuilder, Action<AccessTokenCachingOptions>?, Action<MemoryCacheOptions>?)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_WithInMemoryCaching_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_System_Action_Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions__System_Action_Microsoft_Extensions_Caching_Memory_MemoryCacheOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithInMemoryCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder,System.Action{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions},System.Action{Microsoft.Extensions.Caching.Memory.MemoryCacheOptions})
+  name.vb: WithInMemoryCaching(IAccessTokenProviderBuilder, Action(Of AccessTokenCachingOptions), Action(Of MemoryCacheOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithInMemoryCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action<Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions>?, System.Action<Microsoft.Extensions.Caching.Memory.MemoryCacheOptions>?)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithInMemoryCaching(Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder, System.Action(Of Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions), System.Action(Of Microsoft.Extensions.Caching.Memory.MemoryCacheOptions))
+  nameWithType: AccessTokenProviderBuilderExtensions.WithInMemoryCaching(IAccessTokenProviderBuilder, Action<AccessTokenCachingOptions>?, Action<MemoryCacheOptions>?)
+  nameWithType.vb: AccessTokenProviderBuilderExtensions.WithInMemoryCaching(IAccessTokenProviderBuilder, Action(Of AccessTokenCachingOptions), Action(Of MemoryCacheOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithInMemoryCaching*
+  name: WithInMemoryCaching
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderBuilderExtensions_WithInMemoryCaching_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithInMemoryCaching
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.WithInMemoryCaching
+  nameWithType: AccessTokenProviderBuilderExtensions.WithInMemoryCaching
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions
+  name: AccessTokenProviderOptions
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions
+  nameWithType: AccessTokenProviderOptions
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.AdditionalProperties
+  name: AdditionalProperties
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderOptions_AdditionalProperties
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.AdditionalProperties
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.AdditionalProperties
+  nameWithType: AccessTokenProviderOptions.AdditionalProperties
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.AdditionalProperties*
+  name: AdditionalProperties
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderOptions_AdditionalProperties_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.AdditionalProperties
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.AdditionalProperties
+  nameWithType: AccessTokenProviderOptions.AdditionalProperties
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.ClientId
+  name: ClientId
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderOptions_ClientId
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.ClientId
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.ClientId
+  nameWithType: AccessTokenProviderOptions.ClientId
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.ClientId*
+  name: ClientId
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderOptions_ClientId_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.ClientId
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.ClientId
+  nameWithType: AccessTokenProviderOptions.ClientId
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.TokenEndpoint
+  name: TokenEndpoint
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderOptions_TokenEndpoint
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.TokenEndpoint
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.TokenEndpoint
+  nameWithType: AccessTokenProviderOptions.TokenEndpoint
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.TokenEndpoint*
+  name: TokenEndpoint
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderOptions_TokenEndpoint_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.TokenEndpoint
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.TokenEndpoint
+  nameWithType: AccessTokenProviderOptions.TokenEndpoint
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions
+  name: AccessTokenProviderServiceCollectionExtensions
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions
+  nameWithType: AccessTokenProviderServiceCollectionExtensions
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder})
+  name: AddAccessTokenProvider(IServiceCollection, Action<IAccessTokenProviderBuilder>)
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderServiceCollectionExtensions_AddAccessTokenProvider_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder})
+  name.vb: AddAccessTokenProvider(IServiceCollection, Action(Of IAccessTokenProviderBuilder))
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder>)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder))
+  nameWithType: AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider(IServiceCollection, Action<IAccessTokenProviderBuilder>)
+  nameWithType.vb: AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider(IServiceCollection, Action(Of IAccessTokenProviderBuilder))
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider*
+  name: AddAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.html#Xerris_Extensions_Authentication_OAuth_AccessTokenProviderServiceCollectionExtensions_AddAccessTokenProvider_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider
+  nameWithType: AccessTokenProviderServiceCollectionExtensions.AddAccessTokenProvider
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse
+  name: AccessTokenResponse
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse
+  nameWithType: AccessTokenResponse
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AccessToken
+  name: AccessToken
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_AccessToken
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AccessToken
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AccessToken
+  nameWithType: AccessTokenResponse.AccessToken
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AccessToken*
+  name: AccessToken
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_AccessToken_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AccessToken
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AccessToken
+  nameWithType: AccessTokenResponse.AccessToken
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AdditionalProperties
+  name: AdditionalProperties
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_AdditionalProperties
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AdditionalProperties
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AdditionalProperties
+  nameWithType: AccessTokenResponse.AdditionalProperties
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AdditionalProperties*
+  name: AdditionalProperties
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_AdditionalProperties_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AdditionalProperties
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.AdditionalProperties
+  nameWithType: AccessTokenResponse.AdditionalProperties
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.ExpiresIn
+  name: ExpiresIn
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_ExpiresIn
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.ExpiresIn
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.ExpiresIn
+  nameWithType: AccessTokenResponse.ExpiresIn
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.ExpiresIn*
+  name: ExpiresIn
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_ExpiresIn_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.ExpiresIn
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.ExpiresIn
+  nameWithType: AccessTokenResponse.ExpiresIn
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.Scope
+  name: Scope
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_Scope
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.Scope
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.Scope
+  nameWithType: AccessTokenResponse.Scope
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.Scope*
+  name: Scope
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_Scope_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.Scope
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.Scope
+  nameWithType: AccessTokenResponse.Scope
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.TokenType
+  name: TokenType
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_TokenType
+  commentId: P:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.TokenType
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.TokenType
+  nameWithType: AccessTokenResponse.TokenType
+- uid: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.TokenType*
+  name: TokenType
+  href: api/Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html#Xerris_Extensions_Authentication_OAuth_AccessTokenResponse_TokenType_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.TokenType
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.TokenType
+  nameWithType: AccessTokenResponse.TokenType
+- uid: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler
+  name: BearerTokenAuthenticationHandler
+  href: api/Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler
+  fullName: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler
+  nameWithType: BearerTokenAuthenticationHandler
+- uid: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.#ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider,System.String[])
+  name: BearerTokenAuthenticationHandler(IAccessTokenProvider, params string[])
+  href: api/Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.html#Xerris_Extensions_Authentication_OAuth_BearerTokenAuthenticationHandler__ctor_Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_System_String___
+  commentId: M:Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.#ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider,System.String[])
+  name.vb: New(IAccessTokenProvider, ParamArray String())
+  fullName: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.BearerTokenAuthenticationHandler(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider, params string[])
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.New(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider, ParamArray String())
+  nameWithType: BearerTokenAuthenticationHandler.BearerTokenAuthenticationHandler(IAccessTokenProvider, params string[])
+  nameWithType.vb: BearerTokenAuthenticationHandler.New(IAccessTokenProvider, ParamArray String())
+- uid: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.#ctor*
+  name: BearerTokenAuthenticationHandler
+  href: api/Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.html#Xerris_Extensions_Authentication_OAuth_BearerTokenAuthenticationHandler__ctor_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.BearerTokenAuthenticationHandler
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.New
+  nameWithType: BearerTokenAuthenticationHandler.BearerTokenAuthenticationHandler
+  nameWithType.vb: BearerTokenAuthenticationHandler.New
+- uid: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.html#Xerris_Extensions_Authentication_OAuth_BearerTokenAuthenticationHandler_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  nameWithType: BearerTokenAuthenticationHandler.SendAsync(HttpRequestMessage, CancellationToken)
+- uid: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.SendAsync*
+  name: SendAsync
+  href: api/Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.html#Xerris_Extensions_Authentication_OAuth_BearerTokenAuthenticationHandler_SendAsync_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.SendAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.SendAsync
+  nameWithType: BearerTokenAuthenticationHandler.SendAsync
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider
+  name: ClientCredentialsAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider
+  nameWithType: ClientCredentialsAccessTokenProvider
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions})
+  name: ClientCredentialsAccessTokenProvider(HttpClient, IOptions<ClientCredentialsProviderOptions>)
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsAccessTokenProvider__ctor_System_Net_Http_HttpClient_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_Authentication_OAuth_ClientCredentialsProviderOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions})
+  name.vb: New(HttpClient, IOptions(Of ClientCredentialsProviderOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.ClientCredentialsAccessTokenProvider(System.Net.Http.HttpClient, Microsoft.Extensions.Options.IOptions<Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions>)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.New(System.Net.Http.HttpClient, Microsoft.Extensions.Options.IOptions(Of Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions))
+  nameWithType: ClientCredentialsAccessTokenProvider.ClientCredentialsAccessTokenProvider(HttpClient, IOptions<ClientCredentialsProviderOptions>)
+  nameWithType.vb: ClientCredentialsAccessTokenProvider.New(HttpClient, IOptions(Of ClientCredentialsProviderOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.#ctor*
+  name: ClientCredentialsAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsAccessTokenProvider__ctor_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.ClientCredentialsAccessTokenProvider
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.New
+  nameWithType: ClientCredentialsAccessTokenProvider.ClientCredentialsAccessTokenProvider
+  nameWithType.vb: ClientCredentialsAccessTokenProvider.New
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name: GetAccessTokenAsync(params string[])
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsAccessTokenProvider_GetAccessTokenAsync_System_String___
+  commentId: M:Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name.vb: GetAccessTokenAsync(ParamArray String())
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.GetAccessTokenAsync(params string[])
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+  nameWithType: ClientCredentialsAccessTokenProvider.GetAccessTokenAsync(params string[])
+  nameWithType.vb: ClientCredentialsAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.GetAccessTokenAsync*
+  name: GetAccessTokenAsync
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsAccessTokenProvider_GetAccessTokenAsync_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.GetAccessTokenAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.GetAccessTokenAsync
+  nameWithType: ClientCredentialsAccessTokenProvider.GetAccessTokenAsync
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions
+  name: ClientCredentialsProviderOptions
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions
+  nameWithType: ClientCredentialsProviderOptions
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.ClientSecret
+  name: ClientSecret
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsProviderOptions_ClientSecret
+  commentId: P:Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.ClientSecret
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.ClientSecret
+  nameWithType: ClientCredentialsProviderOptions.ClientSecret
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.ClientSecret*
+  name: ClientSecret
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsProviderOptions_ClientSecret_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.ClientSecret
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.ClientSecret
+  nameWithType: ClientCredentialsProviderOptions.ClientSecret
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.Value
+  name: Value
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsProviderOptions_Value
+  commentId: P:Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.Value
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.Value
+  nameWithType: ClientCredentialsProviderOptions.Value
+- uid: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.Value*
+  name: Value
+  href: api/Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ClientCredentialsProviderOptions_Value_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.Value
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.Value
+  nameWithType: ClientCredentialsProviderOptions.Value
+- uid: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider
+  name: DistributedCachingAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider
+  fullName: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider
+  nameWithType: DistributedCachingAccessTokenProvider
+- uid: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.#ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider,Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions})
+  name: DistributedCachingAccessTokenProvider(IAccessTokenProvider, IDistributedCache, IOptions<AccessTokenCachingOptions>)
+  href: api/Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_DistributedCachingAccessTokenProvider__ctor_Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_Microsoft_Extensions_Caching_Distributed_IDistributedCache_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.#ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider,Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions})
+  name.vb: New(IAccessTokenProvider, IDistributedCache, IOptions(Of AccessTokenCachingOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.DistributedCachingAccessTokenProvider(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider, Microsoft.Extensions.Caching.Distributed.IDistributedCache, Microsoft.Extensions.Options.IOptions<Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions>)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.New(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider, Microsoft.Extensions.Caching.Distributed.IDistributedCache, Microsoft.Extensions.Options.IOptions(Of Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions))
+  nameWithType: DistributedCachingAccessTokenProvider.DistributedCachingAccessTokenProvider(IAccessTokenProvider, IDistributedCache, IOptions<AccessTokenCachingOptions>)
+  nameWithType.vb: DistributedCachingAccessTokenProvider.New(IAccessTokenProvider, IDistributedCache, IOptions(Of AccessTokenCachingOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.#ctor*
+  name: DistributedCachingAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_DistributedCachingAccessTokenProvider__ctor_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.DistributedCachingAccessTokenProvider
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.New
+  nameWithType: DistributedCachingAccessTokenProvider.DistributedCachingAccessTokenProvider
+  nameWithType.vb: DistributedCachingAccessTokenProvider.New
+- uid: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name: GetAccessTokenAsync(params string[])
+  href: api/Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_DistributedCachingAccessTokenProvider_GetAccessTokenAsync_System_String___
+  commentId: M:Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name.vb: GetAccessTokenAsync(ParamArray String())
+  fullName: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.GetAccessTokenAsync(params string[])
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+  nameWithType: DistributedCachingAccessTokenProvider.GetAccessTokenAsync(params string[])
+  nameWithType.vb: DistributedCachingAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+- uid: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.GetAccessTokenAsync*
+  name: GetAccessTokenAsync
+  href: api/Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_DistributedCachingAccessTokenProvider_GetAccessTokenAsync_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.GetAccessTokenAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.GetAccessTokenAsync
+  nameWithType: DistributedCachingAccessTokenProvider.GetAccessTokenAsync
+- uid: Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider
+  name: IAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider
+  fullName: Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider
+  nameWithType: IAccessTokenProvider
+- uid: Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name: GetAccessTokenAsync(params string[])
+  href: api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_GetAccessTokenAsync_System_String___
+  commentId: M:Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name.vb: GetAccessTokenAsync(ParamArray String())
+  fullName: Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.GetAccessTokenAsync(params string[])
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+  nameWithType: IAccessTokenProvider.GetAccessTokenAsync(params string[])
+  nameWithType.vb: IAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+- uid: Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.GetAccessTokenAsync*
+  name: GetAccessTokenAsync
+  href: api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_GetAccessTokenAsync_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.GetAccessTokenAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.GetAccessTokenAsync
+  nameWithType: IAccessTokenProvider.GetAccessTokenAsync
+- uid: Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder
+  name: IAccessTokenProviderBuilder
+  href: api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder
+  fullName: Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder
+  nameWithType: IAccessTokenProviderBuilder
+- uid: Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.Services
+  name: Services
+  href: api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.html#Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_Services
+  commentId: P:Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.Services
+  fullName: Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.Services
+  nameWithType: IAccessTokenProviderBuilder.Services
+- uid: Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.Services*
+  name: Services
+  href: api/Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.html#Xerris_Extensions_Authentication_OAuth_IAccessTokenProviderBuilder_Services_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.Services
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.Services
+  nameWithType: IAccessTokenProviderBuilder.Services
+- uid: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider
+  name: InMemoryCachingAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider
+  fullName: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider
+  nameWithType: InMemoryCachingAccessTokenProvider
+- uid: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.#ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions})
+  name: InMemoryCachingAccessTokenProvider(IAccessTokenProvider, IMemoryCache, IOptions<AccessTokenCachingOptions>)
+  href: api/Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider__ctor_Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.#ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions})
+  name.vb: New(IAccessTokenProvider, IMemoryCache, IOptions(Of AccessTokenCachingOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.InMemoryCachingAccessTokenProvider(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider, Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Options.IOptions<Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions>)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.New(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider, Microsoft.Extensions.Caching.Memory.IMemoryCache, Microsoft.Extensions.Options.IOptions(Of Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions))
+  nameWithType: InMemoryCachingAccessTokenProvider.InMemoryCachingAccessTokenProvider(IAccessTokenProvider, IMemoryCache, IOptions<AccessTokenCachingOptions>)
+  nameWithType.vb: InMemoryCachingAccessTokenProvider.New(IAccessTokenProvider, IMemoryCache, IOptions(Of AccessTokenCachingOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.#ctor*
+  name: InMemoryCachingAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider__ctor_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.InMemoryCachingAccessTokenProvider
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.New
+  nameWithType: InMemoryCachingAccessTokenProvider.InMemoryCachingAccessTokenProvider
+  nameWithType.vb: InMemoryCachingAccessTokenProvider.New
+- uid: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name: GetAccessTokenAsync(params string[])
+  href: api/Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider_GetAccessTokenAsync_System_String___
+  commentId: M:Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name.vb: GetAccessTokenAsync(ParamArray String())
+  fullName: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(params string[])
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+  nameWithType: InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(params string[])
+  nameWithType.vb: InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+- uid: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync*
+  name: GetAccessTokenAsync
+  href: api/Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider_GetAccessTokenAsync_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync
+  nameWithType: InMemoryCachingAccessTokenProvider.GetAccessTokenAsync
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider
+  name: ResourceOwnerPasswordAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider
+  nameWithType: ResourceOwnerPasswordAccessTokenProvider
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions})
+  name: ResourceOwnerPasswordAccessTokenProvider(HttpClient, IOptions<ResourceOwnerPasswordProviderOptions>)
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordAccessTokenProvider__ctor_System_Net_Http_HttpClient_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions__
+  commentId: M:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions})
+  name.vb: New(HttpClient, IOptions(Of ResourceOwnerPasswordProviderOptions))
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.ResourceOwnerPasswordAccessTokenProvider(System.Net.Http.HttpClient, Microsoft.Extensions.Options.IOptions<Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions>)
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.New(System.Net.Http.HttpClient, Microsoft.Extensions.Options.IOptions(Of Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions))
+  nameWithType: ResourceOwnerPasswordAccessTokenProvider.ResourceOwnerPasswordAccessTokenProvider(HttpClient, IOptions<ResourceOwnerPasswordProviderOptions>)
+  nameWithType.vb: ResourceOwnerPasswordAccessTokenProvider.New(HttpClient, IOptions(Of ResourceOwnerPasswordProviderOptions))
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.#ctor*
+  name: ResourceOwnerPasswordAccessTokenProvider
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordAccessTokenProvider__ctor_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.ResourceOwnerPasswordAccessTokenProvider
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.New
+  nameWithType: ResourceOwnerPasswordAccessTokenProvider.ResourceOwnerPasswordAccessTokenProvider
+  nameWithType.vb: ResourceOwnerPasswordAccessTokenProvider.New
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name: GetAccessTokenAsync(params string[])
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordAccessTokenProvider_GetAccessTokenAsync_System_String___
+  commentId: M:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync(System.String[])
+  name.vb: GetAccessTokenAsync(ParamArray String())
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync(params string[])
+  fullName.vb: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+  nameWithType: ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync(params string[])
+  nameWithType.vb: ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync(ParamArray String())
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync*
+  name: GetAccessTokenAsync
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordAccessTokenProvider_GetAccessTokenAsync_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync
+  nameWithType: ResourceOwnerPasswordAccessTokenProvider.GetAccessTokenAsync
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions
+  name: ResourceOwnerPasswordProviderOptions
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html
+  commentId: T:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions
+  nameWithType: ResourceOwnerPasswordProviderOptions
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.ClientSecret
+  name: ClientSecret
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_ClientSecret
+  commentId: P:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.ClientSecret
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.ClientSecret
+  nameWithType: ResourceOwnerPasswordProviderOptions.ClientSecret
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.ClientSecret*
+  name: ClientSecret
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_ClientSecret_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.ClientSecret
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.ClientSecret
+  nameWithType: ResourceOwnerPasswordProviderOptions.ClientSecret
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Password
+  name: Password
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_Password
+  commentId: P:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Password
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Password
+  nameWithType: ResourceOwnerPasswordProviderOptions.Password
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Password*
+  name: Password
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_Password_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Password
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Password
+  nameWithType: ResourceOwnerPasswordProviderOptions.Password
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Username
+  name: Username
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_Username
+  commentId: P:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Username
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Username
+  nameWithType: ResourceOwnerPasswordProviderOptions.Username
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Username*
+  name: Username
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_Username_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Username
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Username
+  nameWithType: ResourceOwnerPasswordProviderOptions.Username
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Value
+  name: Value
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_Value
+  commentId: P:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Value
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Value
+  nameWithType: ResourceOwnerPasswordProviderOptions.Value
+- uid: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Value*
+  name: Value
+  href: api/Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html#Xerris_Extensions_Authentication_OAuth_ResourceOwnerPasswordProviderOptions_Value_
+  commentId: Overload:Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Value
+  isSpec: "True"
+  fullName: Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.Value
+  nameWithType: ResourceOwnerPasswordProviderOptions.Value
+- uid: Xerris.Extensions.BackgroundTasks
+  name: Xerris.Extensions.BackgroundTasks
+  href: api/Xerris.Extensions.BackgroundTasks.html
+  commentId: N:Xerris.Extensions.BackgroundTasks
+  fullName: Xerris.Extensions.BackgroundTasks
+  nameWithType: Xerris.Extensions.BackgroundTasks
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue
+  name: BackgroundTaskQueue
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html
+  commentId: T:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue
+  nameWithType: BackgroundTaskQueue
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.#ctor(Microsoft.Extensions.Options.IOptions{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions})
+  name: BackgroundTaskQueue(IOptions<BackgroundTaskQueueOptions>)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue__ctor_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions__
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.#ctor(Microsoft.Extensions.Options.IOptions{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions})
+  name.vb: New(IOptions(Of BackgroundTaskQueueOptions))
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.BackgroundTaskQueue(Microsoft.Extensions.Options.IOptions<Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions>)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.New(Microsoft.Extensions.Options.IOptions(Of Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions))
+  nameWithType: BackgroundTaskQueue.BackgroundTaskQueue(IOptions<BackgroundTaskQueueOptions>)
+  nameWithType.vb: BackgroundTaskQueue.New(IOptions(Of BackgroundTaskQueueOptions))
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.#ctor*
+  name: BackgroundTaskQueue
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue__ctor_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.BackgroundTaskQueue
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.New
+  nameWithType: BackgroundTaskQueue.BackgroundTaskQueue
+  nameWithType.vb: BackgroundTaskQueue.New
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.Count
+  name: Count
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_Count
+  commentId: P:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.Count
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.Count
+  nameWithType: BackgroundTaskQueue.Count
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.Count*
+  name: Count
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_Count_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.Count
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.Count
+  nameWithType: BackgroundTaskQueue.Count
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.DequeueAsync(System.Threading.CancellationToken)
+  name: DequeueAsync(CancellationToken)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_DequeueAsync_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.DequeueAsync(System.Threading.CancellationToken)
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.DequeueAsync(System.Threading.CancellationToken)
+  nameWithType: BackgroundTaskQueue.DequeueAsync(CancellationToken)
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.DequeueAsync*
+  name: DequeueAsync
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_DequeueAsync_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.DequeueAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.DequeueAsync
+  nameWithType: BackgroundTaskQueue.DequeueAsync
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
+  name: QueueBackgroundWorkItemAsync(Func<CancellationToken, ValueTask>)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_QueueBackgroundWorkItemAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
+  name.vb: QueueBackgroundWorkItemAsync(Func(Of CancellationToken, ValueTask))
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.ValueTask>)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.ValueTask))
+  nameWithType: BackgroundTaskQueue.QueueBackgroundWorkItemAsync(Func<CancellationToken, ValueTask>)
+  nameWithType.vb: BackgroundTaskQueue.QueueBackgroundWorkItemAsync(Func(Of CancellationToken, ValueTask))
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync(Xerris.Extensions.BackgroundTasks.IBackgroundTask)
+  name: QueueBackgroundWorkItemAsync(IBackgroundTask)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_QueueBackgroundWorkItemAsync_Xerris_Extensions_BackgroundTasks_IBackgroundTask_
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync(Xerris.Extensions.BackgroundTasks.IBackgroundTask)
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync(Xerris.Extensions.BackgroundTasks.IBackgroundTask)
+  nameWithType: BackgroundTaskQueue.QueueBackgroundWorkItemAsync(IBackgroundTask)
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync*
+  name: QueueBackgroundWorkItemAsync
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_QueueBackgroundWorkItemAsync_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.QueueBackgroundWorkItemAsync
+  nameWithType: BackgroundTaskQueue.QueueBackgroundWorkItemAsync
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.TryPeek(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask}@)
+  name: TryPeek(out Func<CancellationToken, ValueTask>?)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_TryPeek_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask___
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.TryPeek(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask}@)
+  name.vb: TryPeek(Func(Of CancellationToken, ValueTask))
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.TryPeek(out System.Func<System.Threading.CancellationToken, System.Threading.Tasks.ValueTask>?)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.TryPeek(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.ValueTask))
+  nameWithType: BackgroundTaskQueue.TryPeek(out Func<CancellationToken, ValueTask>?)
+  nameWithType.vb: BackgroundTaskQueue.TryPeek(Func(Of CancellationToken, ValueTask))
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.TryPeek*
+  name: TryPeek
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueue_TryPeek_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.TryPeek
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueue.TryPeek
+  nameWithType: BackgroundTaskQueue.TryPeek
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions
+  name: BackgroundTaskQueueOptions
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html
+  commentId: T:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions
+  nameWithType: BackgroundTaskQueueOptions
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.#ctor(System.Int32,System.Int32)
+  name: BackgroundTaskQueueOptions(int, int)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions__ctor_System_Int32_System_Int32_
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.#ctor(System.Int32,System.Int32)
+  name.vb: New(Integer, Integer)
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.BackgroundTaskQueueOptions(int, int)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.New(Integer, Integer)
+  nameWithType: BackgroundTaskQueueOptions.BackgroundTaskQueueOptions(int, int)
+  nameWithType.vb: BackgroundTaskQueueOptions.New(Integer, Integer)
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.#ctor*
+  name: BackgroundTaskQueueOptions
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions__ctor_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.BackgroundTaskQueueOptions
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.New
+  nameWithType: BackgroundTaskQueueOptions.BackgroundTaskQueueOptions
+  nameWithType.vb: BackgroundTaskQueueOptions.New
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.QueueCapacity
+  name: QueueCapacity
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions_QueueCapacity
+  commentId: P:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.QueueCapacity
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.QueueCapacity
+  nameWithType: BackgroundTaskQueueOptions.QueueCapacity
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.QueueCapacity*
+  name: QueueCapacity
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions_QueueCapacity_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.QueueCapacity
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.QueueCapacity
+  nameWithType: BackgroundTaskQueueOptions.QueueCapacity
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.Value
+  name: Value
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions_Value
+  commentId: P:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.Value
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.Value
+  nameWithType: BackgroundTaskQueueOptions.Value
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.Value*
+  name: Value
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions_Value_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.Value
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.Value
+  nameWithType: BackgroundTaskQueueOptions.Value
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.WorkerCount
+  name: WorkerCount
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions_WorkerCount
+  commentId: P:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.WorkerCount
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.WorkerCount
+  nameWithType: BackgroundTaskQueueOptions.WorkerCount
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.WorkerCount*
+  name: WorkerCount
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions_WorkerCount_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.WorkerCount
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions.WorkerCount
+  nameWithType: BackgroundTaskQueueOptions.WorkerCount
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor
+  name: BackgroundTaskQueueProcessor
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html
+  commentId: T:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor
+  nameWithType: BackgroundTaskQueueProcessor
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.#ctor(Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions},Microsoft.Extensions.Logging.ILogger{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor})
+  name: BackgroundTaskQueueProcessor(IBackgroundTaskQueue, IOptions<BackgroundTaskQueueOptions>, ILogger<BackgroundTaskQueueProcessor>)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueProcessor__ctor_Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions__Microsoft_Extensions_Logging_ILogger_Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueProcessor__
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.#ctor(Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions},Microsoft.Extensions.Logging.ILogger{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor})
+  name.vb: New(IBackgroundTaskQueue, IOptions(Of BackgroundTaskQueueOptions), ILogger(Of BackgroundTaskQueueProcessor))
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.BackgroundTaskQueueProcessor(Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue, Microsoft.Extensions.Options.IOptions<Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions>, Microsoft.Extensions.Logging.ILogger<Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor>)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.New(Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue, Microsoft.Extensions.Options.IOptions(Of Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions), Microsoft.Extensions.Logging.ILogger(Of Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor))
+  nameWithType: BackgroundTaskQueueProcessor.BackgroundTaskQueueProcessor(IBackgroundTaskQueue, IOptions<BackgroundTaskQueueOptions>, ILogger<BackgroundTaskQueueProcessor>)
+  nameWithType.vb: BackgroundTaskQueueProcessor.New(IBackgroundTaskQueue, IOptions(Of BackgroundTaskQueueOptions), ILogger(Of BackgroundTaskQueueProcessor))
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.#ctor*
+  name: BackgroundTaskQueueProcessor
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueProcessor__ctor_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.BackgroundTaskQueueProcessor
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.New
+  nameWithType: BackgroundTaskQueueProcessor.BackgroundTaskQueueProcessor
+  nameWithType.vb: BackgroundTaskQueueProcessor.New
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueProcessor_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: BackgroundTaskQueueProcessor.ExecuteAsync(CancellationToken)
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueProcessor_ExecuteAsync_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.ExecuteAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.ExecuteAsync
+  nameWithType: BackgroundTaskQueueProcessor.ExecuteAsync
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueProcessor_StopAsync_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.StopAsync(System.Threading.CancellationToken)
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.StopAsync(System.Threading.CancellationToken)
+  nameWithType: BackgroundTaskQueueProcessor.StopAsync(CancellationToken)
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.StopAsync*
+  name: StopAsync
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueProcessor_StopAsync_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.StopAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueProcessor.StopAsync
+  nameWithType: BackgroundTaskQueueProcessor.StopAsync
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions
+  name: BackgroundTaskServiceCollectionExtensions
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.html
+  commentId: T:Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions
+  nameWithType: BackgroundTaskServiceCollectionExtensions
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions})
+  name: AddBackgroundTaskProcessing(IServiceCollection, Action<BackgroundTaskQueueOptions>)
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskServiceCollectionExtensions_AddBackgroundTaskProcessing_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Xerris_Extensions_BackgroundTasks_BackgroundTaskQueueOptions__
+  commentId: M:Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions})
+  name.vb: AddBackgroundTaskProcessing(IServiceCollection, Action(Of BackgroundTaskQueueOptions))
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions>)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Xerris.Extensions.BackgroundTasks.BackgroundTaskQueueOptions))
+  nameWithType: BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing(IServiceCollection, Action<BackgroundTaskQueueOptions>)
+  nameWithType.vb: BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing(IServiceCollection, Action(Of BackgroundTaskQueueOptions))
+- uid: Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing*
+  name: AddBackgroundTaskProcessing
+  href: api/Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.html#Xerris_Extensions_BackgroundTasks_BackgroundTaskServiceCollectionExtensions_AddBackgroundTaskProcessing_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing
+  nameWithType: BackgroundTaskServiceCollectionExtensions.AddBackgroundTaskProcessing
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTask
+  name: IBackgroundTask
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTask.html
+  commentId: T:Xerris.Extensions.BackgroundTasks.IBackgroundTask
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTask
+  nameWithType: IBackgroundTask
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTask.DoWorkAsync(System.Threading.CancellationToken)
+  name: DoWorkAsync(CancellationToken)
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTask.html#Xerris_Extensions_BackgroundTasks_IBackgroundTask_DoWorkAsync_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.BackgroundTasks.IBackgroundTask.DoWorkAsync(System.Threading.CancellationToken)
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTask.DoWorkAsync(System.Threading.CancellationToken)
+  nameWithType: IBackgroundTask.DoWorkAsync(CancellationToken)
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTask.DoWorkAsync*
+  name: DoWorkAsync
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTask.html#Xerris_Extensions_BackgroundTasks_IBackgroundTask_DoWorkAsync_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.IBackgroundTask.DoWorkAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTask.DoWorkAsync
+  nameWithType: IBackgroundTask.DoWorkAsync
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue
+  name: IBackgroundTaskQueue
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html
+  commentId: T:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue
+  nameWithType: IBackgroundTaskQueue
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.Count
+  name: Count
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_Count
+  commentId: P:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.Count
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.Count
+  nameWithType: IBackgroundTaskQueue.Count
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.Count*
+  name: Count
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_Count_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.Count
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.Count
+  nameWithType: IBackgroundTaskQueue.Count
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.DequeueAsync(System.Threading.CancellationToken)
+  name: DequeueAsync(CancellationToken)
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_DequeueAsync_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.DequeueAsync(System.Threading.CancellationToken)
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.DequeueAsync(System.Threading.CancellationToken)
+  nameWithType: IBackgroundTaskQueue.DequeueAsync(CancellationToken)
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.DequeueAsync*
+  name: DequeueAsync
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_DequeueAsync_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.DequeueAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.DequeueAsync
+  nameWithType: IBackgroundTaskQueue.DequeueAsync
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
+  name: QueueBackgroundWorkItemAsync(Func<CancellationToken, ValueTask>)
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_QueueBackgroundWorkItemAsync_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask__
+  commentId: M:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask})
+  name.vb: QueueBackgroundWorkItemAsync(Func(Of CancellationToken, ValueTask))
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func<System.Threading.CancellationToken, System.Threading.Tasks.ValueTask>)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.ValueTask))
+  nameWithType: IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(Func<CancellationToken, ValueTask>)
+  nameWithType.vb: IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(Func(Of CancellationToken, ValueTask))
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(Xerris.Extensions.BackgroundTasks.IBackgroundTask)
+  name: QueueBackgroundWorkItemAsync(IBackgroundTask)
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_QueueBackgroundWorkItemAsync_Xerris_Extensions_BackgroundTasks_IBackgroundTask_
+  commentId: M:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(Xerris.Extensions.BackgroundTasks.IBackgroundTask)
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(Xerris.Extensions.BackgroundTasks.IBackgroundTask)
+  nameWithType: IBackgroundTaskQueue.QueueBackgroundWorkItemAsync(IBackgroundTask)
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync*
+  name: QueueBackgroundWorkItemAsync
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_QueueBackgroundWorkItemAsync_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.QueueBackgroundWorkItemAsync
+  nameWithType: IBackgroundTaskQueue.QueueBackgroundWorkItemAsync
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.TryPeek(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask}@)
+  name: TryPeek(out Func<CancellationToken, ValueTask>?)
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_TryPeek_System_Func_System_Threading_CancellationToken_System_Threading_Tasks_ValueTask___
+  commentId: M:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.TryPeek(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask}@)
+  name.vb: TryPeek(Func(Of CancellationToken, ValueTask))
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.TryPeek(out System.Func<System.Threading.CancellationToken, System.Threading.Tasks.ValueTask>?)
+  fullName.vb: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.TryPeek(System.Func(Of System.Threading.CancellationToken, System.Threading.Tasks.ValueTask))
+  nameWithType: IBackgroundTaskQueue.TryPeek(out Func<CancellationToken, ValueTask>?)
+  nameWithType.vb: IBackgroundTaskQueue.TryPeek(Func(Of CancellationToken, ValueTask))
+- uid: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.TryPeek*
+  name: TryPeek
+  href: api/Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.html#Xerris_Extensions_BackgroundTasks_IBackgroundTaskQueue_TryPeek_
+  commentId: Overload:Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.TryPeek
+  isSpec: "True"
+  fullName: Xerris.Extensions.BackgroundTasks.IBackgroundTaskQueue.TryPeek
+  nameWithType: IBackgroundTaskQueue.TryPeek
+- uid: Xerris.Extensions.Common
+  name: Xerris.Extensions.Common
+  href: api/Xerris.Extensions.Common.html
+  commentId: N:Xerris.Extensions.Common
+  fullName: Xerris.Extensions.Common
+  nameWithType: Xerris.Extensions.Common
+- uid: Xerris.Extensions.Common.Http
+  name: Xerris.Extensions.Common.Http
+  href: api/Xerris.Extensions.Common.Http.html
+  commentId: N:Xerris.Extensions.Common.Http
+  fullName: Xerris.Extensions.Common.Http
+  nameWithType: Xerris.Extensions.Common.Http
+- uid: Xerris.Extensions.Common.Http.HttpClientExtensions
+  name: HttpClientExtensions
+  href: api/Xerris.Extensions.Common.Http.HttpClientExtensions.html
+  commentId: T:Xerris.Extensions.Common.Http.HttpClientExtensions
+  fullName: Xerris.Extensions.Common.Http.HttpClientExtensions
+  nameWithType: HttpClientExtensions
+- uid: Xerris.Extensions.Common.Http.HttpClientExtensions.DeleteAsJsonAsync*
+  name: DeleteAsJsonAsync
+  href: api/Xerris.Extensions.Common.Http.HttpClientExtensions.html#Xerris_Extensions_Common_Http_HttpClientExtensions_DeleteAsJsonAsync_
+  commentId: Overload:Xerris.Extensions.Common.Http.HttpClientExtensions.DeleteAsJsonAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Http.HttpClientExtensions.DeleteAsJsonAsync
+  nameWithType: HttpClientExtensions.DeleteAsJsonAsync
+- uid: Xerris.Extensions.Common.Http.HttpClientExtensions.DeleteAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  name: DeleteAsJsonAsync<TRequest>(HttpClient, string?, TRequest, JsonSerializerOptions?, CancellationToken)
+  href: api/Xerris.Extensions.Common.Http.HttpClientExtensions.html#Xerris_Extensions_Common_Http_HttpClientExtensions_DeleteAsJsonAsync__1_System_Net_Http_HttpClient_System_String___0_System_Text_Json_JsonSerializerOptions_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.Common.Http.HttpClientExtensions.DeleteAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  name.vb: DeleteAsJsonAsync(Of TRequest)(HttpClient, String, TRequest, JsonSerializerOptions, CancellationToken)
+  fullName: Xerris.Extensions.Common.Http.HttpClientExtensions.DeleteAsJsonAsync<TRequest>(System.Net.Http.HttpClient, string?, TRequest, System.Text.Json.JsonSerializerOptions?, System.Threading.CancellationToken)
+  fullName.vb: Xerris.Extensions.Common.Http.HttpClientExtensions.DeleteAsJsonAsync(Of TRequest)(System.Net.Http.HttpClient, String, TRequest, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
+  nameWithType: HttpClientExtensions.DeleteAsJsonAsync<TRequest>(HttpClient, string?, TRequest, JsonSerializerOptions?, CancellationToken)
+  nameWithType.vb: HttpClientExtensions.DeleteAsJsonAsync(Of TRequest)(HttpClient, String, TRequest, JsonSerializerOptions, CancellationToken)
+- uid: Xerris.Extensions.Common.Http.HttpClientExtensions.PostAsJsonAsync*
+  name: PostAsJsonAsync
+  href: api/Xerris.Extensions.Common.Http.HttpClientExtensions.html#Xerris_Extensions_Common_Http_HttpClientExtensions_PostAsJsonAsync_
+  commentId: Overload:Xerris.Extensions.Common.Http.HttpClientExtensions.PostAsJsonAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Http.HttpClientExtensions.PostAsJsonAsync
+  nameWithType: HttpClientExtensions.PostAsJsonAsync
+- uid: Xerris.Extensions.Common.Http.HttpClientExtensions.PostAsJsonAsync``2(System.Net.Http.HttpClient,System.String,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  name: PostAsJsonAsync<TRequest, TResponse>(HttpClient, string?, TRequest, JsonSerializerOptions?, CancellationToken)
+  href: api/Xerris.Extensions.Common.Http.HttpClientExtensions.html#Xerris_Extensions_Common_Http_HttpClientExtensions_PostAsJsonAsync__2_System_Net_Http_HttpClient_System_String___0_System_Text_Json_JsonSerializerOptions_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.Common.Http.HttpClientExtensions.PostAsJsonAsync``2(System.Net.Http.HttpClient,System.String,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  name.vb: PostAsJsonAsync(Of TRequest, TResponse)(HttpClient, String, TRequest, JsonSerializerOptions, CancellationToken)
+  fullName: Xerris.Extensions.Common.Http.HttpClientExtensions.PostAsJsonAsync<TRequest, TResponse>(System.Net.Http.HttpClient, string?, TRequest, System.Text.Json.JsonSerializerOptions?, System.Threading.CancellationToken)
+  fullName.vb: Xerris.Extensions.Common.Http.HttpClientExtensions.PostAsJsonAsync(Of TRequest, TResponse)(System.Net.Http.HttpClient, String, TRequest, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
+  nameWithType: HttpClientExtensions.PostAsJsonAsync<TRequest, TResponse>(HttpClient, string?, TRequest, JsonSerializerOptions?, CancellationToken)
+  nameWithType.vb: HttpClientExtensions.PostAsJsonAsync(Of TRequest, TResponse)(HttpClient, String, TRequest, JsonSerializerOptions, CancellationToken)
+- uid: Xerris.Extensions.Common.Http.HttpClientExtensions.PutAsJsonAsync*
+  name: PutAsJsonAsync
+  href: api/Xerris.Extensions.Common.Http.HttpClientExtensions.html#Xerris_Extensions_Common_Http_HttpClientExtensions_PutAsJsonAsync_
+  commentId: Overload:Xerris.Extensions.Common.Http.HttpClientExtensions.PutAsJsonAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Http.HttpClientExtensions.PutAsJsonAsync
+  nameWithType: HttpClientExtensions.PutAsJsonAsync
+- uid: Xerris.Extensions.Common.Http.HttpClientExtensions.PutAsJsonAsync``2(System.Net.Http.HttpClient,System.String,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  name: PutAsJsonAsync<TRequest, TResponse>(HttpClient, string?, TRequest, JsonSerializerOptions?, CancellationToken)
+  href: api/Xerris.Extensions.Common.Http.HttpClientExtensions.html#Xerris_Extensions_Common_Http_HttpClientExtensions_PutAsJsonAsync__2_System_Net_Http_HttpClient_System_String___0_System_Text_Json_JsonSerializerOptions_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.Common.Http.HttpClientExtensions.PutAsJsonAsync``2(System.Net.Http.HttpClient,System.String,``0,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)
+  name.vb: PutAsJsonAsync(Of TRequest, TResponse)(HttpClient, String, TRequest, JsonSerializerOptions, CancellationToken)
+  fullName: Xerris.Extensions.Common.Http.HttpClientExtensions.PutAsJsonAsync<TRequest, TResponse>(System.Net.Http.HttpClient, string?, TRequest, System.Text.Json.JsonSerializerOptions?, System.Threading.CancellationToken)
+  fullName.vb: Xerris.Extensions.Common.Http.HttpClientExtensions.PutAsJsonAsync(Of TRequest, TResponse)(System.Net.Http.HttpClient, String, TRequest, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)
+  nameWithType: HttpClientExtensions.PutAsJsonAsync<TRequest, TResponse>(HttpClient, string?, TRequest, JsonSerializerOptions?, CancellationToken)
+  nameWithType.vb: HttpClientExtensions.PutAsJsonAsync(Of TRequest, TResponse)(HttpClient, String, TRequest, JsonSerializerOptions, CancellationToken)
+- uid: Xerris.Extensions.Common.Http.HttpExtensions
+  name: HttpExtensions
+  href: api/Xerris.Extensions.Common.Http.HttpExtensions.html
+  commentId: T:Xerris.Extensions.Common.Http.HttpExtensions
+  fullName: Xerris.Extensions.Common.Http.HttpExtensions
+  nameWithType: HttpExtensions
+- uid: Xerris.Extensions.Common.Http.HttpExtensions.ToQueryString*
+  name: ToQueryString
+  href: api/Xerris.Extensions.Common.Http.HttpExtensions.html#Xerris_Extensions_Common_Http_HttpExtensions_ToQueryString_
+  commentId: Overload:Xerris.Extensions.Common.Http.HttpExtensions.ToQueryString
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Http.HttpExtensions.ToQueryString
+  nameWithType: HttpExtensions.ToQueryString
+- uid: Xerris.Extensions.Common.Http.HttpExtensions.ToQueryString``1(``0)
+  name: ToQueryString<T>(T)
+  href: api/Xerris.Extensions.Common.Http.HttpExtensions.html#Xerris_Extensions_Common_Http_HttpExtensions_ToQueryString__1___0_
+  commentId: M:Xerris.Extensions.Common.Http.HttpExtensions.ToQueryString``1(``0)
+  name.vb: ToQueryString(Of T)(T)
+  fullName: Xerris.Extensions.Common.Http.HttpExtensions.ToQueryString<T>(T)
+  fullName.vb: Xerris.Extensions.Common.Http.HttpExtensions.ToQueryString(Of T)(T)
+  nameWithType: HttpExtensions.ToQueryString<T>(T)
+  nameWithType.vb: HttpExtensions.ToQueryString(Of T)(T)
+- uid: Xerris.Extensions.Common.ObjectExtensions
+  name: ObjectExtensions
+  href: api/Xerris.Extensions.Common.ObjectExtensions.html
+  commentId: T:Xerris.Extensions.Common.ObjectExtensions
+  fullName: Xerris.Extensions.Common.ObjectExtensions
+  nameWithType: ObjectExtensions
+- uid: Xerris.Extensions.Common.ObjectExtensions.ValueOrDefault*
+  name: ValueOrDefault
+  href: api/Xerris.Extensions.Common.ObjectExtensions.html#Xerris_Extensions_Common_ObjectExtensions_ValueOrDefault_
+  commentId: Overload:Xerris.Extensions.Common.ObjectExtensions.ValueOrDefault
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.ObjectExtensions.ValueOrDefault
+  nameWithType: ObjectExtensions.ValueOrDefault
+- uid: Xerris.Extensions.Common.ObjectExtensions.ValueOrDefault``2(``0,System.Func{``0,``1})
+  name: ValueOrDefault<T, TMember>(T?, Func<T?, TMember?>)
+  href: api/Xerris.Extensions.Common.ObjectExtensions.html#Xerris_Extensions_Common_ObjectExtensions_ValueOrDefault__2___0_System_Func___0___1__
+  commentId: M:Xerris.Extensions.Common.ObjectExtensions.ValueOrDefault``2(``0,System.Func{``0,``1})
+  name.vb: ValueOrDefault(Of T, TMember)(T, Func(Of T, TMember))
+  fullName: Xerris.Extensions.Common.ObjectExtensions.ValueOrDefault<T, TMember>(T?, System.Func<T?, TMember?>)
+  fullName.vb: Xerris.Extensions.Common.ObjectExtensions.ValueOrDefault(Of T, TMember)(T, System.Func(Of T, TMember))
+  nameWithType: ObjectExtensions.ValueOrDefault<T, TMember>(T?, Func<T?, TMember?>)
+  nameWithType.vb: ObjectExtensions.ValueOrDefault(Of T, TMember)(T, Func(Of T, TMember))
+- uid: Xerris.Extensions.Common.ObjectExtensions.Yield*
+  name: Yield
+  href: api/Xerris.Extensions.Common.ObjectExtensions.html#Xerris_Extensions_Common_ObjectExtensions_Yield_
+  commentId: Overload:Xerris.Extensions.Common.ObjectExtensions.Yield
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.ObjectExtensions.Yield
+  nameWithType: ObjectExtensions.Yield
+- uid: Xerris.Extensions.Common.ObjectExtensions.Yield``1(``0)
+  name: Yield<T>(T?)
+  href: api/Xerris.Extensions.Common.ObjectExtensions.html#Xerris_Extensions_Common_ObjectExtensions_Yield__1___0_
+  commentId: M:Xerris.Extensions.Common.ObjectExtensions.Yield``1(``0)
+  name.vb: Yield(Of T)(T)
+  fullName: Xerris.Extensions.Common.ObjectExtensions.Yield<T>(T?)
+  fullName.vb: Xerris.Extensions.Common.ObjectExtensions.Yield(Of T)(T)
+  nameWithType: ObjectExtensions.Yield<T>(T?)
+  nameWithType.vb: ObjectExtensions.Yield(Of T)(T)
+- uid: Xerris.Extensions.Common.Serialization
+  name: Xerris.Extensions.Common.Serialization
+  href: api/Xerris.Extensions.Common.Serialization.html
+  commentId: N:Xerris.Extensions.Common.Serialization
+  fullName: Xerris.Extensions.Common.Serialization
+  nameWithType: Xerris.Extensions.Common.Serialization
+- uid: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter
+  name: DateOnlyJsonConverter
+  href: api/Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.html
+  commentId: T:Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter
+  fullName: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter
+  nameWithType: DateOnlyJsonConverter
+- uid: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.html#Xerris_Extensions_Common_Serialization_DateOnlyJsonConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: DateOnlyJsonConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: DateOnlyJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Read*
+  name: Read
+  href: api/Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.html#Xerris_Extensions_Common_Serialization_DateOnlyJsonConverter_Read_
+  commentId: Overload:Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Read
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Read
+  nameWithType: DateOnlyJsonConverter.Read
+- uid: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateOnly,System.Text.Json.JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, DateOnly, JsonSerializerOptions)
+  href: api/Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.html#Xerris_Extensions_Common_Serialization_DateOnlyJsonConverter_Write_System_Text_Json_Utf8JsonWriter_System_DateOnly_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateOnly,System.Text.Json.JsonSerializerOptions)
+  fullName: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Write(System.Text.Json.Utf8JsonWriter, System.DateOnly, System.Text.Json.JsonSerializerOptions)
+  nameWithType: DateOnlyJsonConverter.Write(Utf8JsonWriter, DateOnly, JsonSerializerOptions)
+- uid: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Write*
+  name: Write
+  href: api/Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.html#Xerris_Extensions_Common_Serialization_DateOnlyJsonConverter_Write_
+  commentId: Overload:Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Write
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Serialization.DateOnlyJsonConverter.Write
+  nameWithType: DateOnlyJsonConverter.Write
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions
+  name: JsonExtensions
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html
+  commentId: T:Xerris.Extensions.Common.Serialization.JsonExtensions
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions
+  nameWithType: JsonExtensions
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.DefaultJsonSerializerOptions
+  name: DefaultJsonSerializerOptions
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_DefaultJsonSerializerOptions
+  commentId: P:Xerris.Extensions.Common.Serialization.JsonExtensions.DefaultJsonSerializerOptions
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.DefaultJsonSerializerOptions
+  nameWithType: JsonExtensions.DefaultJsonSerializerOptions
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.DefaultJsonSerializerOptions*
+  name: DefaultJsonSerializerOptions
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_DefaultJsonSerializerOptions_
+  commentId: Overload:Xerris.Extensions.Common.Serialization.JsonExtensions.DefaultJsonSerializerOptions
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.DefaultJsonSerializerOptions
+  nameWithType: JsonExtensions.DefaultJsonSerializerOptions
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson*
+  name: FromJson
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_FromJson_
+  commentId: Overload:Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson
+  nameWithType: JsonExtensions.FromJson
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson``1(System.String,``0,System.Text.Json.JsonSerializerOptions)
+  name: FromJson<TValue>(string, TValue, JsonSerializerOptions?)
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_FromJson__1_System_String___0_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson``1(System.String,``0,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(Of TValue)(String, TValue, JsonSerializerOptions)
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson<TValue>(string, TValue, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson(Of TValue)(String, TValue, System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonExtensions.FromJson<TValue>(string, TValue, JsonSerializerOptions?)
+  nameWithType.vb: JsonExtensions.FromJson(Of TValue)(String, TValue, JsonSerializerOptions)
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  name: FromJson<TValue>(string, JsonSerializerOptions?)
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_FromJson__1_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson``1(System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: FromJson(Of TValue)(String, JsonSerializerOptions)
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson<TValue>(string, System.Text.Json.JsonSerializerOptions?)
+  fullName.vb: Xerris.Extensions.Common.Serialization.JsonExtensions.FromJson(Of TValue)(String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonExtensions.FromJson<TValue>(string, JsonSerializerOptions?)
+  nameWithType.vb: JsonExtensions.FromJson(Of TValue)(String, JsonSerializerOptions)
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(System.Object,System.Boolean)
+  name: ToJson(object, bool)
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_ToJson_System_Object_System_Boolean_
+  commentId: M:Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(System.Object,System.Boolean)
+  name.vb: ToJson(Object, Boolean)
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(object, bool)
+  fullName.vb: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(Object, Boolean)
+  nameWithType: JsonExtensions.ToJson(object, bool)
+  nameWithType.vb: JsonExtensions.ToJson(Object, Boolean)
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  name: ToJson(object, JsonSerializerOptions)
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_ToJson_System_Object_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)
+  name.vb: ToJson(Object, JsonSerializerOptions)
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(object, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson(Object, System.Text.Json.JsonSerializerOptions)
+  nameWithType: JsonExtensions.ToJson(object, JsonSerializerOptions)
+  nameWithType.vb: JsonExtensions.ToJson(Object, JsonSerializerOptions)
+- uid: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson*
+  name: ToJson
+  href: api/Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_ToJson_
+  commentId: Overload:Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Serialization.JsonExtensions.ToJson
+  nameWithType: JsonExtensions.ToJson
+- uid: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter
+  name: TrimmingJsonConverter
+  href: api/Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.html
+  commentId: T:Xerris.Extensions.Common.Serialization.TrimmingJsonConverter
+  fullName: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter
+  nameWithType: TrimmingJsonConverter
+- uid: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name: Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  href: api/Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.html#Xerris_Extensions_Common_Serialization_TrimmingJsonConverter_Read_System_Text_Json_Utf8JsonReader__System_Type_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)
+  name.vb: Read(Utf8JsonReader, Type, JsonSerializerOptions)
+  fullName: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Read(ref System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Read(System.Text.Json.Utf8JsonReader, System.Type, System.Text.Json.JsonSerializerOptions)
+  nameWithType: TrimmingJsonConverter.Read(ref Utf8JsonReader, Type, JsonSerializerOptions)
+  nameWithType.vb: TrimmingJsonConverter.Read(Utf8JsonReader, Type, JsonSerializerOptions)
+- uid: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Read*
+  name: Read
+  href: api/Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.html#Xerris_Extensions_Common_Serialization_TrimmingJsonConverter_Read_
+  commentId: Overload:Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Read
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Read
+  nameWithType: TrimmingJsonConverter.Read
+- uid: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.String,System.Text.Json.JsonSerializerOptions)
+  name: Write(Utf8JsonWriter, string, JsonSerializerOptions)
+  href: api/Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.html#Xerris_Extensions_Common_Serialization_TrimmingJsonConverter_Write_System_Text_Json_Utf8JsonWriter_System_String_System_Text_Json_JsonSerializerOptions_
+  commentId: M:Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.String,System.Text.Json.JsonSerializerOptions)
+  name.vb: Write(Utf8JsonWriter, String, JsonSerializerOptions)
+  fullName: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Write(System.Text.Json.Utf8JsonWriter, string, System.Text.Json.JsonSerializerOptions)
+  fullName.vb: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Write(System.Text.Json.Utf8JsonWriter, String, System.Text.Json.JsonSerializerOptions)
+  nameWithType: TrimmingJsonConverter.Write(Utf8JsonWriter, string, JsonSerializerOptions)
+  nameWithType.vb: TrimmingJsonConverter.Write(Utf8JsonWriter, String, JsonSerializerOptions)
+- uid: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Write*
+  name: Write
+  href: api/Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.html#Xerris_Extensions_Common_Serialization_TrimmingJsonConverter_Write_
+  commentId: Overload:Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Write
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.Serialization.TrimmingJsonConverter.Write
+  nameWithType: TrimmingJsonConverter.Write
+- uid: Xerris.Extensions.Common.StringExtensions
+  name: StringExtensions
+  href: api/Xerris.Extensions.Common.StringExtensions.html
+  commentId: T:Xerris.Extensions.Common.StringExtensions
+  fullName: Xerris.Extensions.Common.StringExtensions
+  nameWithType: StringExtensions
+- uid: Xerris.Extensions.Common.StringExtensions.StripDiacritics(System.String)
+  name: StripDiacritics(string)
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_StripDiacritics_System_String_
+  commentId: M:Xerris.Extensions.Common.StringExtensions.StripDiacritics(System.String)
+  name.vb: StripDiacritics(String)
+  fullName: Xerris.Extensions.Common.StringExtensions.StripDiacritics(string)
+  fullName.vb: Xerris.Extensions.Common.StringExtensions.StripDiacritics(String)
+  nameWithType: StringExtensions.StripDiacritics(string)
+  nameWithType.vb: StringExtensions.StripDiacritics(String)
+- uid: Xerris.Extensions.Common.StringExtensions.StripDiacritics*
+  name: StripDiacritics
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_StripDiacritics_
+  commentId: Overload:Xerris.Extensions.Common.StringExtensions.StripDiacritics
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.StringExtensions.StripDiacritics
+  nameWithType: StringExtensions.StripDiacritics
+- uid: Xerris.Extensions.Common.StringExtensions.ToLowerCamelCase(System.String)
+  name: ToLowerCamelCase(string)
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_ToLowerCamelCase_System_String_
+  commentId: M:Xerris.Extensions.Common.StringExtensions.ToLowerCamelCase(System.String)
+  name.vb: ToLowerCamelCase(String)
+  fullName: Xerris.Extensions.Common.StringExtensions.ToLowerCamelCase(string)
+  fullName.vb: Xerris.Extensions.Common.StringExtensions.ToLowerCamelCase(String)
+  nameWithType: StringExtensions.ToLowerCamelCase(string)
+  nameWithType.vb: StringExtensions.ToLowerCamelCase(String)
+- uid: Xerris.Extensions.Common.StringExtensions.ToLowerCamelCase*
+  name: ToLowerCamelCase
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_ToLowerCamelCase_
+  commentId: Overload:Xerris.Extensions.Common.StringExtensions.ToLowerCamelCase
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.StringExtensions.ToLowerCamelCase
+  nameWithType: StringExtensions.ToLowerCamelCase
+- uid: Xerris.Extensions.Common.StringExtensions.ToUpperCamelCase(System.String)
+  name: ToUpperCamelCase(string)
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_ToUpperCamelCase_System_String_
+  commentId: M:Xerris.Extensions.Common.StringExtensions.ToUpperCamelCase(System.String)
+  name.vb: ToUpperCamelCase(String)
+  fullName: Xerris.Extensions.Common.StringExtensions.ToUpperCamelCase(string)
+  fullName.vb: Xerris.Extensions.Common.StringExtensions.ToUpperCamelCase(String)
+  nameWithType: StringExtensions.ToUpperCamelCase(string)
+  nameWithType.vb: StringExtensions.ToUpperCamelCase(String)
+- uid: Xerris.Extensions.Common.StringExtensions.ToUpperCamelCase*
+  name: ToUpperCamelCase
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_ToUpperCamelCase_
+  commentId: Overload:Xerris.Extensions.Common.StringExtensions.ToUpperCamelCase
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.StringExtensions.ToUpperCamelCase
+  nameWithType: StringExtensions.ToUpperCamelCase
+- uid: Xerris.Extensions.Common.StringExtensions.ToValidFileName(System.String,System.String)
+  name: ToValidFileName(string, string)
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_ToValidFileName_System_String_System_String_
+  commentId: M:Xerris.Extensions.Common.StringExtensions.ToValidFileName(System.String,System.String)
+  name.vb: ToValidFileName(String, String)
+  fullName: Xerris.Extensions.Common.StringExtensions.ToValidFileName(string, string)
+  fullName.vb: Xerris.Extensions.Common.StringExtensions.ToValidFileName(String, String)
+  nameWithType: StringExtensions.ToValidFileName(string, string)
+  nameWithType.vb: StringExtensions.ToValidFileName(String, String)
+- uid: Xerris.Extensions.Common.StringExtensions.ToValidFileName*
+  name: ToValidFileName
+  href: api/Xerris.Extensions.Common.StringExtensions.html#Xerris_Extensions_Common_StringExtensions_ToValidFileName_
+  commentId: Overload:Xerris.Extensions.Common.StringExtensions.ToValidFileName
+  isSpec: "True"
+  fullName: Xerris.Extensions.Common.StringExtensions.ToValidFileName
+  nameWithType: StringExtensions.ToValidFileName
+- uid: Xerris.Extensions.Configuration
+  name: Xerris.Extensions.Configuration
+  href: api/Xerris.Extensions.Configuration.html
+  commentId: N:Xerris.Extensions.Configuration
+  fullName: Xerris.Extensions.Configuration
+  nameWithType: Xerris.Extensions.Configuration
+- uid: Xerris.Extensions.Configuration.Aws
+  name: Xerris.Extensions.Configuration.Aws
+  href: api/Xerris.Extensions.Configuration.Aws.html
+  commentId: N:Xerris.Extensions.Configuration.Aws
+  fullName: Xerris.Extensions.Configuration.Aws
+  nameWithType: Xerris.Extensions.Configuration.Aws
+- uid: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions
+  name: AmazonSecretsManagerConfigurationExtensions
+  href: api/Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.html
+  commentId: T:Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions
+  fullName: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions
+  nameWithType: AmazonSecretsManagerConfigurationExtensions
+- uid: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder,Amazon.Runtime.AWSCredentials,System.String,System.String[])
+  name: AddAmazonSecretsManager(IConfigurationBuilder, AWSCredentials, string, params string[])
+  href: api/Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.html#Xerris_Extensions_Configuration_Aws_AmazonSecretsManagerConfigurationExtensions_AddAmazonSecretsManager_Microsoft_Extensions_Configuration_IConfigurationBuilder_Amazon_Runtime_AWSCredentials_System_String_System_String___
+  commentId: M:Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder,Amazon.Runtime.AWSCredentials,System.String,System.String[])
+  name.vb: AddAmazonSecretsManager(IConfigurationBuilder, AWSCredentials, String, ParamArray String())
+  fullName: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder, Amazon.Runtime.AWSCredentials, string, params string[])
+  fullName.vb: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder, Amazon.Runtime.AWSCredentials, String, ParamArray String())
+  nameWithType: AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(IConfigurationBuilder, AWSCredentials, string, params string[])
+  nameWithType.vb: AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(IConfigurationBuilder, AWSCredentials, String, ParamArray String())
+- uid: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.String[])
+  name: AddAmazonSecretsManager(IConfigurationBuilder, string, params string[])
+  href: api/Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.html#Xerris_Extensions_Configuration_Aws_AmazonSecretsManagerConfigurationExtensions_AddAmazonSecretsManager_Microsoft_Extensions_Configuration_IConfigurationBuilder_System_String_System_String___
+  commentId: M:Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.String[])
+  name.vb: AddAmazonSecretsManager(IConfigurationBuilder, String, ParamArray String())
+  fullName: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder, string, params string[])
+  fullName.vb: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(Microsoft.Extensions.Configuration.IConfigurationBuilder, String, ParamArray String())
+  nameWithType: AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(IConfigurationBuilder, string, params string[])
+  nameWithType.vb: AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager(IConfigurationBuilder, String, ParamArray String())
+- uid: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager*
+  name: AddAmazonSecretsManager
+  href: api/Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.html#Xerris_Extensions_Configuration_Aws_AmazonSecretsManagerConfigurationExtensions_AddAmazonSecretsManager_
+  commentId: Overload:Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager
+  isSpec: "True"
+  fullName: Xerris.Extensions.Configuration.Aws.AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager
+  nameWithType: AmazonSecretsManagerConfigurationExtensions.AddAmazonSecretsManager
+- uid: Xerris.Extensions.Configuration.ConfigurationBuilderExtensions
+  name: ConfigurationBuilderExtensions
+  href: api/Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.html
+  commentId: T:Xerris.Extensions.Configuration.ConfigurationBuilderExtensions
+  fullName: Xerris.Extensions.Configuration.ConfigurationBuilderExtensions
+  nameWithType: ConfigurationBuilderExtensions
+- uid: Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.SetKeyDelimiters(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String[])
+  name: SetKeyDelimiters(IConfigurationBuilder, params string[])
+  href: api/Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.html#Xerris_Extensions_Configuration_ConfigurationBuilderExtensions_SetKeyDelimiters_Microsoft_Extensions_Configuration_IConfigurationBuilder_System_String___
+  commentId: M:Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.SetKeyDelimiters(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String[])
+  name.vb: SetKeyDelimiters(IConfigurationBuilder, ParamArray String())
+  fullName: Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.SetKeyDelimiters(Microsoft.Extensions.Configuration.IConfigurationBuilder, params string[])
+  fullName.vb: Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.SetKeyDelimiters(Microsoft.Extensions.Configuration.IConfigurationBuilder, ParamArray String())
+  nameWithType: ConfigurationBuilderExtensions.SetKeyDelimiters(IConfigurationBuilder, params string[])
+  nameWithType.vb: ConfigurationBuilderExtensions.SetKeyDelimiters(IConfigurationBuilder, ParamArray String())
+- uid: Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.SetKeyDelimiters*
+  name: SetKeyDelimiters
+  href: api/Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.html#Xerris_Extensions_Configuration_ConfigurationBuilderExtensions_SetKeyDelimiters_
+  commentId: Overload:Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.SetKeyDelimiters
+  isSpec: "True"
+  fullName: Xerris.Extensions.Configuration.ConfigurationBuilderExtensions.SetKeyDelimiters
+  nameWithType: ConfigurationBuilderExtensions.SetKeyDelimiters
+- uid: Xerris.Extensions.Configuration.ConfigurationException
+  name: ConfigurationException
+  href: api/Xerris.Extensions.Configuration.ConfigurationException.html
+  commentId: T:Xerris.Extensions.Configuration.ConfigurationException
+  fullName: Xerris.Extensions.Configuration.ConfigurationException
+  nameWithType: ConfigurationException
+- uid: Xerris.Extensions.Configuration.ConfigurationException.#ctor(System.String)
+  name: ConfigurationException(string)
+  href: api/Xerris.Extensions.Configuration.ConfigurationException.html#Xerris_Extensions_Configuration_ConfigurationException__ctor_System_String_
+  commentId: M:Xerris.Extensions.Configuration.ConfigurationException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Xerris.Extensions.Configuration.ConfigurationException.ConfigurationException(string)
+  fullName.vb: Xerris.Extensions.Configuration.ConfigurationException.New(String)
+  nameWithType: ConfigurationException.ConfigurationException(string)
+  nameWithType.vb: ConfigurationException.New(String)
+- uid: Xerris.Extensions.Configuration.ConfigurationException.#ctor*
+  name: ConfigurationException
+  href: api/Xerris.Extensions.Configuration.ConfigurationException.html#Xerris_Extensions_Configuration_ConfigurationException__ctor_
+  commentId: Overload:Xerris.Extensions.Configuration.ConfigurationException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.Configuration.ConfigurationException.ConfigurationException
+  fullName.vb: Xerris.Extensions.Configuration.ConfigurationException.New
+  nameWithType: ConfigurationException.ConfigurationException
+  nameWithType.vb: ConfigurationException.New
+- uid: Xerris.Extensions.Configuration.ConfigurationExtensions
+  name: ConfigurationExtensions
+  href: api/Xerris.Extensions.Configuration.ConfigurationExtensions.html
+  commentId: T:Xerris.Extensions.Configuration.ConfigurationExtensions
+  fullName: Xerris.Extensions.Configuration.ConfigurationExtensions
+  nameWithType: ConfigurationExtensions
+- uid: Xerris.Extensions.Configuration.ConfigurationExtensions.Collection(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: Collection(IConfiguration, string)
+  href: api/Xerris.Extensions.Configuration.ConfigurationExtensions.html#Xerris_Extensions_Configuration_ConfigurationExtensions_Collection_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Xerris.Extensions.Configuration.ConfigurationExtensions.Collection(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: Collection(IConfiguration, String)
+  fullName: Xerris.Extensions.Configuration.ConfigurationExtensions.Collection(Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Xerris.Extensions.Configuration.ConfigurationExtensions.Collection(Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ConfigurationExtensions.Collection(IConfiguration, string)
+  nameWithType.vb: ConfigurationExtensions.Collection(IConfiguration, String)
+- uid: Xerris.Extensions.Configuration.ConfigurationExtensions.Collection*
+  name: Collection
+  href: api/Xerris.Extensions.Configuration.ConfigurationExtensions.html#Xerris_Extensions_Configuration_ConfigurationExtensions_Collection_
+  commentId: Overload:Xerris.Extensions.Configuration.ConfigurationExtensions.Collection
+  isSpec: "True"
+  fullName: Xerris.Extensions.Configuration.ConfigurationExtensions.Collection
+  nameWithType: ConfigurationExtensions.Collection
+- uid: Xerris.Extensions.Configuration.ConfigurationExtensions.Require(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: Require(IConfiguration, string)
+  href: api/Xerris.Extensions.Configuration.ConfigurationExtensions.html#Xerris_Extensions_Configuration_ConfigurationExtensions_Require_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Xerris.Extensions.Configuration.ConfigurationExtensions.Require(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: Require(IConfiguration, String)
+  fullName: Xerris.Extensions.Configuration.ConfigurationExtensions.Require(Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Xerris.Extensions.Configuration.ConfigurationExtensions.Require(Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ConfigurationExtensions.Require(IConfiguration, string)
+  nameWithType.vb: ConfigurationExtensions.Require(IConfiguration, String)
+- uid: Xerris.Extensions.Configuration.ConfigurationExtensions.Require*
+  name: Require
+  href: api/Xerris.Extensions.Configuration.ConfigurationExtensions.html#Xerris_Extensions_Configuration_ConfigurationExtensions_Require_
+  commentId: Overload:Xerris.Extensions.Configuration.ConfigurationExtensions.Require
+  isSpec: "True"
+  fullName: Xerris.Extensions.Configuration.ConfigurationExtensions.Require
+  nameWithType: ConfigurationExtensions.Require
+- uid: Xerris.Extensions.Testing
+  name: Xerris.Extensions.Testing
+  href: api/Xerris.Extensions.Testing.html
+  commentId: N:Xerris.Extensions.Testing
+  fullName: Xerris.Extensions.Testing
+  nameWithType: Xerris.Extensions.Testing
+- uid: Xerris.Extensions.Testing.Http
+  name: Xerris.Extensions.Testing.Http
+  href: api/Xerris.Extensions.Testing.Http.html
+  commentId: N:Xerris.Extensions.Testing.Http
+  fullName: Xerris.Extensions.Testing.Http
+  nameWithType: Xerris.Extensions.Testing.Http
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities
+  name: HttpTestUtilities
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.html
+  commentId: T:Xerris.Extensions.Testing.Http.HttpTestUtilities
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities
+  nameWithType: HttpTestUtilities
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub
+  name: HttpTestUtilities.DelegatingHandlerStub
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.html
+  commentId: T:Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub
+  nameWithType: HttpTestUtilities.DelegatingHandlerStub
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.#ctor(System.Func{System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}})
+  name: DelegatingHandlerStub(Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>>)
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.html#Xerris_Extensions_Testing_Http_HttpTestUtilities_DelegatingHandlerStub__ctor_System_Func_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_System_Threading_Tasks_Task_System_Net_Http_HttpResponseMessage___
+  commentId: M:Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.#ctor(System.Func{System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}})
+  name.vb: New(Func(Of HttpRequestMessage, CancellationToken, Task(Of HttpResponseMessage)))
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.DelegatingHandlerStub(System.Func<System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>>)
+  fullName.vb: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.New(System.Func(Of System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)))
+  nameWithType: HttpTestUtilities.DelegatingHandlerStub.DelegatingHandlerStub(Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>>)
+  nameWithType.vb: HttpTestUtilities.DelegatingHandlerStub.New(Func(Of HttpRequestMessage, CancellationToken, Task(Of HttpResponseMessage)))
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.#ctor*
+  name: DelegatingHandlerStub
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.html#Xerris_Extensions_Testing_Http_HttpTestUtilities_DelegatingHandlerStub__ctor_
+  commentId: Overload:Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.DelegatingHandlerStub
+  fullName.vb: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.New
+  nameWithType: HttpTestUtilities.DelegatingHandlerStub.DelegatingHandlerStub
+  nameWithType.vb: HttpTestUtilities.DelegatingHandlerStub.New
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.html#Xerris_Extensions_Testing_Http_HttpTestUtilities_DelegatingHandlerStub_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_
+  commentId: M:Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  nameWithType: HttpTestUtilities.DelegatingHandlerStub.SendAsync(HttpRequestMessage, CancellationToken)
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.SendAsync*
+  name: SendAsync
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.html#Xerris_Extensions_Testing_Http_HttpTestUtilities_DelegatingHandlerStub_SendAsync_
+  commentId: Overload:Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.SendAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities.DelegatingHandlerStub.SendAsync
+  nameWithType: HttpTestUtilities.DelegatingHandlerStub.SendAsync
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities.GetMockHttpMessageHandler(System.Net.Http.HttpResponseMessage,System.Action{System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken})
+  name: GetMockHttpMessageHandler(HttpResponseMessage, Action<HttpRequestMessage, CancellationToken>?)
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.html#Xerris_Extensions_Testing_Http_HttpTestUtilities_GetMockHttpMessageHandler_System_Net_Http_HttpResponseMessage_System_Action_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken__
+  commentId: M:Xerris.Extensions.Testing.Http.HttpTestUtilities.GetMockHttpMessageHandler(System.Net.Http.HttpResponseMessage,System.Action{System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken})
+  name.vb: GetMockHttpMessageHandler(HttpResponseMessage, Action(Of HttpRequestMessage, CancellationToken))
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities.GetMockHttpMessageHandler(System.Net.Http.HttpResponseMessage, System.Action<System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken>?)
+  fullName.vb: Xerris.Extensions.Testing.Http.HttpTestUtilities.GetMockHttpMessageHandler(System.Net.Http.HttpResponseMessage, System.Action(Of System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken))
+  nameWithType: HttpTestUtilities.GetMockHttpMessageHandler(HttpResponseMessage, Action<HttpRequestMessage, CancellationToken>?)
+  nameWithType.vb: HttpTestUtilities.GetMockHttpMessageHandler(HttpResponseMessage, Action(Of HttpRequestMessage, CancellationToken))
+- uid: Xerris.Extensions.Testing.Http.HttpTestUtilities.GetMockHttpMessageHandler*
+  name: GetMockHttpMessageHandler
+  href: api/Xerris.Extensions.Testing.Http.HttpTestUtilities.html#Xerris_Extensions_Testing_Http_HttpTestUtilities_GetMockHttpMessageHandler_
+  commentId: Overload:Xerris.Extensions.Testing.Http.HttpTestUtilities.GetMockHttpMessageHandler
+  isSpec: "True"
+  fullName: Xerris.Extensions.Testing.Http.HttpTestUtilities.GetMockHttpMessageHandler
+  nameWithType: HttpTestUtilities.GetMockHttpMessageHandler
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1
+  name: ServiceTestHarness<TService>
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html
+  commentId: T:Xerris.Extensions.Testing.ServiceTestHarness`1
+  name.vb: ServiceTestHarness(Of TService)
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService)
+  nameWithType: ServiceTestHarness<TService>
+  nameWithType.vb: ServiceTestHarness(Of TService)
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.Create(System.Func{`0,System.Threading.Tasks.Task})
+  name: Create(Func<TService, Task>)
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_Create_System_Func__0_System_Threading_Tasks_Task__
+  commentId: M:Xerris.Extensions.Testing.ServiceTestHarness`1.Create(System.Func{`0,System.Threading.Tasks.Task})
+  name.vb: Create(Func(Of TService, Task))
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.Create(System.Func<TService, System.Threading.Tasks.Task>)
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).Create(System.Func(Of TService, System.Threading.Tasks.Task))
+  nameWithType: ServiceTestHarness<TService>.Create(Func<TService, Task>)
+  nameWithType.vb: ServiceTestHarness(Of TService).Create(Func(Of TService, Task))
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.Create*
+  name: Create
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_Create_
+  commentId: Overload:Xerris.Extensions.Testing.ServiceTestHarness`1.Create
+  isSpec: "True"
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.Create
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).Create
+  nameWithType: ServiceTestHarness<TService>.Create
+  nameWithType.vb: ServiceTestHarness(Of TService).Create
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.TestAsync
+  name: TestAsync()
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_TestAsync
+  commentId: M:Xerris.Extensions.Testing.ServiceTestHarness`1.TestAsync
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.TestAsync()
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).TestAsync()
+  nameWithType: ServiceTestHarness<TService>.TestAsync()
+  nameWithType.vb: ServiceTestHarness(Of TService).TestAsync()
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.TestAsync*
+  name: TestAsync
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_TestAsync_
+  commentId: Overload:Xerris.Extensions.Testing.ServiceTestHarness`1.TestAsync
+  isSpec: "True"
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.TestAsync
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).TestAsync
+  nameWithType: ServiceTestHarness<TService>.TestAsync
+  nameWithType.vb: ServiceTestHarness(Of TService).TestAsync
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency*
+  name: WithDependency
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_WithDependency_
+  commentId: Overload:Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency
+  isSpec: "True"
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.WithDependency
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).WithDependency
+  nameWithType: ServiceTestHarness<TService>.WithDependency
+  nameWithType.vb: ServiceTestHarness(Of TService).WithDependency
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency``1
+  name: WithDependency<TDependency>()
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_WithDependency__1
+  commentId: M:Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency``1
+  name.vb: WithDependency(Of TDependency)()
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.WithDependency<TDependency>()
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).WithDependency(Of TDependency)()
+  nameWithType: ServiceTestHarness<TService>.WithDependency<TDependency>()
+  nameWithType.vb: ServiceTestHarness(Of TService).WithDependency(Of TDependency)()
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency``1(``0)
+  name: WithDependency<TDependency>(TDependency)
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_WithDependency__1___0_
+  commentId: M:Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency``1(``0)
+  name.vb: WithDependency(Of TDependency)(TDependency)
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.WithDependency<TDependency>(TDependency)
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).WithDependency(Of TDependency)(TDependency)
+  nameWithType: ServiceTestHarness<TService>.WithDependency<TDependency>(TDependency)
+  nameWithType.vb: ServiceTestHarness(Of TService).WithDependency(Of TDependency)(TDependency)
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency``1(Moq.Mock{``0})
+  name: WithDependency<TDependency>(Mock<TDependency>)
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_WithDependency__1_Moq_Mock___0__
+  commentId: M:Xerris.Extensions.Testing.ServiceTestHarness`1.WithDependency``1(Moq.Mock{``0})
+  name.vb: WithDependency(Of TDependency)(Mock(Of TDependency))
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.WithDependency<TDependency>(Moq.Mock<TDependency>)
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).WithDependency(Of TDependency)(Moq.Mock(Of TDependency))
+  nameWithType: ServiceTestHarness<TService>.WithDependency<TDependency>(Mock<TDependency>)
+  nameWithType.vb: ServiceTestHarness(Of TService).WithDependency(Of TDependency)(Mock(Of TDependency))
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.WithServices(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  name: WithServices(Action<IServiceCollection>)
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_WithServices_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  commentId: M:Xerris.Extensions.Testing.ServiceTestHarness`1.WithServices(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  name.vb: WithServices(Action(Of IServiceCollection))
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.WithServices(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).WithServices(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  nameWithType: ServiceTestHarness<TService>.WithServices(Action<IServiceCollection>)
+  nameWithType.vb: ServiceTestHarness(Of TService).WithServices(Action(Of IServiceCollection))
+- uid: Xerris.Extensions.Testing.ServiceTestHarness`1.WithServices*
+  name: WithServices
+  href: api/Xerris.Extensions.Testing.ServiceTestHarness-1.html#Xerris_Extensions_Testing_ServiceTestHarness_1_WithServices_
+  commentId: Overload:Xerris.Extensions.Testing.ServiceTestHarness`1.WithServices
+  isSpec: "True"
+  fullName: Xerris.Extensions.Testing.ServiceTestHarness<TService>.WithServices
+  fullName.vb: Xerris.Extensions.Testing.ServiceTestHarness(Of TService).WithServices
+  nameWithType: ServiceTestHarness<TService>.WithServices
+  nameWithType.vb: ServiceTestHarness(Of TService).WithServices

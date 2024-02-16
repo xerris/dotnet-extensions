@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Namespace Xerris.Extensions.Authentication.OAuth
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Namespace Xerris.Extensions.Authentication.OAuth
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xerris.Extensions.Authentication.OAuth">
+
+  <h1 id="Xerris_Extensions_Authentication_OAuth" data-uid="Xerris.Extensions.Authentication.OAuth" class="text-break">Namespace Xerris.Extensions.Authentication.OAuth
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">
+Classes
+</h3>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html">AccessTokenCachingOptions</a></h4>
+      <section><p>Options for configuring access token caching behavior.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenProviderBuilderExtensions.html">AccessTokenProviderBuilderExtensions</a></h4>
+      <section><p>Extension methods for <a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.html">IAccessTokenProviderBuilder</a>.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenProviderOptions.html">AccessTokenProviderOptions</a></h4>
+      <section><p>The configuration values used to acquire access tokens.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenProviderServiceCollectionExtensions.html">AccessTokenProviderServiceCollectionExtensions</a></h4>
+      <section><p>Extension methods for configuring access token providers in an <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html">AccessTokenResponse</a></h4>
+      <section><p>A successful access token response from the authorization server.
+<remarks>
+See the <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-5.1">OAuth 2.0 spec</a> for more
+information.
+</remarks></p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.BearerTokenAuthenticationHandler.html">BearerTokenAuthenticationHandler</a></h4>
+      <section><p>Adds OAuth 2.0 <a href="https://datatracker.ietf.org/doc/html/rfc6750">bearer token authentication</a> to
+outgoing HTTP requests.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.ClientCredentialsAccessTokenProvider.html">ClientCredentialsAccessTokenProvider</a></h4>
+      <section><p>Acquires an OAuth 2.0 access token using the
+<a href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.4">client credentials</a> flow.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.ClientCredentialsProviderOptions.html">ClientCredentialsProviderOptions</a></h4>
+      <section><p>The options values for acquiring access tokens using the
+<a href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.4">client credentials</a> flow.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.DistributedCachingAccessTokenProvider.html">DistributedCachingAccessTokenProvider</a></h4>
+      <section><p>An <a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a> decorator that caches access token responses in an
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache">IDistributedCache</a>.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html">InMemoryCachingAccessTokenProvider</a></h4>
+      <section><p>An <a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a> decorator that caches access token responses in an
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache">IMemoryCache</a>.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordAccessTokenProvider.html">ResourceOwnerPasswordAccessTokenProvider</a></h4>
+      <section><p>Acquires an OAuth 2.0 access token using the
+<a href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.3">resource owner password credentials</a>
+flow.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.ResourceOwnerPasswordProviderOptions.html">ResourceOwnerPasswordProviderOptions</a></h4>
+      <section><p>The options values for acquiring access tokens using the
+<a href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.3">resource owner password credentials</a>
+flow.</p>
+</section>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a></h4>
+      <section><p>A service for retrieving <a href="https://oauth.net/2/access-tokens/">OAuth 2.0 access tokens</a>.</p>
+</section>
+      <h4><a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProviderBuilder.html">IAccessTokenProviderBuilder</a></h4>
+      <section><p>An interface for configuring access token providers.</p>
+</section>
+
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

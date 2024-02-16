@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class InMemoryCachingAccessTokenProvider
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class InMemoryCachingAccessTokenProvider
+ ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider">
+
+
+
+  <h1 id="Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider" data-uid="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider" class="text-break">Class InMemoryCachingAccessTokenProvider
+</h1>
+  <div class="markdown level0 summary"><p>An <a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a> decorator that caches access token responses in an
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache">IMemoryCache</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">InMemoryCachingAccessTokenProvider</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Xerris.html">Xerris</a>.<a class="xref" href="Xerris.Extensions.html">Extensions</a>.<a class="xref" href="Xerris.Extensions.Authentication.html">Authentication</a>.<a class="xref" href="Xerris.Extensions.Authentication.OAuth.html">OAuth</a></h6>
+  <h6><strong>Assembly</strong>: Xerris.Extensions.Authentication.dll</h6>
+  <h5 id="Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class InMemoryCachingAccessTokenProvider : IAccessTokenProvider</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xerris/dotnet-extensions/new/main/apiSpec/new?filename=Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider__ctor_Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions__.md&amp;value=---%0Auid%3A%20Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.%23ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider%2CMicrosoft.Extensions.Caching.Memory.IMemoryCache%2CMicrosoft.Extensions.Options.IOptions%7BXerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xerris/dotnet-extensions/blob/main/src/Authentication/OAuth/InMemoryCachingAccessTokenProvider.cs/#L22">View Source</a>
+  </span>
+  <a id="Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider__ctor_" data-uid="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.#ctor*"></a>
+  <h4 id="Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider__ctor_Xerris_Extensions_Authentication_OAuth_IAccessTokenProvider_Microsoft_Extensions_Caching_Memory_IMemoryCache_Microsoft_Extensions_Options_IOptions_Xerris_Extensions_Authentication_OAuth_AccessTokenCachingOptions__" data-uid="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.#ctor(Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider,Microsoft.Extensions.Caching.Memory.IMemoryCache,Microsoft.Extensions.Options.IOptions{Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions})">InMemoryCachingAccessTokenProvider(IAccessTokenProvider, IMemoryCache, IOptions&lt;AccessTokenCachingOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Create a new instance of <a class="xref" href="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.html">InMemoryCachingAccessTokenProvider</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InMemoryCachingAccessTokenProvider(IAccessTokenProvider innerProvider, IMemoryCache cache, IOptions&lt;AccessTokenCachingOptions&gt; options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a></td>
+        <td><span class="parametername">innerProvider</span></td>
+        <td><p>The underlying <a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a>to decorate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache">IMemoryCache</a></td>
+        <td><span class="parametername">cache</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.imemorycache">IMemoryCache</a> to cache responses with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptions-1">IOptions</a>&lt;<a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenCachingOptions.html">AccessTokenCachingOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The access token caching configuration options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/xerris/dotnet-extensions/new/main/apiSpec/new?filename=Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider_GetAccessTokenAsync_System_String___.md&amp;value=---%0Auid%3A%20Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/xerris/dotnet-extensions/blob/main/src/Authentication/OAuth/InMemoryCachingAccessTokenProvider.cs/#L37">View Source</a>
+  </span>
+  <a id="Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider_GetAccessTokenAsync_" data-uid="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync*"></a>
+  <h4 id="Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider_GetAccessTokenAsync_System_String___" data-uid="Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider.GetAccessTokenAsync(System.String[])">GetAccessTokenAsync(params string[])</h4>
+  <div class="markdown level1 summary"><p>Checks for an unexpired <a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html">AccessTokenResponse</a> with the specified scopes in the cache and returns
+it if found. Otherwise, requests a fresh access token from the decorated <a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a>,
+stores it, and returns the fresh <a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html">AccessTokenResponse</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AccessTokenResponse&gt; GetAccessTokenAsync(params string[] scopes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">scopes</span></td>
+        <td><p>The <a href="https://oauth.net/2/scope/">scopes</a> to include in the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html">AccessTokenResponse</a>&gt;</td>
+        <td><p>The cached <a class="xref" href="Xerris.Extensions.Authentication.OAuth.AccessTokenResponse.html">AccessTokenResponse</a> if found, otherwise the fresh response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Xerris.Extensions.Authentication.OAuth.IAccessTokenProvider.html">IAccessTokenProvider</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_ToJson_System_Object_System_Boolean_">JsonExtensions.ToJson(object, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xerris.Extensions.Common.Serialization.JsonExtensions.html#Xerris_Extensions_Common_Serialization_JsonExtensions_ToJson_System_Object_System_Text_Json_JsonSerializerOptions_">JsonExtensions.ToJson(object, JsonSerializerOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xerris.Extensions.Common.Http.HttpExtensions.html#Xerris_Extensions_Common_Http_HttpExtensions_ToQueryString__1___0_">HttpExtensions.ToQueryString&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xerris.Extensions.Common.ObjectExtensions.html#Xerris_Extensions_Common_ObjectExtensions_ValueOrDefault__2___0_System_Func___0___1__">ObjectExtensions.ValueOrDefault&lt;T, TMember&gt;(T?, Func&lt;T?, TMember?&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Xerris.Extensions.Common.ObjectExtensions.html#Xerris_Extensions_Common_ObjectExtensions_Yield__1___0_">ObjectExtensions.Yield&lt;T&gt;(T?)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/xerris/dotnet-extensions/new/main/apiSpec/new?filename=Xerris_Extensions_Authentication_OAuth_InMemoryCachingAccessTokenProvider.md&amp;value=---%0Auid%3A%20Xerris.Extensions.Authentication.OAuth.InMemoryCachingAccessTokenProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/xerris/dotnet-extensions/blob/main/src/Authentication/OAuth/InMemoryCachingAccessTokenProvider.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
