@@ -8,7 +8,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace Xerris.Extensions.Configuration.Aws;
 
-internal class AmazonSecretsManagerConfigurationProvider(AWSCredentials credentials, string region, string secretName)
+internal sealed class AmazonSecretsManagerConfigurationProvider(
+    AWSCredentials credentials,
+    string region,
+    string secretName)
     : ConfigurationProvider
 {
     public override void Load()

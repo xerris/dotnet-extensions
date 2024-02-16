@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 namespace Xerris.Extensions.Configuration;
 
 /// <summary>
-/// Extension methods for <see cref="IConfiguration"/>.
+/// Extension methods for <see cref="IConfiguration" />.
 /// </summary>
 public static class ConfigurationExtensions
 {

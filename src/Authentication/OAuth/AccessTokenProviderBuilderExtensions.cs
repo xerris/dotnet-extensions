@@ -10,7 +10,7 @@ namespace Xerris.Extensions.Authentication.OAuth;
 public static class AccessTokenProviderBuilderExtensions
 {
     /// <summary>
-    /// Adds an <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
+    /// Adds n <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
     /// acquires access tokens using the OAuth 2.0
     /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.4">client credentials</see> flow.
     /// </summary>
@@ -30,7 +30,7 @@ public static class AccessTokenProviderBuilderExtensions
     }
 
     /// <summary>
-    /// Adds an <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
+    /// Adds n <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
     /// acquires access tokens using the OAuth 2.0
     /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.4">client credentials</see> flow.
     /// </summary>
@@ -50,8 +50,8 @@ public static class AccessTokenProviderBuilderExtensions
     }
 
     /// <summary>
-    /// Adds an <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
-    /// acquires access tokens using the the OAuth2.0
+    /// Adds n <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
+    /// acquires access tokens using the OAuth2.0
     /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.3">resource owner password credentials</see>
     /// flow.
     /// </summary>
@@ -73,8 +73,8 @@ public static class AccessTokenProviderBuilderExtensions
     }
 
     /// <summary>
-    /// Adds an <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
-    /// acquires access tokens using the the OAuth2.0
+    /// Adds a <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
+    /// acquires access tokens using the OAuth2.0
     /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.3">resource owner password credentials</see>
     /// flow.
     /// </summary>
@@ -107,8 +107,8 @@ public static class AccessTokenProviderBuilderExtensions
     }
 
     /// <summary>
-    /// Adds an <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
-    /// caches access token responses using an <see cref="IDistributedCache" />.
+    /// Adds a <see cref="IAccessTokenProvider" /> and related services to the <see cref="IServiceCollection" /> that
+    /// caches access token responses using a <see cref="IDistributedCache" />.
     /// </summary>
     /// <remarks>
     /// If no distributed cache is configured in the service collection, cache entries will be stored using an

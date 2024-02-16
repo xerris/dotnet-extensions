@@ -4,7 +4,7 @@ using Moq.AutoMock;
 
 namespace Xerris.Extensions.Testing;
 
-internal class AutoMockingServiceProviderFactory(MockBehavior mockBehavior = MockBehavior.Loose)
+internal sealed class AutoMockingServiceProviderFactory(MockBehavior mockBehavior = MockBehavior.Loose)
     : IServiceProviderFactory<IServiceCollection>
 {
     private readonly AutoMocker _mocker = new(mockBehavior);
@@ -14,12 +14,6 @@ internal class AutoMockingServiceProviderFactory(MockBehavior mockBehavior = Moc
         return services;
     }
 
-    /// <summary>
-    ///     Creates an <see cref="IServiceProvider" /> instance that registers a <see cref="Mock" /> instance of any
-    ///     missing dependencies for requested services.
-    /// </summary>
-    /// <param name="serviceCollection">The <see cref="IServiceCollection" /> to use.</param>
-    /// <returns>An <see cref="IServiceProvider" /> with missing registrations registered as mocks.</returns>
     public IServiceProvider CreateServiceProvider(IServiceCollection serviceCollection)
     {
         var implicitlyConstructedServicesDescriptors =
@@ -48,13 +42,13 @@ internal class AutoMockingServiceProviderFactory(MockBehavior mockBehavior = Moc
 
             // Don't mock framework constructs
             var filteredCtorParameterTypes = ctorParameterTypes.Where(pt =>
-                    !pt.Namespace!.StartsWith("System", StringComparison.InvariantCulture) &&
-                    !pt.Namespace!.StartsWith("Microsoft.Extensions", StringComparison.InvariantCulture));
+                !pt.Namespace!.StartsWith("System", StringComparison.InvariantCulture) &&
+                !pt.Namespace!.StartsWith("Microsoft.Extensions", StringComparison.InvariantCulture));
 
             foreach (var parameterType in filteredCtorParameterTypes)
             {
                 // If there's already a type registered for this constructor parameter, move on, otherwise register a
-                // mock of it.
+                // mocked version of it.
                 if (serviceCollection.Any(sd => sd.ServiceType == parameterType))
                     continue;
 

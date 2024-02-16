@@ -1,15 +1,15 @@
 namespace Xerris.Extensions.Common;
 
 /// <summary>
-/// Extensions for arbitrary <see cref="object"/>s.
+/// Extensions for arbitrary <see cref="object" />s.
 /// </summary>
 public static class ObjectExtensions
 {
     /// <summary>
-    /// Yield the object as an <see cref="IEnumerable{T}" />.
+    /// Yield the object as a <see cref="IEnumerable{T}" />.
     /// </summary>
     /// <typeparam name="T">The object type.</typeparam>
-    /// <returns> An <see cref="IEnumerable{T}" /> containing the item.</returns>
+    /// <returns> A <see cref="IEnumerable{T}" /> containing the item.</returns>
     public static IEnumerable<T> Yield<T>(this T? item)
     {
         if (item is null)
@@ -27,7 +27,7 @@ public static class ObjectExtensions
     /// <param name="item">The object to select from.</param>
     /// <param name="selector">The property selector.</param>
     /// <returns>
-    /// The value for the member if not null, otherwise the default value for <typeparamref name="TMember"/>
+    /// The value for the member if not null, otherwise the default value for <typeparamref name="TMember" />
     /// </returns>
     /// <remarks>
     /// In the <b>vast majority</b> of cases, a null-coalescing operator (<c>??</c> or <c>??=</c>) should be used

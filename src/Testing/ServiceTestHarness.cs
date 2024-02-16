@@ -5,7 +5,7 @@ using Moq;
 namespace Xerris.Extensions.Testing;
 
 /// <summary>
-/// A harness for executing tests against an instance of <typeparamref name="TService"/> and configuring it's
+/// A harness for executing tests against an instance of <typeparamref name="TService" /> and configuring its
 /// dependencies.
 /// </summary>
 /// <typeparam name="TService">The type of the service under test.</typeparam>
@@ -22,12 +22,12 @@ public class ServiceTestHarness<TService>
     }
 
     /// <summary>
-    /// Create a new instance of <see cref="ServiceTestHarness{TService}"/>.
+    /// Create a new instance of <see cref="ServiceTestHarness{TService}" />.
     /// </summary>
     /// <param name="testAction">
-    /// A delegate containing the test action to execute. Invoked when <see cref="TestAsync"/> is called.
+    /// A delegate containing the test action to execute. Invoked when <see cref="TestAsync" /> is called.
     /// </param>
-    /// <returns>The <see cref="ServiceTestHarness{TService}"/> instance.</returns>
+    /// <returns>The <see cref="ServiceTestHarness{TService}" /> instance.</returns>
 #pragma warning disable CA1000 // Do not declare static members on generic types
     // This syntax is not confusing since this class uses a private constructor.
     public static ServiceTestHarness<TService> Create(Func<TService, Task> testAction)
@@ -41,7 +41,7 @@ public class ServiceTestHarness<TService>
     /// </summary>
     /// <typeparam name="TDependency">The dependency type.</typeparam>
     /// <param name="dependency">The dependency to add</param>
-    /// <returns>The <see cref="ServiceTestHarness{TService}"/> instance.</returns>
+    /// <returns>The <see cref="ServiceTestHarness{TService}" /> instance.</returns>
     public ServiceTestHarness<TService> WithDependency<TDependency>(TDependency dependency)
         where TDependency : class
     {
@@ -55,7 +55,7 @@ public class ServiceTestHarness<TService>
     /// </summary>
     /// <typeparam name="TDependency">The dependency type.</typeparam>
     /// <param name="mock">The mocked dependency to add.</param>
-    /// <returns>The <see cref="ServiceTestHarness{TService}"/> instance.</returns>
+    /// <returns>The <see cref="ServiceTestHarness{TService}" /> instance.</returns>
     public ServiceTestHarness<TService> WithDependency<TDependency>(Mock<TDependency> mock)
         where TDependency : class
     {
@@ -66,7 +66,7 @@ public class ServiceTestHarness<TService>
     /// Configures a dependency of the specified type with the underlying service provider.
     /// </summary>
     /// <typeparam name="TDependency">The dependency type.</typeparam>
-    /// <returns>The <see cref="ServiceTestHarness{TService}"/> instance.</returns>
+    /// <returns>The <see cref="ServiceTestHarness{TService}" /> instance.</returns>
     public ServiceTestHarness<TService> WithDependency<TDependency>()
         where TDependency : class
     {
@@ -76,15 +76,15 @@ public class ServiceTestHarness<TService>
     }
 
     /// <summary>
-    /// Configures the underlying <see cref="IServiceCollection"/>.
+    /// Configures the underlying <see cref="IServiceCollection" />.
     /// </summary>
     /// <remarks>
-    /// Useful when using configuring services using <see cref="IServiceCollection"/> extension methods.
+    /// Useful when using configuring services using <see cref="IServiceCollection" /> extension methods.
     /// </remarks>
     /// <param name="configure">
     /// A delegate to configure the <see cref="IServiceCollection" /> for the test service.
     /// </param>
-    /// <returns>The <see cref="ServiceTestHarness{TService}"/> instance.</returns>
+    /// <returns>The <see cref="ServiceTestHarness{TService}" /> instance.</returns>
     public ServiceTestHarness<TService> WithServices(Action<IServiceCollection> configure)
     {
         configure(_serviceCollection);
@@ -95,7 +95,7 @@ public class ServiceTestHarness<TService>
     /// <summary>
     /// Execute the test action, automatically creating mocks for any missing dependencies.
     /// </summary>
-    /// <returns>A <see cref="Task"/> that represents the test action execution.</returns>
+    /// <returns>A <see cref="Task" /> that represents the test action execution.</returns>
     public async Task TestAsync()
     {
         _serviceCollection.AddLogging(logging => logging.AddConsole());

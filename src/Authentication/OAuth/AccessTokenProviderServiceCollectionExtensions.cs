@@ -4,7 +4,7 @@ using Xerris.Extensions.Authentication.OAuth.Internal;
 namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
-/// Extension methods for configuring access token providers in an <see cref="IServiceCollection" />.
+/// Extension methods for configuring access token providers in a <see cref="IServiceCollection" />.
 /// </summary>
 public static class AccessTokenProviderServiceCollectionExtensions
 {

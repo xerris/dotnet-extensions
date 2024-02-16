@@ -4,7 +4,7 @@ using System.Text;
 namespace Xerris.Extensions.Common;
 
 /// <summary>
-/// Extension methods for working with <see cref="string"/>s.
+/// Extension methods for working with <see cref="string" />s.
 /// </summary>
 public static class StringExtensions
 {
@@ -39,7 +39,7 @@ public static class StringExtensions
         if (string.IsNullOrEmpty(s))
             return s;
 
-        // This splits letters with diacritics into separate characters so we can strip them away
+        // This splits letters with diacritics into separate characters so that we can strip them away
         s = s.Normalize(NormalizationForm.FormD);
 
         int i = 0, j = 0;
@@ -76,7 +76,7 @@ public static class StringExtensions
                 continue;
             }
 
-            // We treat a translation from a uppercase to lowercase as the start of a new word. This handles the case
+            // We treat a translation from an uppercase to lowercase as the start of a new word. This handles the case
             // of applying ToCamelCase to a string that is already camel-cased.
             if (i > 0 && char.IsLower(s[i - 1]) && char.IsUpper(s[i]))
                 isStartOfWord = true;
@@ -96,7 +96,7 @@ public static class StringExtensions
     }
 
     /// <summary>
-    /// Replace the diacritic characters in in a string with their ASCII equivalents when possible. For example:
+    /// Replace the diacritic characters in a string with their ASCII equivalents when possible. For example:
     /// <example>
     ///     <code>"Hafþór Júlíus Björnsson".StripDiacritics() == "Hafthor Julius Bjornsson"</code>
     /// </example>

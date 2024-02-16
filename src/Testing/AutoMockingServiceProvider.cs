@@ -3,7 +3,7 @@ using Moq.AutoMock;
 
 namespace Xerris.Extensions.Testing;
 
-internal class AutoMockingServiceProvider(IServiceProvider serviceProvider, AutoMocker mocker) : IServiceProvider
+internal sealed class AutoMockingServiceProvider(IServiceProvider serviceProvider, AutoMocker mocker) : IServiceProvider
 {
     public object GetService(Type serviceType)
     {

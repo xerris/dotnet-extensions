@@ -4,7 +4,7 @@ using Xerris.Extensions.Configuration.Internal;
 namespace Xerris.Extensions.Configuration;
 
 /// <summary>
-/// Extension methods for <see cref="IConfigurationBuilder"/>.
+/// Extension methods for <see cref="IConfigurationBuilder" />.
 /// </summary>
 public static class ConfigurationBuilderExtensions
 {

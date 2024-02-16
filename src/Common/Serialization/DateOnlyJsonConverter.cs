@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 namespace Xerris.Extensions.Common.Serialization;
 
 /// <summary>
-/// Allows a date with a time component to be deserialized as a <see cref="DateOnly"/>.
+/// Allows a date with a time component to be deserialized as a <see cref="DateOnly" />.
 /// <remarks>
 /// This is useful when working with JSON produced with flexible date/time types that include a time component by
 /// default. For example, a TypeScript <c>Date</c> can deserialize <c>"2023-01-01"</c>, but will serialize to

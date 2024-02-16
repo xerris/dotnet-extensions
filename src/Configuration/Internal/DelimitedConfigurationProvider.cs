@@ -2,7 +2,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Xerris.Extensions.Configuration.Internal;
 
-internal class DelimitedConfigurationProvider(IEnumerable<string> keyDelimiters, IConfiguration config)
+internal sealed class DelimitedConfigurationProvider(IEnumerable<string> keyDelimiters, IConfiguration config)
     : ConfigurationProvider
 {
     public override void Load()

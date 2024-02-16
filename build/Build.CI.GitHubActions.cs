@@ -22,6 +22,4 @@ using Xerris.Nuke.Components;
     InvokedTargets = [nameof(ITest.Test), nameof(IPack.Pack), nameof(IPush.Push)],
     CacheKeyFiles = ["global.json", "src/**/*.csproj"],
     ImportSecrets = [nameof(IPush.NuGetApiKey)])]
-partial class Build
-{
-}
+partial class Build;

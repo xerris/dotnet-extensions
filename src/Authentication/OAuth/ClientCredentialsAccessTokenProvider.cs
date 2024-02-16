@@ -25,22 +25,15 @@ public record ClientCredentialsProviderOptions : AccessTokenProviderOptions, IOp
 /// Acquires an OAuth 2.0 access token using the
 /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.4">client credentials</see> flow.
 /// </summary>
-public class ClientCredentialsAccessTokenProvider : IAccessTokenProvider
+/// <remarks>
+/// Create a new instance of <see cref="ClientCredentialsAccessTokenProvider" />.
+/// </remarks>
+/// <param name="httpClient">The <see cref="HttpClient" /> to use.</param>
+/// <param name="options">The configuration options for the access token request.</param>
+public class ClientCredentialsAccessTokenProvider(HttpClient httpClient,
+    IOptions<ClientCredentialsProviderOptions> options) : IAccessTokenProvider
 {
-    private readonly HttpClient _httpClient;
-    private readonly ClientCredentialsProviderOptions _options;
-
-    /// <summary>
-    /// Create a new instance of <see cref="ClientCredentialsAccessTokenProvider" />.
-    /// </summary>
-    /// <param name="httpClient">The <see cref="HttpClient" /> to use.</param>
-    /// <param name="options">The configuration options for the access token request.</param>
-    public ClientCredentialsAccessTokenProvider(HttpClient httpClient,
-        IOptions<ClientCredentialsProviderOptions> options)
-    {
-        _httpClient = httpClient;
-        _options = options.Value;
-    }
+    private readonly ClientCredentialsProviderOptions _options = options.Value;
 
     /// <inheritdoc />
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)
@@ -55,7 +48,7 @@ public class ClientCredentialsAccessTokenProvider : IAccessTokenProvider
             AdditionalProperties = _options.AdditionalProperties?.ToDictionary(k => k.Key, v => (object) v.Value)
         };
 
-        using var response = await _httpClient.PostAsJsonAsync(_options.TokenEndpoint, request).ConfigureAwait(false);
+        using var response = await httpClient.PostAsJsonAsync(_options.TokenEndpoint, request).ConfigureAwait(false);
 
         try
         {

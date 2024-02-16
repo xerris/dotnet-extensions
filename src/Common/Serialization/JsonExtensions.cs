@@ -20,7 +20,7 @@ public static class JsonExtensions
     /// Get a JSON representation of this object.
     /// </summary>
     /// <param name="obj">The object to serialize.</param>
-    /// <param name="indented">Whether or not JSON should use pretty printing.</param>
+    /// <param name="indented">Whether JSON should use pretty printing.</param>
     /// <returns>The JSON string representing this object.</returns>
     public static string ToJson(this object obj, bool indented = false)
     {
@@ -55,7 +55,7 @@ public static class JsonExtensions
     }
 
     /// <summary>
-    /// Parses the string representing a single JSON value into a <paramref name="returnType"/>.
+    /// Parses the string representing a single JSON value into a <paramref name="returnType" />.
     /// </summary>
     /// <param name="json">JSON text to parse.</param>
     /// <param name="returnType">The type of the object to convert to and return.</param>
@@ -70,7 +70,8 @@ public static class JsonExtensions
     /// </code>
     /// </remarks>
 #pragma warning disable IDE0060 // Remove unused parameter
-    public static TValue? FromJson<TValue>(this string json, TValue returnType, JsonSerializerOptions? options = default)
+    public static TValue? FromJson<TValue>(this string json, TValue returnType,
+        JsonSerializerOptions? options = default)
 #pragma warning restore IDE0060 // Remove unused parameter
     {
         options ??= DefaultJsonSerializerOptions;

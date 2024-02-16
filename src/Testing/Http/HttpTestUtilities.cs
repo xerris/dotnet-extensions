@@ -9,24 +9,28 @@ namespace Xerris.Extensions.Testing.Http;
 public static class HttpTestUtilities
 {
     /// <summary>
-    /// Creates a mock <see cref="HttpMessageHandler"/> that returns a supplied <see cref="HttpResponseMessage"/>.
+    /// Creates a mock <see cref="HttpMessageHandler" /> that returns a supplied <see cref="HttpResponseMessage" />.
     /// </summary>
     /// <param name="mockResponse">The expected result of any HTTP request that passes through this handler.</param>
     /// <param name="requestCallback">
-    /// A callback to invoke when the <see cref="HttpMessageHandler"/> handles a request.
+    /// A callback to invoke when the <see cref="HttpMessageHandler" /> handles a request.
     /// </param>
-    /// <returns>The <see cref="HttpMessageHandler"/> mock.</returns>
+    /// <returns>The <see cref="HttpMessageHandler" /> mock.</returns>
     public static Mock<HttpMessageHandler> GetMockHttpMessageHandler(HttpResponseMessage mockResponse,
         Action<HttpRequestMessage, CancellationToken>? requestCallback = null)
     {
         var handlerMock = new Mock<HttpMessageHandler>(MockBehavior.Strict);
+
         handlerMock
             .Protected()
             .Setup<Task<HttpResponseMessage>>(
                 nameof(HttpClient.SendAsync),
                 ItExpr.IsAny<HttpRequestMessage>(),
                 ItExpr.IsAny<CancellationToken>())
-            .Callback(requestCallback ?? ((_, _) => { /* no-op */ }))
+            .Callback(requestCallback ?? ((_, _) =>
+            {
+                /* no-op */
+            }))
             .ReturnsAsync(mockResponse)
             .Verifiable();
 
@@ -34,24 +38,20 @@ public static class HttpTestUtilities
     }
 
     /// <summary>
-    /// A <see cref="DelegatingHandler"/> that invokes a specified function when it handles a
-    /// <see cref="HttpRequestMessage"/>.
+    /// A <see cref="DelegatingHandler" /> that invokes a specified function when it handles a
+    /// <see cref="HttpRequestMessage" />.
     /// </summary>
-    public class DelegatingHandlerStub : DelegatingHandler
+    /// <remarks>
+    /// Initializes a new instance of this class.
+    /// </remarks>
+    /// <param name="handlerFunc">The function to invoke when handling <see cref="HttpRequestMessage" /></param>
+    public class DelegatingHandlerStub(Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>> handlerFunc) : DelegatingHandler
     {
-        private readonly Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>> _handlerFunc;
-
-        /// <summary>
-        /// Initializes a new instance of this class.
-        /// </summary>
-        /// <param name="handlerFunc">The function to invoke when handling <see cref="HttpRequestMessage"/></param>
-        public DelegatingHandlerStub(Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>> handlerFunc)
-        {
-            _handlerFunc = handlerFunc;
-        }
+        private readonly Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>> _handlerFunc = handlerFunc;
 
         /// <inheritdoc />
-        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
+            CancellationToken cancellationToken)
         {
             return _handlerFunc(request, cancellationToken);
         }

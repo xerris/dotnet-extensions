@@ -5,7 +5,7 @@ using Xerris.Extensions.Authentication.OAuth.Internal;
 namespace Xerris.Extensions.Authentication.OAuth;
 
 /// <summary>
-/// The options values for acquiring access tokens using the
+/// Options for acquiring access tokens using the
 /// <see href="https://datatracker.ietf.org/doc/html/rfc6749#section-1.3.3">resource owner password credentials</see>
 /// flow.
 /// </summary>
@@ -43,22 +43,15 @@ public record ResourceOwnerPasswordProviderOptions : AccessTokenProviderOptions,
 /// a very high degree of trust in the application, and carries risks that are not present in other flows. This flow
 /// should <b>only</b> be used when other more secure flows aren't viable.
 /// </remarks>
-public class ResourceOwnerPasswordAccessTokenProvider : IAccessTokenProvider
+/// <remarks>
+/// Creates a new instance of <see cref="ResourceOwnerPasswordAccessTokenProvider" />.
+/// </remarks>
+/// <param name="httpClient">The <see cref="HttpClient" /> used to make request.</param>
+/// <param name="options">The configuration options for this provider.</param>
+public class ResourceOwnerPasswordAccessTokenProvider(HttpClient httpClient,
+    IOptions<ResourceOwnerPasswordProviderOptions> options) : IAccessTokenProvider
 {
-    private readonly HttpClient _httpClient;
-    private readonly ResourceOwnerPasswordProviderOptions _options;
-
-    /// <summary>
-    /// Creates a new instance of <see cref="ResourceOwnerPasswordAccessTokenProvider" />.
-    /// </summary>
-    /// <param name="httpClient">The <see cref="HttpClient" /> used to make request.</param>
-    /// <param name="options">The configuration options for this provider.</param>
-    public ResourceOwnerPasswordAccessTokenProvider(HttpClient httpClient,
-        IOptions<ResourceOwnerPasswordProviderOptions> options)
-    {
-        _httpClient = httpClient;
-        _options = options.Value;
-    }
+    private readonly ResourceOwnerPasswordProviderOptions _options = options.Value;
 
     /// <inheritdoc />
     public async Task<AccessTokenResponse> GetAccessTokenAsync(params string[] scopes)
@@ -75,7 +68,7 @@ public class ResourceOwnerPasswordAccessTokenProvider : IAccessTokenProvider
             AdditionalProperties = _options.AdditionalProperties?.ToDictionary(k => k.Key, v => (object) v.Value)
         };
 
-        using var response = await _httpClient.PostAsJsonAsync(_options.TokenEndpoint, request).ConfigureAwait(false);
+        using var response = await httpClient.PostAsJsonAsync(_options.TokenEndpoint, request).ConfigureAwait(false);
 
         try
         {
