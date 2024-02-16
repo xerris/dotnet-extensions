@@ -2,12 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Xerris.Extensions.Authentication.OAuth.Internal;
 
-internal sealed class AccessTokenProviderBuilder : IAccessTokenProviderBuilder
+internal sealed class AccessTokenProviderBuilder(IServiceCollection services) : IAccessTokenProviderBuilder
 {
-    public AccessTokenProviderBuilder(IServiceCollection services)
-    {
-        Services = services;
-    }
-
-    public IServiceCollection Services { get; }
+    public IServiceCollection Services { get; } = services;
 }

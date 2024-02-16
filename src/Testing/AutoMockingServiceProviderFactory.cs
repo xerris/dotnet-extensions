@@ -4,14 +4,10 @@ using Moq.AutoMock;
 
 namespace Xerris.Extensions.Testing;
 
-internal class AutoMockingServiceProviderFactory : IServiceProviderFactory<IServiceCollection>
+internal class AutoMockingServiceProviderFactory(MockBehavior mockBehavior = MockBehavior.Loose)
+    : IServiceProviderFactory<IServiceCollection>
 {
-    private readonly AutoMocker _mocker;
-
-    public AutoMockingServiceProviderFactory(MockBehavior mockBehavior = MockBehavior.Loose)
-    {
-        _mocker = new AutoMocker(mockBehavior);
-    }
+    private readonly AutoMocker _mocker = new(mockBehavior);
 
     public IServiceCollection CreateBuilder(IServiceCollection services)
     {

@@ -1,7 +1,6 @@
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
-using Xerris.Extensions.Common.Http;
 using Xerris.Extensions.Common.Serialization;
 
 namespace Xerris.Extensions.Common.Http;

@@ -8,19 +8,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace Xerris.Extensions.Configuration.Aws;
 
-internal class AmazonSecretsManagerConfigurationProvider : ConfigurationProvider
+internal class AmazonSecretsManagerConfigurationProvider(AWSCredentials credentials, string region, string secretName)
+    : ConfigurationProvider
 {
-    private readonly AWSCredentials _credentials;
-    private readonly string _region;
-    private readonly string _secretName;
-
-    public AmazonSecretsManagerConfigurationProvider(AWSCredentials credentials, string region, string secretName)
-    {
-        _credentials = credentials;
-        _region = region;
-        _secretName = secretName;
-    }
-
     public override void Load()
     {
         var secret = GetSecret();
@@ -33,11 +23,11 @@ internal class AmazonSecretsManagerConfigurationProvider : ConfigurationProvider
     {
         var request = new GetSecretValueRequest
         {
-            SecretId = _secretName,
+            SecretId = secretName,
             VersionStage = "AWSCURRENT" // VersionStage defaults to AWSCURRENT if unspecified.
         };
 
-        using var client = new AmazonSecretsManagerClient(_credentials, RegionEndpoint.GetBySystemName(_region));
+        using var client = new AmazonSecretsManagerClient(credentials, RegionEndpoint.GetBySystemName(region));
 
         var response = client.GetSecretValueAsync(request).Result;
 

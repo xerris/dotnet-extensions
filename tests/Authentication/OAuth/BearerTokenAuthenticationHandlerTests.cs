@@ -7,18 +7,11 @@ using Xerris.Extensions.Testing.Http;
 
 namespace Xerris.Extensions.Authentication.Tests.OAuth;
 
-public class DummyHttpService
+public class DummyHttpService(HttpClient client)
 {
-    private readonly HttpClient _client;
-
-    public DummyHttpService(HttpClient client)
-    {
-        _client = client;
-    }
-
     public Task MakeRequest()
     {
-        return _client.GetAsync("http://example.com");
+        return client.GetAsync("http://example.com");
     }
 }
 
